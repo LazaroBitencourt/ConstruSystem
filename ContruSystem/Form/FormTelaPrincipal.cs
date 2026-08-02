@@ -36,5 +36,20 @@ namespace ContruSystem
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelDataTelaPrincipal_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelData_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
