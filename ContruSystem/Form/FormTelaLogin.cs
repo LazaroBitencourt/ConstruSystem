@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ContruSystem
 {
-    public partial class Menu : Form
+    public partial class FormTelaLogin : Form
     {
-        public Menu()
+        public FormTelaLogin()
         {
             InitializeComponent();
         }
