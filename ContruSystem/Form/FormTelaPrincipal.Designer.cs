@@ -54,9 +54,9 @@
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 168);
+            this.panel1.Location = new System.Drawing.Point(7, 178);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(250, 16);
+            this.panel1.Size = new System.Drawing.Size(243, 16);
             this.panel1.TabIndex = 3;
             // 
             // btnVendas
@@ -69,11 +69,11 @@
             this.btnVendas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
             this.btnVendas.Image = ((System.Drawing.Image)(resources.GetObject("btnVendas.Image")));
             this.btnVendas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVendas.Location = new System.Drawing.Point(0, 184);
+            this.btnVendas.Location = new System.Drawing.Point(7, 194);
             this.btnVendas.Margin = new System.Windows.Forms.Padding(3, 3, 3, 5);
             this.btnVendas.Name = "btnVendas";
             this.btnVendas.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.btnVendas.Size = new System.Drawing.Size(250, 60);
+            this.btnVendas.Size = new System.Drawing.Size(243, 60);
             this.btnVendas.TabIndex = 4;
             this.btnVendas.Text = "Vendas";
             this.btnVendas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -83,9 +83,9 @@
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 320);
+            this.panel2.Location = new System.Drawing.Point(7, 330);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(250, 16);
+            this.panel2.Size = new System.Drawing.Size(243, 16);
             this.panel2.TabIndex = 5;
             // 
             // btnProdutos
@@ -98,11 +98,11 @@
             this.btnProdutos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
             this.btnProdutos.Image = ((System.Drawing.Image)(resources.GetObject("btnProdutos.Image")));
             this.btnProdutos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProdutos.Location = new System.Drawing.Point(0, 260);
+            this.btnProdutos.Location = new System.Drawing.Point(7, 270);
             this.btnProdutos.Margin = new System.Windows.Forms.Padding(3, 3, 3, 5);
             this.btnProdutos.Name = "btnProdutos";
             this.btnProdutos.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.btnProdutos.Size = new System.Drawing.Size(250, 60);
+            this.btnProdutos.Size = new System.Drawing.Size(243, 60);
             this.btnProdutos.TabIndex = 6;
             this.btnProdutos.Text = "Produtos";
             this.btnProdutos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -112,9 +112,9 @@
             // panel3
             // 
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 396);
+            this.panel3.Location = new System.Drawing.Point(7, 406);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(250, 16);
+            this.panel3.Size = new System.Drawing.Size(243, 16);
             this.panel3.TabIndex = 7;
             // 
             // btnFuncionarios
@@ -127,11 +127,11 @@
             this.btnFuncionarios.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
             this.btnFuncionarios.Image = ((System.Drawing.Image)(resources.GetObject("btnFuncionarios.Image")));
             this.btnFuncionarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFuncionarios.Location = new System.Drawing.Point(0, 336);
+            this.btnFuncionarios.Location = new System.Drawing.Point(7, 346);
             this.btnFuncionarios.Margin = new System.Windows.Forms.Padding(3, 3, 3, 5);
             this.btnFuncionarios.Name = "btnFuncionarios";
             this.btnFuncionarios.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnFuncionarios.Size = new System.Drawing.Size(250, 60);
+            this.btnFuncionarios.Size = new System.Drawing.Size(243, 60);
             this.btnFuncionarios.TabIndex = 8;
             this.btnFuncionarios.Text = "Funcionários";
             this.btnFuncionarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -141,9 +141,9 @@
             // panel4
             // 
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 244);
+            this.panel4.Location = new System.Drawing.Point(7, 254);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(250, 16);
+            this.panel4.Size = new System.Drawing.Size(243, 16);
             this.panel4.TabIndex = 9;
             // 
             // btnRelatorio
@@ -156,11 +156,11 @@
             this.btnRelatorio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
             this.btnRelatorio.Image = ((System.Drawing.Image)(resources.GetObject("btnRelatorio.Image")));
             this.btnRelatorio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRelatorio.Location = new System.Drawing.Point(0, 412);
+            this.btnRelatorio.Location = new System.Drawing.Point(7, 422);
             this.btnRelatorio.Margin = new System.Windows.Forms.Padding(3, 3, 3, 5);
             this.btnRelatorio.Name = "btnRelatorio";
             this.btnRelatorio.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.btnRelatorio.Size = new System.Drawing.Size(250, 60);
+            this.btnRelatorio.Size = new System.Drawing.Size(243, 60);
             this.btnRelatorio.TabIndex = 10;
             this.btnRelatorio.Text = "Relatório";
             this.btnRelatorio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -171,9 +171,9 @@
             // panel5
             // 
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 472);
+            this.panel5.Location = new System.Drawing.Point(7, 482);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(250, 16);
+            this.panel5.Size = new System.Drawing.Size(243, 16);
             this.panel5.TabIndex = 11;
             // 
             // btnSair
@@ -186,11 +186,11 @@
             this.btnSair.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
             this.btnSair.Image = ((System.Drawing.Image)(resources.GetObject("btnSair.Image")));
             this.btnSair.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSair.Location = new System.Drawing.Point(0, 488);
+            this.btnSair.Location = new System.Drawing.Point(7, 498);
             this.btnSair.Margin = new System.Windows.Forms.Padding(3, 3, 3, 5);
             this.btnSair.Name = "btnSair";
             this.btnSair.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnSair.Size = new System.Drawing.Size(250, 60);
+            this.btnSair.Size = new System.Drawing.Size(243, 60);
             this.btnSair.TabIndex = 12;
             this.btnSair.Text = "Sair";
             this.btnSair.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -202,7 +202,7 @@
             this.labelDesenvolvedor.AutoSize = true;
             this.labelDesenvolvedor.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDesenvolvedor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.labelDesenvolvedor.Location = new System.Drawing.Point(40, 587);
+            this.labelDesenvolvedor.Location = new System.Drawing.Point(37, 582);
             this.labelDesenvolvedor.Name = "labelDesenvolvedor";
             this.labelDesenvolvedor.Size = new System.Drawing.Size(172, 16);
             this.labelDesenvolvedor.TabIndex = 14;
@@ -234,11 +234,11 @@
             this.btnHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
             this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
             this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.Location = new System.Drawing.Point(0, 108);
+            this.btnHome.Location = new System.Drawing.Point(7, 118);
             this.btnHome.Margin = new System.Windows.Forms.Padding(3, 3, 3, 5);
             this.btnHome.Name = "btnHome";
             this.btnHome.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.btnHome.Size = new System.Drawing.Size(250, 60);
+            this.btnHome.Size = new System.Drawing.Size(243, 60);
             this.btnHome.TabIndex = 1;
             this.btnHome.Text = "Home";
             this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -251,17 +251,17 @@
             this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
             this.panelLogo.Controls.Add(this.pictureBoxPainelLogo);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Location = new System.Drawing.Point(7, 0);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(250, 108);
+            this.panelLogo.Size = new System.Drawing.Size(243, 118);
             this.panelLogo.TabIndex = 0;
             // 
             // pictureBoxPainelLogo
             // 
             this.pictureBoxPainelLogo.Image = global::ContruSystem.Properties.Resources.logo_ContruSystem;
-            this.pictureBoxPainelLogo.Location = new System.Drawing.Point(36, 22);
+            this.pictureBoxPainelLogo.Location = new System.Drawing.Point(14, 21);
             this.pictureBoxPainelLogo.Name = "pictureBoxPainelLogo";
-            this.pictureBoxPainelLogo.Size = new System.Drawing.Size(176, 59);
+            this.pictureBoxPainelLogo.Size = new System.Drawing.Size(217, 75);
             this.pictureBoxPainelLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxPainelLogo.TabIndex = 0;
             this.pictureBoxPainelLogo.TabStop = false;
@@ -285,6 +285,7 @@
             this.panelMenuTelaPrincipal.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenuTelaPrincipal.Location = new System.Drawing.Point(0, 0);
             this.panelMenuTelaPrincipal.Name = "panelMenuTelaPrincipal";
+            this.panelMenuTelaPrincipal.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
             this.panelMenuTelaPrincipal.Size = new System.Drawing.Size(250, 621);
             this.panelMenuTelaPrincipal.TabIndex = 0;
             // 
@@ -297,6 +298,7 @@
             this.Controls.Add(this.panelMenuTelaPrincipal);
             this.Controls.Add(this.panelInformation);
             this.Controls.Add(this.panelFormTelaPrincipal);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormTelaPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
