@@ -41,34 +41,34 @@
             this.btnSair = new System.Windows.Forms.Button();
             this.labelDesenvolvedor = new System.Windows.Forms.Label();
             this.panelFormTelaPrincipal = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.labelValorProdutosBaixoEst = new System.Windows.Forms.Label();
+            this.labelProdutosEstBaixo = new System.Windows.Forms.Label();
+            this.panelQtdVendasHoje = new System.Windows.Forms.Panel();
+            this.labelValorQtdVendasHoje = new System.Windows.Forms.Label();
+            this.labelQtdVendasHoje = new System.Windows.Forms.Label();
+            this.panelVendasHoje = new System.Windows.Forms.Panel();
+            this.labelValorVendasHoje = new System.Windows.Forms.Label();
+            this.labelPainelVendaHoje = new System.Windows.Forms.Label();
             this.panelInformacao = new System.Windows.Forms.Panel();
+            this.labelPainelInformacao = new System.Windows.Forms.Label();
+            this.labelMesagemUsuario = new System.Windows.Forms.Label();
+            this.labelHoraTelaPrincipal = new System.Windows.Forms.Label();
+            this.labelDataTelaPrincipal = new System.Windows.Forms.Label();
+            this.labelData = new System.Windows.Forms.Label();
             this.btnHome = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBoxPainelLogo = new System.Windows.Forms.PictureBox();
             this.panelMenuTelaPrincipal = new System.Windows.Forms.Panel();
-            this.labelData = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.labelDataTelaPrincipal = new System.Windows.Forms.Label();
-            this.labelHoraTelaPrincipal = new System.Windows.Forms.Label();
-            this.labelMesagemUsuario = new System.Windows.Forms.Label();
-            this.labelPainelInformacao = new System.Windows.Forms.Label();
-            this.panelVendasHoje = new System.Windows.Forms.Panel();
-            this.labelPainelVendaHoje = new System.Windows.Forms.Label();
-            this.labelValorVendasHoje = new System.Windows.Forms.Label();
-            this.panelQtdVendasHoje = new System.Windows.Forms.Panel();
-            this.labelValorQtdVendasHoje = new System.Windows.Forms.Label();
-            this.labelQtdVendasHoje = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.labelValorProdutosBaixoEst = new System.Windows.Forms.Label();
-            this.labelProdutosEstBaixo = new System.Windows.Forms.Label();
             this.panelFormTelaPrincipal.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panelQtdVendasHoje.SuspendLayout();
+            this.panelVendasHoje.SuspendLayout();
             this.panelInformacao.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPainelLogo)).BeginInit();
             this.panelMenuTelaPrincipal.SuspendLayout();
-            this.panelVendasHoje.SuspendLayout();
-            this.panelQtdVendasHoje.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -99,6 +99,7 @@
             this.btnVendas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVendas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnVendas.UseVisualStyleBackColor = false;
+            this.btnVendas.Click += new System.EventHandler(this.btnVendas_Click);
             // 
             // panel2
             // 
@@ -128,6 +129,7 @@
             this.btnProdutos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProdutos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnProdutos.UseVisualStyleBackColor = false;
+            this.btnProdutos.Click += new System.EventHandler(this.btnProdutos_Click);
             // 
             // panel3
             // 
@@ -157,6 +159,7 @@
             this.btnFuncionarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFuncionarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnFuncionarios.UseVisualStyleBackColor = false;
+            this.btnFuncionarios.Click += new System.EventHandler(this.btnFuncionarios_Click);
             // 
             // panel4
             // 
@@ -216,6 +219,7 @@
             this.btnSair.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSair.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSair.UseVisualStyleBackColor = false;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // labelDesenvolvedor
             // 
@@ -241,6 +245,106 @@
             this.panelFormTelaPrincipal.Size = new System.Drawing.Size(928, 500);
             this.panelFormTelaPrincipal.TabIndex = 1;
             // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.panel6.Controls.Add(this.labelValorProdutosBaixoEst);
+            this.panel6.Controls.Add(this.labelProdutosEstBaixo);
+            this.panel6.Location = new System.Drawing.Point(634, 62);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(270, 190);
+            this.panel6.TabIndex = 3;
+            // 
+            // labelValorProdutosBaixoEst
+            // 
+            this.labelValorProdutosBaixoEst.AutoSize = true;
+            this.labelValorProdutosBaixoEst.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelValorProdutosBaixoEst.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(107)))), ((int)(((byte)(32)))));
+            this.labelValorProdutosBaixoEst.Location = new System.Drawing.Point(101, 99);
+            this.labelValorProdutosBaixoEst.Name = "labelValorProdutosBaixoEst";
+            this.labelValorProdutosBaixoEst.Size = new System.Drawing.Size(68, 45);
+            this.labelValorProdutosBaixoEst.TabIndex = 1;
+            this.labelValorProdutosBaixoEst.Text = "19";
+            // 
+            // labelProdutosEstBaixo
+            // 
+            this.labelProdutosEstBaixo.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelProdutosEstBaixo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.labelProdutosEstBaixo.Location = new System.Drawing.Point(53, 16);
+            this.labelProdutosEstBaixo.Name = "labelProdutosEstBaixo";
+            this.labelProdutosEstBaixo.Size = new System.Drawing.Size(166, 71);
+            this.labelProdutosEstBaixo.TabIndex = 0;
+            this.labelProdutosEstBaixo.Text = "PRODUTOS COM ESTOQUE BAIXO";
+            this.labelProdutosEstBaixo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panelQtdVendasHoje
+            // 
+            this.panelQtdVendasHoje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.panelQtdVendasHoje.Controls.Add(this.labelValorQtdVendasHoje);
+            this.panelQtdVendasHoje.Controls.Add(this.labelQtdVendasHoje);
+            this.panelQtdVendasHoje.Location = new System.Drawing.Point(330, 62);
+            this.panelQtdVendasHoje.Name = "panelQtdVendasHoje";
+            this.panelQtdVendasHoje.Size = new System.Drawing.Size(270, 190);
+            this.panelQtdVendasHoje.TabIndex = 2;
+            // 
+            // labelValorQtdVendasHoje
+            // 
+            this.labelValorQtdVendasHoje.AutoSize = true;
+            this.labelValorQtdVendasHoje.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelValorQtdVendasHoje.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(107)))), ((int)(((byte)(32)))));
+            this.labelValorQtdVendasHoje.Location = new System.Drawing.Point(101, 99);
+            this.labelValorQtdVendasHoje.Name = "labelValorQtdVendasHoje";
+            this.labelValorQtdVendasHoje.Size = new System.Drawing.Size(68, 45);
+            this.labelValorQtdVendasHoje.TabIndex = 1;
+            this.labelValorQtdVendasHoje.Text = "19";
+            this.labelValorQtdVendasHoje.Click += new System.EventHandler(this.label1_Click_2);
+            // 
+            // labelQtdVendasHoje
+            // 
+            this.labelQtdVendasHoje.AutoSize = true;
+            this.labelQtdVendasHoje.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelQtdVendasHoje.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.labelQtdVendasHoje.Location = new System.Drawing.Point(41, 40);
+            this.labelQtdVendasHoje.Name = "labelQtdVendasHoje";
+            this.labelQtdVendasHoje.Size = new System.Drawing.Size(194, 23);
+            this.labelQtdVendasHoje.TabIndex = 0;
+            this.labelQtdVendasHoje.Text = "QTD VENDAS HOJE";
+            this.labelQtdVendasHoje.Click += new System.EventHandler(this.labelQtdVendasHoje_Click);
+            // 
+            // panelVendasHoje
+            // 
+            this.panelVendasHoje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.panelVendasHoje.Controls.Add(this.labelValorVendasHoje);
+            this.panelVendasHoje.Controls.Add(this.labelPainelVendaHoje);
+            this.panelVendasHoje.Location = new System.Drawing.Point(25, 62);
+            this.panelVendasHoje.Name = "panelVendasHoje";
+            this.panelVendasHoje.Size = new System.Drawing.Size(270, 190);
+            this.panelVendasHoje.TabIndex = 0;
+            // 
+            // labelValorVendasHoje
+            // 
+            this.labelValorVendasHoje.AutoSize = true;
+            this.labelValorVendasHoje.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelValorVendasHoje.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.labelValorVendasHoje.Location = new System.Drawing.Point(13, 99);
+            this.labelValorVendasHoje.Name = "labelValorVendasHoje";
+            this.labelValorVendasHoje.Size = new System.Drawing.Size(250, 45);
+            this.labelValorVendasHoje.TabIndex = 1;
+            this.labelValorVendasHoje.Text = "R$ 4.250,00";
+            this.labelValorVendasHoje.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // labelPainelVendaHoje
+            // 
+            this.labelPainelVendaHoje.AutoSize = true;
+            this.labelPainelVendaHoje.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPainelVendaHoje.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.labelPainelVendaHoje.Location = new System.Drawing.Point(63, 45);
+            this.labelPainelVendaHoje.Name = "labelPainelVendaHoje";
+            this.labelPainelVendaHoje.Size = new System.Drawing.Size(147, 23);
+            this.labelPainelVendaHoje.TabIndex = 0;
+            this.labelPainelVendaHoje.Text = "VENDAS HOJE";
+            this.labelPainelVendaHoje.Click += new System.EventHandler(this.label1_Click_1);
+            // 
             // panelInformacao
             // 
             this.panelInformacao.Controls.Add(this.labelPainelInformacao);
@@ -252,6 +356,69 @@
             this.panelInformacao.Name = "panelInformacao";
             this.panelInformacao.Size = new System.Drawing.Size(928, 100);
             this.panelInformacao.TabIndex = 2;
+            // 
+            // labelPainelInformacao
+            // 
+            this.labelPainelInformacao.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.labelPainelInformacao.AutoSize = true;
+            this.labelPainelInformacao.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPainelInformacao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(107)))), ((int)(((byte)(32)))));
+            this.labelPainelInformacao.Location = new System.Drawing.Point(80, 10);
+            this.labelPainelInformacao.Name = "labelPainelInformacao";
+            this.labelPainelInformacao.Size = new System.Drawing.Size(404, 13);
+            this.labelPainelInformacao.TabIndex = 4;
+            this.labelPainelInformacao.Text = "Seu Sistema de Gestão e Vendas para Loja de Materiais de Construção";
+            this.labelPainelInformacao.Click += new System.EventHandler(this.labelPainelInformacao_Click);
+            // 
+            // labelMesagemUsuario
+            // 
+            this.labelMesagemUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.labelMesagemUsuario.AutoSize = true;
+            this.labelMesagemUsuario.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMesagemUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.labelMesagemUsuario.Location = new System.Drawing.Point(77, 32);
+            this.labelMesagemUsuario.Name = "labelMesagemUsuario";
+            this.labelMesagemUsuario.Size = new System.Drawing.Size(272, 33);
+            this.labelMesagemUsuario.TabIndex = 3;
+            this.labelMesagemUsuario.Text = "Bem-vindo, admin!";
+            // 
+            // labelHoraTelaPrincipal
+            // 
+            this.labelHoraTelaPrincipal.AutoSize = true;
+            this.labelHoraTelaPrincipal.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHoraTelaPrincipal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.labelHoraTelaPrincipal.Location = new System.Drawing.Point(825, 38);
+            this.labelHoraTelaPrincipal.Name = "labelHoraTelaPrincipal";
+            this.labelHoraTelaPrincipal.Size = new System.Drawing.Size(55, 19);
+            this.labelHoraTelaPrincipal.TabIndex = 2;
+            this.labelHoraTelaPrincipal.Text = "20:09";
+            this.labelHoraTelaPrincipal.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // labelDataTelaPrincipal
+            // 
+            this.labelDataTelaPrincipal.AutoSize = true;
+            this.labelDataTelaPrincipal.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDataTelaPrincipal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.labelDataTelaPrincipal.Location = new System.Drawing.Point(712, 38);
+            this.labelDataTelaPrincipal.Name = "labelDataTelaPrincipal";
+            this.labelDataTelaPrincipal.Size = new System.Drawing.Size(107, 19);
+            this.labelDataTelaPrincipal.TabIndex = 1;
+            this.labelDataTelaPrincipal.Text = "02/08/2026";
+            this.labelDataTelaPrincipal.Click += new System.EventHandler(this.labelDataTelaPrincipal_Click);
+            // 
+            // labelData
+            // 
+            this.labelData.AutoSize = true;
+            this.labelData.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelData.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.labelData.Location = new System.Drawing.Point(652, 38);
+            this.labelData.Name = "labelData";
+            this.labelData.Size = new System.Drawing.Size(54, 19);
+            this.labelData.TabIndex = 0;
+            this.labelData.Text = "Data:";
+            this.labelData.Click += new System.EventHandler(this.labelData_Click);
             // 
             // btnHome
             // 
@@ -273,7 +440,7 @@
             this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHome.UseVisualStyleBackColor = false;
-            this.btnHome.Click += new System.EventHandler(this.btnDashBoard_Click);
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // panelLogo
             // 
@@ -318,168 +485,6 @@
             this.panelMenuTelaPrincipal.Size = new System.Drawing.Size(250, 621);
             this.panelMenuTelaPrincipal.TabIndex = 0;
             // 
-            // labelData
-            // 
-            this.labelData.AutoSize = true;
-            this.labelData.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelData.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.labelData.Location = new System.Drawing.Point(652, 38);
-            this.labelData.Name = "labelData";
-            this.labelData.Size = new System.Drawing.Size(54, 19);
-            this.labelData.TabIndex = 0;
-            this.labelData.Text = "Data:";
-            this.labelData.Click += new System.EventHandler(this.labelData_Click);
-            // 
-            // labelDataTelaPrincipal
-            // 
-            this.labelDataTelaPrincipal.AutoSize = true;
-            this.labelDataTelaPrincipal.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDataTelaPrincipal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.labelDataTelaPrincipal.Location = new System.Drawing.Point(712, 38);
-            this.labelDataTelaPrincipal.Name = "labelDataTelaPrincipal";
-            this.labelDataTelaPrincipal.Size = new System.Drawing.Size(107, 19);
-            this.labelDataTelaPrincipal.TabIndex = 1;
-            this.labelDataTelaPrincipal.Text = "02/08/2026";
-            this.labelDataTelaPrincipal.Click += new System.EventHandler(this.labelDataTelaPrincipal_Click);
-            // 
-            // labelHoraTelaPrincipal
-            // 
-            this.labelHoraTelaPrincipal.AutoSize = true;
-            this.labelHoraTelaPrincipal.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelHoraTelaPrincipal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.labelHoraTelaPrincipal.Location = new System.Drawing.Point(825, 38);
-            this.labelHoraTelaPrincipal.Name = "labelHoraTelaPrincipal";
-            this.labelHoraTelaPrincipal.Size = new System.Drawing.Size(55, 19);
-            this.labelHoraTelaPrincipal.TabIndex = 2;
-            this.labelHoraTelaPrincipal.Text = "20:09";
-            this.labelHoraTelaPrincipal.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // labelMesagemUsuario
-            // 
-            this.labelMesagemUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.labelMesagemUsuario.AutoSize = true;
-            this.labelMesagemUsuario.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMesagemUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.labelMesagemUsuario.Location = new System.Drawing.Point(77, 32);
-            this.labelMesagemUsuario.Name = "labelMesagemUsuario";
-            this.labelMesagemUsuario.Size = new System.Drawing.Size(272, 33);
-            this.labelMesagemUsuario.TabIndex = 3;
-            this.labelMesagemUsuario.Text = "Bem-vindo, admin!";
-            // 
-            // labelPainelInformacao
-            // 
-            this.labelPainelInformacao.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.labelPainelInformacao.AutoSize = true;
-            this.labelPainelInformacao.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPainelInformacao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(107)))), ((int)(((byte)(32)))));
-            this.labelPainelInformacao.Location = new System.Drawing.Point(80, 10);
-            this.labelPainelInformacao.Name = "labelPainelInformacao";
-            this.labelPainelInformacao.Size = new System.Drawing.Size(404, 13);
-            this.labelPainelInformacao.TabIndex = 4;
-            this.labelPainelInformacao.Text = "Seu Sistema de Gestão e Vendas para Loja de Materiais de Construção";
-            this.labelPainelInformacao.Click += new System.EventHandler(this.labelPainelInformacao_Click);
-            // 
-            // panelVendasHoje
-            // 
-            this.panelVendasHoje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.panelVendasHoje.Controls.Add(this.labelValorVendasHoje);
-            this.panelVendasHoje.Controls.Add(this.labelPainelVendaHoje);
-            this.panelVendasHoje.Location = new System.Drawing.Point(25, 62);
-            this.panelVendasHoje.Name = "panelVendasHoje";
-            this.panelVendasHoje.Size = new System.Drawing.Size(270, 190);
-            this.panelVendasHoje.TabIndex = 0;
-            // 
-            // labelPainelVendaHoje
-            // 
-            this.labelPainelVendaHoje.AutoSize = true;
-            this.labelPainelVendaHoje.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPainelVendaHoje.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.labelPainelVendaHoje.Location = new System.Drawing.Point(63, 45);
-            this.labelPainelVendaHoje.Name = "labelPainelVendaHoje";
-            this.labelPainelVendaHoje.Size = new System.Drawing.Size(147, 23);
-            this.labelPainelVendaHoje.TabIndex = 0;
-            this.labelPainelVendaHoje.Text = "VENDAS HOJE";
-            this.labelPainelVendaHoje.Click += new System.EventHandler(this.label1_Click_1);
-            // 
-            // labelValorVendasHoje
-            // 
-            this.labelValorVendasHoje.AutoSize = true;
-            this.labelValorVendasHoje.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelValorVendasHoje.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.labelValorVendasHoje.Location = new System.Drawing.Point(13, 99);
-            this.labelValorVendasHoje.Name = "labelValorVendasHoje";
-            this.labelValorVendasHoje.Size = new System.Drawing.Size(250, 45);
-            this.labelValorVendasHoje.TabIndex = 1;
-            this.labelValorVendasHoje.Text = "R$ 4.250,00";
-            this.labelValorVendasHoje.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // panelQtdVendasHoje
-            // 
-            this.panelQtdVendasHoje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.panelQtdVendasHoje.Controls.Add(this.labelValorQtdVendasHoje);
-            this.panelQtdVendasHoje.Controls.Add(this.labelQtdVendasHoje);
-            this.panelQtdVendasHoje.Location = new System.Drawing.Point(330, 62);
-            this.panelQtdVendasHoje.Name = "panelQtdVendasHoje";
-            this.panelQtdVendasHoje.Size = new System.Drawing.Size(270, 190);
-            this.panelQtdVendasHoje.TabIndex = 2;
-            // 
-            // labelValorQtdVendasHoje
-            // 
-            this.labelValorQtdVendasHoje.AutoSize = true;
-            this.labelValorQtdVendasHoje.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelValorQtdVendasHoje.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(107)))), ((int)(((byte)(32)))));
-            this.labelValorQtdVendasHoje.Location = new System.Drawing.Point(101, 99);
-            this.labelValorQtdVendasHoje.Name = "labelValorQtdVendasHoje";
-            this.labelValorQtdVendasHoje.Size = new System.Drawing.Size(68, 45);
-            this.labelValorQtdVendasHoje.TabIndex = 1;
-            this.labelValorQtdVendasHoje.Text = "19";
-            this.labelValorQtdVendasHoje.Click += new System.EventHandler(this.label1_Click_2);
-            // 
-            // labelQtdVendasHoje
-            // 
-            this.labelQtdVendasHoje.AutoSize = true;
-            this.labelQtdVendasHoje.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelQtdVendasHoje.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.labelQtdVendasHoje.Location = new System.Drawing.Point(63, 45);
-            this.labelQtdVendasHoje.Name = "labelQtdVendasHoje";
-            this.labelQtdVendasHoje.Size = new System.Drawing.Size(147, 23);
-            this.labelQtdVendasHoje.TabIndex = 0;
-            this.labelQtdVendasHoje.Text = "VENDAS HOJE";
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.panel6.Controls.Add(this.labelValorProdutosBaixoEst);
-            this.panel6.Controls.Add(this.labelProdutosEstBaixo);
-            this.panel6.Location = new System.Drawing.Point(634, 62);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(270, 190);
-            this.panel6.TabIndex = 3;
-            // 
-            // labelValorProdutosBaixoEst
-            // 
-            this.labelValorProdutosBaixoEst.AutoSize = true;
-            this.labelValorProdutosBaixoEst.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelValorProdutosBaixoEst.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(107)))), ((int)(((byte)(32)))));
-            this.labelValorProdutosBaixoEst.Location = new System.Drawing.Point(101, 99);
-            this.labelValorProdutosBaixoEst.Name = "labelValorProdutosBaixoEst";
-            this.labelValorProdutosBaixoEst.Size = new System.Drawing.Size(68, 45);
-            this.labelValorProdutosBaixoEst.TabIndex = 1;
-            this.labelValorProdutosBaixoEst.Text = "19";
-            // 
-            // labelProdutosEstBaixo
-            // 
-            this.labelProdutosEstBaixo.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelProdutosEstBaixo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.labelProdutosEstBaixo.Location = new System.Drawing.Point(53, 16);
-            this.labelProdutosEstBaixo.Name = "labelProdutosEstBaixo";
-            this.labelProdutosEstBaixo.Size = new System.Drawing.Size(166, 71);
-            this.labelProdutosEstBaixo.TabIndex = 0;
-            this.labelProdutosEstBaixo.Text = "PRODUTOS COM ESTOQUE BAIXO";
-            this.labelProdutosEstBaixo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // FormTelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -495,18 +500,18 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ConstruSystem";
             this.panelFormTelaPrincipal.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panelQtdVendasHoje.ResumeLayout(false);
+            this.panelQtdVendasHoje.PerformLayout();
+            this.panelVendasHoje.ResumeLayout(false);
+            this.panelVendasHoje.PerformLayout();
             this.panelInformacao.ResumeLayout(false);
             this.panelInformacao.PerformLayout();
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPainelLogo)).EndInit();
             this.panelMenuTelaPrincipal.ResumeLayout(false);
             this.panelMenuTelaPrincipal.PerformLayout();
-            this.panelVendasHoje.ResumeLayout(false);
-            this.panelVendasHoje.PerformLayout();
-            this.panelQtdVendasHoje.ResumeLayout(false);
-            this.panelQtdVendasHoje.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
             this.ResumeLayout(false);
 
         }

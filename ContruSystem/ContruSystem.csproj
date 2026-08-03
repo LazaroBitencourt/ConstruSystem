@@ -50,6 +50,30 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form\FormTelaFormulario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormTelaFormulario.Designer.cs">
+      <DependentUpon>FormTelaFormulario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormTelaFuncionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormTelaFuncionarios.Designer.cs">
+      <DependentUpon>FormTelaFuncionarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormTelaVendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormTelaVendas.Designer.cs">
+      <DependentUpon>FormTelaVendas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormTelaProdutos1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormTelaProdutos1.Designer.cs">
+      <DependentUpon>FormTelaProdutos1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form\FormTelaLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +88,18 @@
     <Compile Include="Form\FormTelaPrincipal.Designer.cs">
       <DependentUpon>FormTelaPrincipal.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Form\FormTelaFormulario.resx">
+      <DependentUpon>FormTelaFormulario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormTelaFuncionarios.resx">
+      <DependentUpon>FormTelaFuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormTelaVendas.resx">
+      <DependentUpon>FormTelaVendas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormTelaProdutos1.resx">
+      <DependentUpon>FormTelaProdutos1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\FormTelaLogin.resx">
       <DependentUpon>FormTelaLogin.cs</DependentUpon>
     </EmbeddedResource>
