@@ -41,7 +41,7 @@
             this.btnSair = new System.Windows.Forms.Button();
             this.labelDesenvolvedor = new System.Windows.Forms.Label();
             this.panelFormTelaPrincipal = new System.Windows.Forms.Panel();
-            this.panelInformation = new System.Windows.Forms.Panel();
+            this.panelInformacao = new System.Windows.Forms.Panel();
             this.btnHome = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBoxPainelLogo = new System.Windows.Forms.PictureBox();
@@ -51,7 +51,10 @@
             this.labelDataTelaPrincipal = new System.Windows.Forms.Label();
             this.labelHoraTelaPrincipal = new System.Windows.Forms.Label();
             this.labelMesagemUsuario = new System.Windows.Forms.Label();
-            this.panelInformation.SuspendLayout();
+            this.labelPainelInformacao = new System.Windows.Forms.Label();
+            this.panelVendasHoje = new System.Windows.Forms.Panel();
+            this.panelFormTelaPrincipal.SuspendLayout();
+            this.panelInformacao.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPainelLogo)).BeginInit();
             this.panelMenuTelaPrincipal.SuspendLayout();
@@ -60,7 +63,7 @@
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(7, 178);
+            this.panel1.Location = new System.Drawing.Point(7, 177);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(243, 16);
             this.panel1.TabIndex = 3;
@@ -75,7 +78,7 @@
             this.btnVendas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
             this.btnVendas.Image = ((System.Drawing.Image)(resources.GetObject("btnVendas.Image")));
             this.btnVendas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVendas.Location = new System.Drawing.Point(7, 194);
+            this.btnVendas.Location = new System.Drawing.Point(7, 193);
             this.btnVendas.Margin = new System.Windows.Forms.Padding(3, 3, 3, 5);
             this.btnVendas.Name = "btnVendas";
             this.btnVendas.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
@@ -89,7 +92,7 @@
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(7, 330);
+            this.panel2.Location = new System.Drawing.Point(7, 329);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(243, 16);
             this.panel2.TabIndex = 5;
@@ -104,7 +107,7 @@
             this.btnProdutos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
             this.btnProdutos.Image = ((System.Drawing.Image)(resources.GetObject("btnProdutos.Image")));
             this.btnProdutos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProdutos.Location = new System.Drawing.Point(7, 270);
+            this.btnProdutos.Location = new System.Drawing.Point(7, 269);
             this.btnProdutos.Margin = new System.Windows.Forms.Padding(3, 3, 3, 5);
             this.btnProdutos.Name = "btnProdutos";
             this.btnProdutos.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
@@ -118,7 +121,7 @@
             // panel3
             // 
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(7, 406);
+            this.panel3.Location = new System.Drawing.Point(7, 405);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(243, 16);
             this.panel3.TabIndex = 7;
@@ -133,7 +136,7 @@
             this.btnFuncionarios.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
             this.btnFuncionarios.Image = ((System.Drawing.Image)(resources.GetObject("btnFuncionarios.Image")));
             this.btnFuncionarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFuncionarios.Location = new System.Drawing.Point(7, 346);
+            this.btnFuncionarios.Location = new System.Drawing.Point(7, 345);
             this.btnFuncionarios.Margin = new System.Windows.Forms.Padding(3, 3, 3, 5);
             this.btnFuncionarios.Name = "btnFuncionarios";
             this.btnFuncionarios.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
@@ -147,7 +150,7 @@
             // panel4
             // 
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(7, 254);
+            this.panel4.Location = new System.Drawing.Point(7, 253);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(243, 16);
             this.panel4.TabIndex = 9;
@@ -162,7 +165,7 @@
             this.btnRelatorio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
             this.btnRelatorio.Image = ((System.Drawing.Image)(resources.GetObject("btnRelatorio.Image")));
             this.btnRelatorio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRelatorio.Location = new System.Drawing.Point(7, 422);
+            this.btnRelatorio.Location = new System.Drawing.Point(7, 421);
             this.btnRelatorio.Margin = new System.Windows.Forms.Padding(3, 3, 3, 5);
             this.btnRelatorio.Name = "btnRelatorio";
             this.btnRelatorio.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
@@ -177,7 +180,7 @@
             // panel5
             // 
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(7, 482);
+            this.panel5.Location = new System.Drawing.Point(7, 481);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(243, 16);
             this.panel5.TabIndex = 11;
@@ -192,7 +195,7 @@
             this.btnSair.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
             this.btnSair.Image = ((System.Drawing.Image)(resources.GetObject("btnSair.Image")));
             this.btnSair.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSair.Location = new System.Drawing.Point(7, 498);
+            this.btnSair.Location = new System.Drawing.Point(7, 497);
             this.btnSair.Margin = new System.Windows.Forms.Padding(3, 3, 3, 5);
             this.btnSair.Name = "btnSair";
             this.btnSair.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
@@ -219,21 +222,23 @@
             // panelFormTelaPrincipal
             // 
             this.panelFormTelaPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.panelFormTelaPrincipal.Controls.Add(this.panelVendasHoje);
             this.panelFormTelaPrincipal.Location = new System.Drawing.Point(256, 115);
             this.panelFormTelaPrincipal.Name = "panelFormTelaPrincipal";
             this.panelFormTelaPrincipal.Size = new System.Drawing.Size(928, 500);
             this.panelFormTelaPrincipal.TabIndex = 1;
             // 
-            // panelInformation
+            // panelInformacao
             // 
-            this.panelInformation.Controls.Add(this.labelMesagemUsuario);
-            this.panelInformation.Controls.Add(this.labelHoraTelaPrincipal);
-            this.panelInformation.Controls.Add(this.labelDataTelaPrincipal);
-            this.panelInformation.Controls.Add(this.labelData);
-            this.panelInformation.Location = new System.Drawing.Point(256, 8);
-            this.panelInformation.Name = "panelInformation";
-            this.panelInformation.Size = new System.Drawing.Size(928, 100);
-            this.panelInformation.TabIndex = 2;
+            this.panelInformacao.Controls.Add(this.labelPainelInformacao);
+            this.panelInformacao.Controls.Add(this.labelMesagemUsuario);
+            this.panelInformacao.Controls.Add(this.labelHoraTelaPrincipal);
+            this.panelInformacao.Controls.Add(this.labelDataTelaPrincipal);
+            this.panelInformacao.Controls.Add(this.labelData);
+            this.panelInformacao.Location = new System.Drawing.Point(256, 8);
+            this.panelInformacao.Name = "panelInformacao";
+            this.panelInformacao.Size = new System.Drawing.Size(928, 100);
+            this.panelInformacao.TabIndex = 2;
             // 
             // btnHome
             // 
@@ -245,7 +250,7 @@
             this.btnHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
             this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
             this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.Location = new System.Drawing.Point(7, 118);
+            this.btnHome.Location = new System.Drawing.Point(7, 117);
             this.btnHome.Margin = new System.Windows.Forms.Padding(3, 3, 3, 5);
             this.btnHome.Name = "btnHome";
             this.btnHome.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
@@ -264,7 +269,7 @@
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(7, 0);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(243, 118);
+            this.panelLogo.Size = new System.Drawing.Size(243, 117);
             this.panelLogo.TabIndex = 0;
             // 
             // pictureBoxPainelLogo
@@ -349,6 +354,27 @@
             this.labelMesagemUsuario.TabIndex = 3;
             this.labelMesagemUsuario.Text = "Bem-vindo, admin!";
             // 
+            // labelPainelInformacao
+            // 
+            this.labelPainelInformacao.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.labelPainelInformacao.AutoSize = true;
+            this.labelPainelInformacao.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPainelInformacao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(107)))), ((int)(((byte)(32)))));
+            this.labelPainelInformacao.Location = new System.Drawing.Point(80, 10);
+            this.labelPainelInformacao.Name = "labelPainelInformacao";
+            this.labelPainelInformacao.Size = new System.Drawing.Size(170, 13);
+            this.labelPainelInformacao.TabIndex = 4;
+            this.labelPainelInformacao.Text = "Sistema de Gestão e Vendas ";
+            // 
+            // panelVendasHoje
+            // 
+            this.panelVendasHoje.BackColor = System.Drawing.Color.Silver;
+            this.panelVendasHoje.Location = new System.Drawing.Point(150, 65);
+            this.panelVendasHoje.Name = "panelVendasHoje";
+            this.panelVendasHoje.Size = new System.Drawing.Size(250, 150);
+            this.panelVendasHoje.TabIndex = 0;
+            // 
             // FormTelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -356,15 +382,16 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
             this.ClientSize = new System.Drawing.Size(1184, 621);
             this.Controls.Add(this.panelMenuTelaPrincipal);
-            this.Controls.Add(this.panelInformation);
+            this.Controls.Add(this.panelInformacao);
             this.Controls.Add(this.panelFormTelaPrincipal);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormTelaPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ConstruSystem";
-            this.panelInformation.ResumeLayout(false);
-            this.panelInformation.PerformLayout();
+            this.panelFormTelaPrincipal.ResumeLayout(false);
+            this.panelInformacao.ResumeLayout(false);
+            this.panelInformacao.PerformLayout();
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPainelLogo)).EndInit();
             this.panelMenuTelaPrincipal.ResumeLayout(false);
@@ -386,7 +413,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label labelDesenvolvedor;
         private System.Windows.Forms.Panel panelFormTelaPrincipal;
-        private System.Windows.Forms.Panel panelInformation;
+        private System.Windows.Forms.Panel panelInformacao;
         private System.Windows.Forms.Button btnHome;
         private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.PictureBox pictureBoxPainelLogo;
@@ -396,5 +423,7 @@
         private System.Windows.Forms.Label labelHoraTelaPrincipal;
         private System.Windows.Forms.Label labelDataTelaPrincipal;
         private System.Windows.Forms.Label labelMesagemUsuario;
+        private System.Windows.Forms.Label labelPainelInformacao;
+        private System.Windows.Forms.Panel panelVendasHoje;
     }
 }
