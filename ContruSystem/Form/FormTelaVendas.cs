@@ -16,5 +16,30 @@ namespace ContruSystem
         {
             InitializeComponent();
         }
+
+        private void FormTelaVendaCodigoVenda_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormTelaVendasCodigo_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void FormTelaVendas_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SubTotal_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

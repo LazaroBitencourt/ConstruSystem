@@ -129,9 +129,17 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\logo ContruSystem.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconProcurar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconProcurar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconProcurar2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
