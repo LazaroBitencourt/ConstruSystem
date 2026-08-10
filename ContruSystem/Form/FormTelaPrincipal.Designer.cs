@@ -52,23 +52,23 @@
             this.labelDataTelaPrincipal = new System.Windows.Forms.Label();
             this.labelData = new System.Windows.Forms.Label();
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.pictureBoxPainelLogo = new System.Windows.Forms.PictureBox();
             this.panelMenuTelaPrincipal = new System.Windows.Forms.Panel();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.btnSair = new System.Windows.Forms.Button();
             this.btnRelatorio = new System.Windows.Forms.Button();
             this.btnFuncionarios = new System.Windows.Forms.Button();
             this.btnProdutos = new System.Windows.Forms.Button();
             this.btnVendas = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
-            this.pictureBoxPainelLogo = new System.Windows.Forms.PictureBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panelFormTelaPrincipal.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panelQtdVendasHoje.SuspendLayout();
             this.panelVendasHoje.SuspendLayout();
             this.panelInformacao.SuspendLayout();
             this.panelLogo.SuspendLayout();
-            this.panelMenuTelaPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPainelLogo)).BeginInit();
+            this.panelMenuTelaPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -320,6 +320,16 @@
             this.panelLogo.Size = new System.Drawing.Size(243, 117);
             this.panelLogo.TabIndex = 0;
             // 
+            // pictureBoxPainelLogo
+            // 
+            this.pictureBoxPainelLogo.Image = global::ContruSystem.Properties.Resources.logo_ContruSystem;
+            this.pictureBoxPainelLogo.Location = new System.Drawing.Point(14, 21);
+            this.pictureBoxPainelLogo.Name = "pictureBoxPainelLogo";
+            this.pictureBoxPainelLogo.Size = new System.Drawing.Size(217, 75);
+            this.pictureBoxPainelLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxPainelLogo.TabIndex = 0;
+            this.pictureBoxPainelLogo.TabStop = false;
+            // 
             // panelMenuTelaPrincipal
             // 
             this.panelMenuTelaPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
@@ -470,20 +480,9 @@
             this.btnHome.Size = new System.Drawing.Size(243, 60);
             this.btnHome.TabIndex = 1;
             this.btnHome.Text = "Home";
-            this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHome.UseVisualStyleBackColor = false;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
-            // 
-            // pictureBoxPainelLogo
-            // 
-            this.pictureBoxPainelLogo.Image = global::ContruSystem.Properties.Resources.logo_ContruSystem;
-            this.pictureBoxPainelLogo.Location = new System.Drawing.Point(14, 21);
-            this.pictureBoxPainelLogo.Name = "pictureBoxPainelLogo";
-            this.pictureBoxPainelLogo.Size = new System.Drawing.Size(217, 75);
-            this.pictureBoxPainelLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxPainelLogo.TabIndex = 0;
-            this.pictureBoxPainelLogo.TabStop = false;
             // 
             // FormTelaPrincipal
             // 
@@ -509,9 +508,9 @@
             this.panelInformacao.ResumeLayout(false);
             this.panelInformacao.PerformLayout();
             this.panelLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPainelLogo)).EndInit();
             this.panelMenuTelaPrincipal.ResumeLayout(false);
             this.panelMenuTelaPrincipal.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPainelLogo)).EndInit();
             this.ResumeLayout(false);
 
         }

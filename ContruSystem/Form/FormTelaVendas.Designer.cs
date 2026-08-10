@@ -611,7 +611,7 @@
             this.Controls.Add(this.FormTelaVendaslblPreco);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormTelaVendas";
-            this.Text = "FormTelaVendas";
+            this.Text = "git ";
             this.Load += new System.EventHandler(this.FormTelaVendas_Load);
             this.PanelCodigo.ResumeLayout(false);
             this.PanelCodigo.PerformLayout();
