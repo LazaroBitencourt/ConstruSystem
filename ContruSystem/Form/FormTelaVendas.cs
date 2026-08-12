@@ -41,5 +41,10 @@ namespace ContruSystem
         {
 
         }
+
+        private void FormTelaVendasDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
