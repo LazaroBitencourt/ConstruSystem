@@ -68,11 +68,11 @@
     <Compile Include="Form\FormTelaVendas.Designer.cs">
       <DependentUpon>FormTelaVendas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\FormTelaProdutos1.cs">
+    <Compile Include="Form\FormTelaProdutos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FormTelaProdutos1.Designer.cs">
-      <DependentUpon>FormTelaProdutos1.cs</DependentUpon>
+    <Compile Include="Form\FormTelaProdutos.Designer.cs">
+      <DependentUpon>FormTelaProdutos.cs</DependentUpon>
     </Compile>
     <Compile Include="Form\FormTelaLogin.cs">
       <SubType>Form</SubType>
@@ -97,8 +97,8 @@
     <EmbeddedResource Include="Form\FormTelaVendas.resx">
       <DependentUpon>FormTelaVendas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\FormTelaProdutos1.resx">
-      <DependentUpon>FormTelaProdutos1.cs</DependentUpon>
+    <EmbeddedResource Include="Form\FormTelaProdutos.resx">
+      <DependentUpon>FormTelaProdutos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\FormTelaLogin.resx">
       <DependentUpon>FormTelaLogin.cs</DependentUpon>
