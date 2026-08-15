@@ -134,7 +134,6 @@
             this.FormTelaFormularioPeriodoPesq.Size = new System.Drawing.Size(233, 14);
             this.FormTelaFormularioPeriodoPesq.TabIndex = 115;
             this.FormTelaFormularioPeriodoPesq.Text = "Período: 01/05/2025 a 01/05/2025";
-            this.FormTelaFormularioPeriodoPesq.Click += new System.EventHandler(this.label2_Click);
             // 
             // FormTelaFormulariolblDataFinal
             // 
@@ -204,7 +203,6 @@
             this.FormTelaFormularioExportarExcBtn.Text = "Exportar Excel";
             this.FormTelaFormularioExportarExcBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.FormTelaFormularioExportarExcBtn.UseVisualStyleBackColor = false;
-            this.FormTelaFormularioExportarExcBtn.Click += new System.EventHandler(this.FormTelaProdutosSalvarBtn_Click);
             // 
             // panelFormulario
             // 
@@ -243,7 +241,6 @@
             this.FormTelaFormulariolblValorTotal.Size = new System.Drawing.Size(122, 23);
             this.FormTelaFormulariolblValorTotal.TabIndex = 116;
             this.FormTelaFormulariolblValorTotal.Text = "Valor Total:";
-            this.FormTelaFormulariolblValorTotal.Click += new System.EventHandler(this.label4_Click);
             // 
             // button1
             // 
