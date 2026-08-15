@@ -141,5 +141,17 @@
   <ItemGroup>
     <None Include="Resources\iconProcurar2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconPrint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconPrint1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconExcel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconExcel1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
