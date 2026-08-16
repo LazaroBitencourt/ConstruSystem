@@ -195,7 +195,7 @@ namespace ContruSystem
             txtValTotal.Text = totalVenda.ToString("N2");
         }
         private void dataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
-            {
+        {
 
             if (e.RowIndex >= 0)
             {
@@ -418,7 +418,7 @@ namespace ContruSystem
             txtEstoqueDisponivel.Clear();
             txtPreco.Clear();
             UDQuantidade.Value = 1;
-           UDDesconto.Value = 0;
+            UDDesconto.Value = 0;
             dgvPesquisaProdutos.Visible = false;
             txtPesqProduto.Focus();
         }
@@ -435,7 +435,7 @@ namespace ContruSystem
 
         }
 
-        
+
     }
 
 }

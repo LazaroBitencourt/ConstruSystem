@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
-using MySql.Data.MySqlClient; 
+using MySql.Data.MySqlClient;
 
 namespace ContruSystem
 {
@@ -24,7 +24,7 @@ namespace ContruSystem
             this.AcceptButton = btnEntrar;
         }
 
-         private void btnEntrar_Click(object sender, EventArgs e)
+        private void btnEntrar_Click(object sender, EventArgs e)
         {
             if (txtUsuario.Text.Trim() == "")
             {
@@ -81,7 +81,7 @@ namespace ContruSystem
 
         private void FormTelaLoginMostrarSenha_CheckedChanged(object sender, EventArgs e)
         {
-            txtSenha.UseSystemPasswordChar =  !btnMostrarSenha.Checked;
+            txtSenha.UseSystemPasswordChar = !btnMostrarSenha.Checked;
         }
 
         private void FormTelaLoginSairBtn_Click(object sender, EventArgs e)
@@ -95,7 +95,7 @@ namespace ContruSystem
 
         }
 
-       
+
     }
 
 
