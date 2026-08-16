@@ -28,129 +28,130 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.FormTelaVendaslblVendas = new System.Windows.Forms.Label();
-            this.FormTelaVendaslblData = new System.Windows.Forms.Label();
-            this.FormTelaVendaslblQuantidade = new System.Windows.Forms.Label();
-            this.FormTelaVendaslblVendendor = new System.Windows.Forms.Label();
-            this.FormTelaVendasProcurarbtn = new System.Windows.Forms.Button();
-            this.FormTelaVendasCodigoTexBox = new System.Windows.Forms.TextBox();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.frmLblCodVenda = new System.Windows.Forms.Label();
+            this.frmLblData = new System.Windows.Forms.Label();
+            this.frmLblqtd = new System.Windows.Forms.Label();
+            this.frmLblVendedor = new System.Windows.Forms.Label();
+            this.txtCodigoVenda = new System.Windows.Forms.TextBox();
             this.PanelCodigo = new System.Windows.Forms.Panel();
             this.panelData = new System.Windows.Forms.Panel();
-            this.FormTelaVendasDataTextBox = new System.Windows.Forms.TextBox();
-            this.panelVendedor = new System.Windows.Forms.Panel();
-            this.FormTelaVendasVendedorTextBox = new System.Windows.Forms.TextBox();
+            this.txtData = new System.Windows.Forms.TextBox();
             this.panelProcurar = new System.Windows.Forms.Panel();
-            this.FormTelaVendasProcurarTextbox = new System.Windows.Forms.TextBox();
+            this.pictureBoxImgProc = new System.Windows.Forms.PictureBox();
+            this.txtPesqProduto = new System.Windows.Forms.TextBox();
             this.panelQuantidade = new System.Windows.Forms.Panel();
-            this.FormTelaVendasQtdTextBox = new System.Windows.Forms.TextBox();
+            this.UDQuantidade = new System.Windows.Forms.NumericUpDown();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.FormTelaVendaPrecoTextBox = new System.Windows.Forms.TextBox();
-            this.FormTelaVendaslblPreco = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.FormTelaVendasDescontoTextBox = new System.Windows.Forms.TextBox();
-            this.FormTelaVendaslblDesconto = new System.Windows.Forms.Label();
-            this.FormTelaVendasDescontoBtn = new System.Windows.Forms.Button();
+            this.txtPreco = new System.Windows.Forms.TextBox();
+            this.frmLblPreco = new System.Windows.Forms.Label();
+            this.frmLblDesc = new System.Windows.Forms.Label();
+            this.btnAdicionar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.FormTelaVendasDataGridView = new System.Windows.Forms.DataGridView();
-            this.FormTelaVendasFinalizarBtn = new System.Windows.Forms.Button();
-            this.FormTelaVendascCancelarBtn = new System.Windows.Forms.Button();
-            this.FormTelaVendasEditarBtn = new System.Windows.Forms.Button();
-            this.FormTelaVendasLimparbtn = new System.Windows.Forms.Button();
+            this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.btnFinalizar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnLimpar = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.ValorTotalTextBox = new System.Windows.Forms.TextBox();
-            this.ValorTotallbl = new System.Windows.Forms.Label();
-            this.FormTelaVendasslblDados = new System.Windows.Forms.Label();
-            this.FormTelaVendasslblAddProd = new System.Windows.Forms.Label();
-            this.FormTelaVendasslblItens = new System.Windows.Forms.Label();
+            this.txtValTotal = new System.Windows.Forms.TextBox();
+            this.frmLblValTotal = new System.Windows.Forms.Label();
+            this.frmLblDadoVenda = new System.Windows.Forms.Label();
+            this.frmLblAdicionaProduto = new System.Windows.Forms.Label();
+            this.frmLblItens = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.FormTelaFuncionariolblPesq = new System.Windows.Forms.Label();
+            this.frmLblPesquisar = new System.Windows.Forms.Label();
+            this.panelVendedor = new System.Windows.Forms.Panel();
+            this.cmbFuncionario = new System.Windows.Forms.ComboBox();
+            this.panelEstoque = new System.Windows.Forms.Panel();
+            this.txtEstoqueDisponivel = new System.Windows.Forms.TextBox();
+            this.frmLblEstoque = new System.Windows.Forms.Label();
+            this.panelDesconto = new System.Windows.Forms.Panel();
+            this.UDDesconto = new System.Windows.Forms.NumericUpDown();
+            this.dgvPesquisaProdutos = new System.Windows.Forms.DataGridView();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.PanelCodigo.SuspendLayout();
             this.panelData.SuspendLayout();
-            this.panelVendedor.SuspendLayout();
             this.panelProcurar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxImgProc)).BeginInit();
             this.panelQuantidade.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.UDQuantidade)).BeginInit();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.FormTelaVendasDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.panel5.SuspendLayout();
+            this.panelVendedor.SuspendLayout();
+            this.panelEstoque.SuspendLayout();
+            this.panelDesconto.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.UDDesconto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPesquisaProdutos)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // FormTelaVendaslblVendas
+            // frmLblCodVenda
             // 
-            this.FormTelaVendaslblVendas.AutoSize = true;
-            this.FormTelaVendaslblVendas.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaVendaslblVendas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaVendaslblVendas.Location = new System.Drawing.Point(22, 46);
-            this.FormTelaVendaslblVendas.Name = "FormTelaVendaslblVendas";
-            this.FormTelaVendaslblVendas.Size = new System.Drawing.Size(127, 19);
-            this.FormTelaVendaslblVendas.TabIndex = 0;
-            this.FormTelaVendaslblVendas.Text = "Código Venda:";
+            this.frmLblCodVenda.AutoSize = true;
+            this.frmLblCodVenda.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.frmLblCodVenda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.frmLblCodVenda.Location = new System.Drawing.Point(22, 46);
+            this.frmLblCodVenda.Name = "frmLblCodVenda";
+            this.frmLblCodVenda.Size = new System.Drawing.Size(127, 19);
+            this.frmLblCodVenda.TabIndex = 0;
+            this.frmLblCodVenda.Text = "Código Venda:";
             // 
-            // FormTelaVendaslblData
+            // frmLblData
             // 
-            this.FormTelaVendaslblData.AutoSize = true;
-            this.FormTelaVendaslblData.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaVendaslblData.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaVendaslblData.Location = new System.Drawing.Point(263, 45);
-            this.FormTelaVendaslblData.Name = "FormTelaVendaslblData";
-            this.FormTelaVendaslblData.Size = new System.Drawing.Size(54, 19);
-            this.FormTelaVendaslblData.TabIndex = 7;
-            this.FormTelaVendaslblData.Text = "Data:";
+            this.frmLblData.AutoSize = true;
+            this.frmLblData.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.frmLblData.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.frmLblData.Location = new System.Drawing.Point(281, 46);
+            this.frmLblData.Name = "frmLblData";
+            this.frmLblData.Size = new System.Drawing.Size(54, 19);
+            this.frmLblData.TabIndex = 7;
+            this.frmLblData.Text = "Data:";
             // 
-            // FormTelaVendaslblQuantidade
+            // frmLblqtd
             // 
-            this.FormTelaVendaslblQuantidade.AutoSize = true;
-            this.FormTelaVendaslblQuantidade.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaVendaslblQuantidade.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaVendaslblQuantidade.Location = new System.Drawing.Point(22, 165);
-            this.FormTelaVendaslblQuantidade.Name = "FormTelaVendaslblQuantidade";
-            this.FormTelaVendaslblQuantidade.Size = new System.Drawing.Size(109, 19);
-            this.FormTelaVendaslblQuantidade.TabIndex = 11;
-            this.FormTelaVendaslblQuantidade.Text = "Quantidade:";
+            this.frmLblqtd.AutoSize = true;
+            this.frmLblqtd.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.frmLblqtd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.frmLblqtd.Location = new System.Drawing.Point(22, 162);
+            this.frmLblqtd.Name = "frmLblqtd";
+            this.frmLblqtd.Size = new System.Drawing.Size(109, 19);
+            this.frmLblqtd.TabIndex = 11;
+            this.frmLblqtd.Text = "Quantidade:";
             // 
-            // FormTelaVendaslblVendendor
+            // frmLblVendedor
             // 
-            this.FormTelaVendaslblVendendor.AutoSize = true;
-            this.FormTelaVendaslblVendendor.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaVendaslblVendendor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaVendaslblVendendor.Location = new System.Drawing.Point(550, 43);
-            this.FormTelaVendaslblVendendor.Name = "FormTelaVendaslblVendendor";
-            this.FormTelaVendaslblVendendor.Size = new System.Drawing.Size(93, 19);
-            this.FormTelaVendaslblVendendor.TabIndex = 14;
-            this.FormTelaVendaslblVendendor.Text = "Vendedor:";
+            this.frmLblVendedor.AutoSize = true;
+            this.frmLblVendedor.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.frmLblVendedor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.frmLblVendedor.Location = new System.Drawing.Point(550, 43);
+            this.frmLblVendedor.Name = "frmLblVendedor";
+            this.frmLblVendedor.Size = new System.Drawing.Size(93, 19);
+            this.frmLblVendedor.TabIndex = 14;
+            this.frmLblVendedor.Text = "Vendedor:";
             // 
-            // FormTelaVendasProcurarbtn
+            // txtCodigoVenda
             // 
-            this.FormTelaVendasProcurarbtn.BackColor = System.Drawing.Color.Transparent;
-            this.FormTelaVendasProcurarbtn.Image = global::ContruSystem.Properties.Resources.iconProcurar2;
-            this.FormTelaVendasProcurarbtn.Location = new System.Drawing.Point(502, 123);
-            this.FormTelaVendasProcurarbtn.Name = "FormTelaVendasProcurarbtn";
-            this.FormTelaVendasProcurarbtn.Padding = new System.Windows.Forms.Padding(1);
-            this.FormTelaVendasProcurarbtn.Size = new System.Drawing.Size(24, 24);
-            this.FormTelaVendasProcurarbtn.TabIndex = 16;
-            this.FormTelaVendasProcurarbtn.UseVisualStyleBackColor = false;
-            // 
-            // FormTelaVendasCodigoTexBox
-            // 
-            this.FormTelaVendasCodigoTexBox.BackColor = System.Drawing.Color.White;
-            this.FormTelaVendasCodigoTexBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.FormTelaVendasCodigoTexBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.FormTelaVendasCodigoTexBox.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaVendasCodigoTexBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaVendasCodigoTexBox.Location = new System.Drawing.Point(0, 0);
-            this.FormTelaVendasCodigoTexBox.Multiline = true;
-            this.FormTelaVendasCodigoTexBox.Name = "FormTelaVendasCodigoTexBox";
-            this.FormTelaVendasCodigoTexBox.ReadOnly = true;
-            this.FormTelaVendasCodigoTexBox.Size = new System.Drawing.Size(98, 19);
-            this.FormTelaVendasCodigoTexBox.TabIndex = 18;
-            this.FormTelaVendasCodigoTexBox.Text = "00001";
-            this.FormTelaVendasCodigoTexBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtCodigoVenda.BackColor = System.Drawing.Color.White;
+            this.txtCodigoVenda.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCodigoVenda.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtCodigoVenda.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodigoVenda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.txtCodigoVenda.Location = new System.Drawing.Point(0, 0);
+            this.txtCodigoVenda.Multiline = true;
+            this.txtCodigoVenda.Name = "txtCodigoVenda";
+            this.txtCodigoVenda.ReadOnly = true;
+            this.txtCodigoVenda.Size = new System.Drawing.Size(98, 19);
+            this.txtCodigoVenda.TabIndex = 18;
+            this.txtCodigoVenda.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // PanelCodigo
             // 
             this.PanelCodigo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanelCodigo.Controls.Add(this.FormTelaVendasCodigoTexBox);
-            this.PanelCodigo.Location = new System.Drawing.Point(154, 44);
+            this.PanelCodigo.Controls.Add(this.txtCodigoVenda);
+            this.PanelCodigo.Location = new System.Drawing.Point(162, 44);
             this.PanelCodigo.Name = "PanelCodigo";
             this.PanelCodigo.Size = new System.Drawing.Size(100, 21);
             this.PanelCodigo.TabIndex = 19;
@@ -158,186 +159,146 @@
             // panelData
             // 
             this.panelData.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelData.Controls.Add(this.FormTelaVendasDataTextBox);
-            this.panelData.Location = new System.Drawing.Point(323, 43);
+            this.panelData.Controls.Add(this.txtData);
+            this.panelData.Location = new System.Drawing.Point(341, 45);
             this.panelData.Name = "panelData";
-            this.panelData.Size = new System.Drawing.Size(203, 21);
+            this.panelData.Size = new System.Drawing.Size(191, 21);
             this.panelData.TabIndex = 20;
             // 
-            // FormTelaVendasDataTextBox
+            // txtData
             // 
-            this.FormTelaVendasDataTextBox.BackColor = System.Drawing.Color.White;
-            this.FormTelaVendasDataTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.FormTelaVendasDataTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.FormTelaVendasDataTextBox.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaVendasDataTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaVendasDataTextBox.Location = new System.Drawing.Point(0, 0);
-            this.FormTelaVendasDataTextBox.Multiline = true;
-            this.FormTelaVendasDataTextBox.Name = "FormTelaVendasDataTextBox";
-            this.FormTelaVendasDataTextBox.ReadOnly = true;
-            this.FormTelaVendasDataTextBox.Size = new System.Drawing.Size(201, 19);
-            this.FormTelaVendasDataTextBox.TabIndex = 18;
-            this.FormTelaVendasDataTextBox.Text = "25/05/2026";
-            // 
-            // panelVendedor
-            // 
-            this.panelVendedor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelVendedor.Controls.Add(this.FormTelaVendasVendedorTextBox);
-            this.panelVendedor.Location = new System.Drawing.Point(649, 41);
-            this.panelVendedor.Name = "panelVendedor";
-            this.panelVendedor.Size = new System.Drawing.Size(252, 21);
-            this.panelVendedor.TabIndex = 21;
-            // 
-            // FormTelaVendasVendedorTextBox
-            // 
-            this.FormTelaVendasVendedorTextBox.BackColor = System.Drawing.Color.White;
-            this.FormTelaVendasVendedorTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.FormTelaVendasVendedorTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.FormTelaVendasVendedorTextBox.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaVendasVendedorTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaVendasVendedorTextBox.Location = new System.Drawing.Point(0, 0);
-            this.FormTelaVendasVendedorTextBox.Name = "FormTelaVendasVendedorTextBox";
-            this.FormTelaVendasVendedorTextBox.ReadOnly = true;
-            this.FormTelaVendasVendedorTextBox.Size = new System.Drawing.Size(250, 19);
-            this.FormTelaVendasVendedorTextBox.TabIndex = 18;
-            this.FormTelaVendasVendedorTextBox.Text = "Cimento";
+            this.txtData.BackColor = System.Drawing.Color.White;
+            this.txtData.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtData.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtData.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtData.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.txtData.Location = new System.Drawing.Point(0, 0);
+            this.txtData.Multiline = true;
+            this.txtData.Name = "txtData";
+            this.txtData.ReadOnly = true;
+            this.txtData.Size = new System.Drawing.Size(189, 19);
+            this.txtData.TabIndex = 18;
+            this.txtData.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panelProcurar
             // 
             this.panelProcurar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelProcurar.Controls.Add(this.FormTelaVendasProcurarTextbox);
-            this.panelProcurar.Location = new System.Drawing.Point(196, 124);
+            this.panelProcurar.Controls.Add(this.pictureBoxImgProc);
+            this.panelProcurar.Controls.Add(this.txtPesqProduto);
+            this.panelProcurar.Location = new System.Drawing.Point(162, 124);
             this.panelProcurar.Name = "panelProcurar";
-            this.panelProcurar.Size = new System.Drawing.Size(300, 21);
+            this.panelProcurar.Size = new System.Drawing.Size(245, 21);
             this.panelProcurar.TabIndex = 23;
             // 
-            // FormTelaVendasProcurarTextbox
+            // pictureBoxImgProc
             // 
-            this.FormTelaVendasProcurarTextbox.BackColor = System.Drawing.Color.White;
-            this.FormTelaVendasProcurarTextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.FormTelaVendasProcurarTextbox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.FormTelaVendasProcurarTextbox.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaVendasProcurarTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaVendasProcurarTextbox.Location = new System.Drawing.Point(0, 0);
-            this.FormTelaVendasProcurarTextbox.Multiline = true;
-            this.FormTelaVendasProcurarTextbox.Name = "FormTelaVendasProcurarTextbox";
-            this.FormTelaVendasProcurarTextbox.ReadOnly = true;
-            this.FormTelaVendasProcurarTextbox.Size = new System.Drawing.Size(298, 19);
-            this.FormTelaVendasProcurarTextbox.TabIndex = 18;
-            this.FormTelaVendasProcurarTextbox.Text = "Cimento";
+            this.pictureBoxImgProc.BackColor = System.Drawing.Color.White;
+            this.pictureBoxImgProc.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBoxImgProc.Image = global::ContruSystem.Properties.Resources.iconProcurar2;
+            this.pictureBoxImgProc.Location = new System.Drawing.Point(224, 0);
+            this.pictureBoxImgProc.Name = "pictureBoxImgProc";
+            this.pictureBoxImgProc.Size = new System.Drawing.Size(19, 19);
+            this.pictureBoxImgProc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBoxImgProc.TabIndex = 100;
+            this.pictureBoxImgProc.TabStop = false;
+            // 
+            // txtPesqProduto
+            // 
+            this.txtPesqProduto.BackColor = System.Drawing.Color.White;
+            this.txtPesqProduto.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPesqProduto.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtPesqProduto.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPesqProduto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.txtPesqProduto.Location = new System.Drawing.Point(0, 0);
+            this.txtPesqProduto.Multiline = true;
+            this.txtPesqProduto.Name = "txtPesqProduto";
+            this.txtPesqProduto.Size = new System.Drawing.Size(243, 19);
+            this.txtPesqProduto.TabIndex = 18;
+            this.txtPesqProduto.TextChanged += new System.EventHandler(this.txtPesqProduto_TextChanged);
             // 
             // panelQuantidade
             // 
             this.panelQuantidade.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelQuantidade.Controls.Add(this.FormTelaVendasQtdTextBox);
-            this.panelQuantidade.Location = new System.Drawing.Point(155, 163);
+            this.panelQuantidade.Controls.Add(this.UDQuantidade);
+            this.panelQuantidade.Location = new System.Drawing.Point(162, 162);
             this.panelQuantidade.Name = "panelQuantidade";
-            this.panelQuantidade.Size = new System.Drawing.Size(100, 21);
+            this.panelQuantidade.Size = new System.Drawing.Size(98, 22);
             this.panelQuantidade.TabIndex = 24;
             // 
-            // FormTelaVendasQtdTextBox
+            // UDQuantidade
             // 
-            this.FormTelaVendasQtdTextBox.BackColor = System.Drawing.Color.White;
-            this.FormTelaVendasQtdTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.FormTelaVendasQtdTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.FormTelaVendasQtdTextBox.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaVendasQtdTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaVendasQtdTextBox.Location = new System.Drawing.Point(0, 0);
-            this.FormTelaVendasQtdTextBox.Multiline = true;
-            this.FormTelaVendasQtdTextBox.Name = "FormTelaVendasQtdTextBox";
-            this.FormTelaVendasQtdTextBox.ReadOnly = true;
-            this.FormTelaVendasQtdTextBox.Size = new System.Drawing.Size(98, 19);
-            this.FormTelaVendasQtdTextBox.TabIndex = 18;
-            this.FormTelaVendasQtdTextBox.Text = "00001";
-            this.FormTelaVendasQtdTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.UDQuantidade.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.UDQuantidade.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.UDQuantidade.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UDQuantidade.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.UDQuantidade.Location = new System.Drawing.Point(0, 0);
+            this.UDQuantidade.Name = "UDQuantidade";
+            this.UDQuantidade.Size = new System.Drawing.Size(96, 23);
+            this.UDQuantidade.TabIndex = 98;
+            this.UDQuantidade.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.FormTelaVendaPrecoTextBox);
-            this.panel1.Location = new System.Drawing.Point(424, 163);
+            this.panel1.Controls.Add(this.txtPreco);
+            this.panel1.Location = new System.Drawing.Point(416, 163);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(102, 21);
             this.panel1.TabIndex = 26;
             // 
-            // FormTelaVendaPrecoTextBox
+            // txtPreco
             // 
-            this.FormTelaVendaPrecoTextBox.BackColor = System.Drawing.Color.White;
-            this.FormTelaVendaPrecoTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.FormTelaVendaPrecoTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.FormTelaVendaPrecoTextBox.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaVendaPrecoTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaVendaPrecoTextBox.Location = new System.Drawing.Point(0, 0);
-            this.FormTelaVendaPrecoTextBox.Multiline = true;
-            this.FormTelaVendaPrecoTextBox.Name = "FormTelaVendaPrecoTextBox";
-            this.FormTelaVendaPrecoTextBox.ReadOnly = true;
-            this.FormTelaVendaPrecoTextBox.Size = new System.Drawing.Size(100, 19);
-            this.FormTelaVendaPrecoTextBox.TabIndex = 18;
-            this.FormTelaVendaPrecoTextBox.Text = "0,00";
-            this.FormTelaVendaPrecoTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtPreco.BackColor = System.Drawing.Color.White;
+            this.txtPreco.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPreco.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtPreco.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPreco.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.txtPreco.Location = new System.Drawing.Point(0, 0);
+            this.txtPreco.Multiline = true;
+            this.txtPreco.Name = "txtPreco";
+            this.txtPreco.ReadOnly = true;
+            this.txtPreco.Size = new System.Drawing.Size(100, 19);
+            this.txtPreco.TabIndex = 18;
+            this.txtPreco.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // FormTelaVendaslblPreco
+            // frmLblPreco
             // 
-            this.FormTelaVendaslblPreco.AutoSize = true;
-            this.FormTelaVendaslblPreco.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaVendaslblPreco.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaVendaslblPreco.Location = new System.Drawing.Point(292, 165);
-            this.FormTelaVendaslblPreco.Name = "FormTelaVendaslblPreco";
-            this.FormTelaVendaslblPreco.Size = new System.Drawing.Size(130, 19);
-            this.FormTelaVendaslblPreco.TabIndex = 25;
-            this.FormTelaVendaslblPreco.Text = "Preço unitário:";
+            this.frmLblPreco.AutoSize = true;
+            this.frmLblPreco.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.frmLblPreco.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.frmLblPreco.Location = new System.Drawing.Point(281, 162);
+            this.frmLblPreco.Name = "frmLblPreco";
+            this.frmLblPreco.Size = new System.Drawing.Size(119, 18);
+            this.frmLblPreco.TabIndex = 25;
+            this.frmLblPreco.Text = "Preço unitário:";
             // 
-            // panel2
+            // frmLblDesc
             // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.FormTelaVendasDescontoTextBox);
-            this.panel2.Location = new System.Drawing.Point(596, 163);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(124, 21);
-            this.panel2.TabIndex = 28;
+            this.frmLblDesc.AutoSize = true;
+            this.frmLblDesc.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.frmLblDesc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.frmLblDesc.Location = new System.Drawing.Point(584, 124);
+            this.frmLblDesc.Name = "frmLblDesc";
+            this.frmLblDesc.Size = new System.Drawing.Size(128, 19);
+            this.frmLblDesc.TabIndex = 27;
+            this.frmLblDesc.Text = "Desconto (%):";
             // 
-            // FormTelaVendasDescontoTextBox
+            // btnAdicionar
             // 
-            this.FormTelaVendasDescontoTextBox.BackColor = System.Drawing.Color.White;
-            this.FormTelaVendasDescontoTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.FormTelaVendasDescontoTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.FormTelaVendasDescontoTextBox.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaVendasDescontoTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaVendasDescontoTextBox.Location = new System.Drawing.Point(0, 0);
-            this.FormTelaVendasDescontoTextBox.Multiline = true;
-            this.FormTelaVendasDescontoTextBox.Name = "FormTelaVendasDescontoTextBox";
-            this.FormTelaVendasDescontoTextBox.ReadOnly = true;
-            this.FormTelaVendasDescontoTextBox.Size = new System.Drawing.Size(122, 19);
-            this.FormTelaVendasDescontoTextBox.TabIndex = 18;
-            this.FormTelaVendasDescontoTextBox.Text = "0,00";
-            this.FormTelaVendasDescontoTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // FormTelaVendaslblDesconto
-            // 
-            this.FormTelaVendaslblDesconto.AutoSize = true;
-            this.FormTelaVendaslblDesconto.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaVendaslblDesconto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaVendaslblDesconto.Location = new System.Drawing.Point(592, 125);
-            this.FormTelaVendaslblDesconto.Name = "FormTelaVendaslblDesconto";
-            this.FormTelaVendaslblDesconto.Size = new System.Drawing.Size(128, 19);
-            this.FormTelaVendaslblDesconto.TabIndex = 27;
-            this.FormTelaVendaslblDesconto.Text = "Desconto (%):";
-            // 
-            // FormTelaVendasDescontoBtn
-            // 
-            this.FormTelaVendasDescontoBtn.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.FormTelaVendasDescontoBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaVendasDescontoBtn.FlatAppearance.BorderSize = 0;
-            this.FormTelaVendasDescontoBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FormTelaVendasDescontoBtn.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaVendasDescontoBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.FormTelaVendasDescontoBtn.Location = new System.Drawing.Point(741, 147);
-            this.FormTelaVendasDescontoBtn.Name = "FormTelaVendasDescontoBtn";
-            this.FormTelaVendasDescontoBtn.Padding = new System.Windows.Forms.Padding(1);
-            this.FormTelaVendasDescontoBtn.Size = new System.Drawing.Size(160, 37);
-            this.FormTelaVendasDescontoBtn.TabIndex = 29;
-            this.FormTelaVendasDescontoBtn.Text = "Adicionar ";
-            this.FormTelaVendasDescontoBtn.UseVisualStyleBackColor = false;
+            this.btnAdicionar.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnAdicionar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.btnAdicionar.FlatAppearance.BorderSize = 0;
+            this.btnAdicionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdicionar.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdicionar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.btnAdicionar.Location = new System.Drawing.Point(740, 146);
+            this.btnAdicionar.Name = "btnAdicionar";
+            this.btnAdicionar.Padding = new System.Windows.Forms.Padding(1);
+            this.btnAdicionar.Size = new System.Drawing.Size(160, 37);
+            this.btnAdicionar.TabIndex = 29;
+            this.btnAdicionar.Text = "Adicionar ";
+            this.btnAdicionar.UseVisualStyleBackColor = false;
+            this.btnAdicionar.Click += new System.EventHandler(this.btnAdicionar_Click);
             // 
             // label1
             // 
@@ -347,169 +308,292 @@
             this.label1.Size = new System.Drawing.Size(874, 2);
             this.label1.TabIndex = 30;
             // 
-            // FormTelaVendasDataGridView
+            // dataGridView
             // 
-            this.FormTelaVendasDataGridView.BackgroundColor = System.Drawing.Color.White;
-            this.FormTelaVendasDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.FormTelaVendasDataGridView.Location = new System.Drawing.Point(26, 241);
-            this.FormTelaVendasDataGridView.Name = "FormTelaVendasDataGridView";
-            this.FormTelaVendasDataGridView.ReadOnly = true;
-            this.FormTelaVendasDataGridView.Size = new System.Drawing.Size(875, 121);
-            this.FormTelaVendasDataGridView.TabIndex = 31;
-            this.FormTelaVendasDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.FormTelaVendasDataGridView_CellContentClick);
+            this.dataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView.EnableHeadersVisualStyles = false;
+            this.dataGridView.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView.Name = "dataGridView";
+            this.dataGridView.ReadOnly = true;
+            this.dataGridView.Size = new System.Drawing.Size(875, 121);
+            this.dataGridView.TabIndex = 31;
+            this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
             // 
-            // FormTelaVendasFinalizarBtn
+            // btnFinalizar
             // 
-            this.FormTelaVendasFinalizarBtn.BackColor = System.Drawing.Color.Green;
-            this.FormTelaVendasFinalizarBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaVendasFinalizarBtn.FlatAppearance.BorderSize = 0;
-            this.FormTelaVendasFinalizarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FormTelaVendasFinalizarBtn.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaVendasFinalizarBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.FormTelaVendasFinalizarBtn.Location = new System.Drawing.Point(561, 427);
-            this.FormTelaVendasFinalizarBtn.Name = "FormTelaVendasFinalizarBtn";
-            this.FormTelaVendasFinalizarBtn.Padding = new System.Windows.Forms.Padding(1);
-            this.FormTelaVendasFinalizarBtn.Size = new System.Drawing.Size(160, 37);
-            this.FormTelaVendasFinalizarBtn.TabIndex = 32;
-            this.FormTelaVendasFinalizarBtn.Text = "Finalizar Venda";
-            this.FormTelaVendasFinalizarBtn.UseVisualStyleBackColor = false;
+            this.btnFinalizar.BackColor = System.Drawing.Color.Green;
+            this.btnFinalizar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.btnFinalizar.FlatAppearance.BorderSize = 0;
+            this.btnFinalizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFinalizar.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFinalizar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.btnFinalizar.Location = new System.Drawing.Point(561, 427);
+            this.btnFinalizar.Name = "btnFinalizar";
+            this.btnFinalizar.Padding = new System.Windows.Forms.Padding(1);
+            this.btnFinalizar.Size = new System.Drawing.Size(160, 37);
+            this.btnFinalizar.TabIndex = 32;
+            this.btnFinalizar.Text = "Finalizar Venda";
+            this.btnFinalizar.UseVisualStyleBackColor = false;
+            this.btnFinalizar.Click += new System.EventHandler(this.btnFinalizar_Click);
             // 
-            // FormTelaVendascCancelarBtn
+            // btnCancelar
             // 
-            this.FormTelaVendascCancelarBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.FormTelaVendascCancelarBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaVendascCancelarBtn.FlatAppearance.BorderSize = 0;
-            this.FormTelaVendascCancelarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FormTelaVendascCancelarBtn.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaVendascCancelarBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.FormTelaVendascCancelarBtn.Location = new System.Drawing.Point(741, 427);
-            this.FormTelaVendascCancelarBtn.Name = "FormTelaVendascCancelarBtn";
-            this.FormTelaVendascCancelarBtn.Padding = new System.Windows.Forms.Padding(1);
-            this.FormTelaVendascCancelarBtn.Size = new System.Drawing.Size(160, 37);
-            this.FormTelaVendascCancelarBtn.TabIndex = 33;
-            this.FormTelaVendascCancelarBtn.Text = "Cancelar";
-            this.FormTelaVendascCancelarBtn.UseVisualStyleBackColor = false;
-            this.FormTelaVendascCancelarBtn.Click += new System.EventHandler(this.button2_Click);
+            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.btnCancelar.FlatAppearance.BorderSize = 0;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.btnCancelar.Location = new System.Drawing.Point(741, 427);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Padding = new System.Windows.Forms.Padding(1);
+            this.btnCancelar.Size = new System.Drawing.Size(160, 37);
+            this.btnCancelar.TabIndex = 33;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // FormTelaVendasEditarBtn
+            // btnEditar
             // 
-            this.FormTelaVendasEditarBtn.BackColor = System.Drawing.Color.Gray;
-            this.FormTelaVendasEditarBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaVendasEditarBtn.FlatAppearance.BorderSize = 0;
-            this.FormTelaVendasEditarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FormTelaVendasEditarBtn.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaVendasEditarBtn.ForeColor = System.Drawing.Color.White;
-            this.FormTelaVendasEditarBtn.Location = new System.Drawing.Point(26, 379);
-            this.FormTelaVendasEditarBtn.Name = "FormTelaVendasEditarBtn";
-            this.FormTelaVendasEditarBtn.Padding = new System.Windows.Forms.Padding(1);
-            this.FormTelaVendasEditarBtn.Size = new System.Drawing.Size(160, 37);
-            this.FormTelaVendasEditarBtn.TabIndex = 34;
-            this.FormTelaVendasEditarBtn.Text = "Editar Itens";
-            this.FormTelaVendasEditarBtn.UseVisualStyleBackColor = false;
+            this.btnEditar.BackColor = System.Drawing.Color.Gray;
+            this.btnEditar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.btnEditar.FlatAppearance.BorderSize = 0;
+            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditar.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.ForeColor = System.Drawing.Color.White;
+            this.btnEditar.Location = new System.Drawing.Point(26, 379);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Padding = new System.Windows.Forms.Padding(1);
+            this.btnEditar.Size = new System.Drawing.Size(160, 37);
+            this.btnEditar.TabIndex = 34;
+            this.btnEditar.Text = "Editar Item";
+            this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
-            // FormTelaVendasLimparbtn
+            // btnLimpar
             // 
-            this.FormTelaVendasLimparbtn.BackColor = System.Drawing.Color.Gray;
-            this.FormTelaVendasLimparbtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaVendasLimparbtn.FlatAppearance.BorderSize = 0;
-            this.FormTelaVendasLimparbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FormTelaVendasLimparbtn.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaVendasLimparbtn.ForeColor = System.Drawing.Color.White;
-            this.FormTelaVendasLimparbtn.Location = new System.Drawing.Point(210, 379);
-            this.FormTelaVendasLimparbtn.Name = "FormTelaVendasLimparbtn";
-            this.FormTelaVendasLimparbtn.Padding = new System.Windows.Forms.Padding(1);
-            this.FormTelaVendasLimparbtn.Size = new System.Drawing.Size(160, 37);
-            this.FormTelaVendasLimparbtn.TabIndex = 35;
-            this.FormTelaVendasLimparbtn.Text = "Limpar Vendas";
-            this.FormTelaVendasLimparbtn.UseVisualStyleBackColor = false;
+            this.btnLimpar.BackColor = System.Drawing.Color.Gray;
+            this.btnLimpar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.btnLimpar.FlatAppearance.BorderSize = 0;
+            this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpar.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpar.ForeColor = System.Drawing.Color.White;
+            this.btnLimpar.Location = new System.Drawing.Point(210, 379);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Padding = new System.Windows.Forms.Padding(1);
+            this.btnLimpar.Size = new System.Drawing.Size(160, 37);
+            this.btnLimpar.TabIndex = 35;
+            this.btnLimpar.Text = "Remover Item";
+            this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // panel5
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.ValorTotalTextBox);
+            this.panel5.Controls.Add(this.txtValTotal);
             this.panel5.Location = new System.Drawing.Point(668, 379);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(233, 30);
             this.panel5.TabIndex = 41;
             // 
-            // ValorTotalTextBox
+            // txtValTotal
             // 
-            this.ValorTotalTextBox.BackColor = System.Drawing.Color.White;
-            this.ValorTotalTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ValorTotalTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ValorTotalTextBox.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ValorTotalTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.ValorTotalTextBox.Location = new System.Drawing.Point(0, 0);
-            this.ValorTotalTextBox.Multiline = true;
-            this.ValorTotalTextBox.Name = "ValorTotalTextBox";
-            this.ValorTotalTextBox.ReadOnly = true;
-            this.ValorTotalTextBox.Size = new System.Drawing.Size(231, 28);
-            this.ValorTotalTextBox.TabIndex = 18;
-            this.ValorTotalTextBox.Text = "0,00";
-            this.ValorTotalTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtValTotal.BackColor = System.Drawing.Color.White;
+            this.txtValTotal.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtValTotal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtValTotal.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtValTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.txtValTotal.Location = new System.Drawing.Point(0, 0);
+            this.txtValTotal.Multiline = true;
+            this.txtValTotal.Name = "txtValTotal";
+            this.txtValTotal.ReadOnly = true;
+            this.txtValTotal.Size = new System.Drawing.Size(231, 28);
+            this.txtValTotal.TabIndex = 18;
+            this.txtValTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // ValorTotallbl
+            // frmLblValTotal
             // 
-            this.ValorTotallbl.AutoSize = true;
-            this.ValorTotallbl.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ValorTotallbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.ValorTotallbl.Location = new System.Drawing.Point(557, 390);
-            this.ValorTotallbl.Name = "ValorTotallbl";
-            this.ValorTotallbl.Size = new System.Drawing.Size(106, 19);
-            this.ValorTotallbl.TabIndex = 40;
-            this.ValorTotallbl.Text = "Valor Total:";
+            this.frmLblValTotal.AutoSize = true;
+            this.frmLblValTotal.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.frmLblValTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.frmLblValTotal.Location = new System.Drawing.Point(557, 390);
+            this.frmLblValTotal.Name = "frmLblValTotal";
+            this.frmLblValTotal.Size = new System.Drawing.Size(106, 19);
+            this.frmLblValTotal.TabIndex = 40;
+            this.frmLblValTotal.Text = "Valor Total:";
             // 
-            // FormTelaVendasslblDados
+            // frmLblDadoVenda
             // 
-            this.FormTelaVendasslblDados.AutoSize = true;
-            this.FormTelaVendasslblDados.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaVendasslblDados.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaVendasslblDados.Location = new System.Drawing.Point(22, 10);
-            this.FormTelaVendasslblDados.Name = "FormTelaVendasslblDados";
-            this.FormTelaVendasslblDados.Size = new System.Drawing.Size(163, 23);
-            this.FormTelaVendasslblDados.TabIndex = 92;
-            this.FormTelaVendasslblDados.Text = "Dados da Venda";
+            this.frmLblDadoVenda.AutoSize = true;
+            this.frmLblDadoVenda.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.frmLblDadoVenda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.frmLblDadoVenda.Location = new System.Drawing.Point(22, 10);
+            this.frmLblDadoVenda.Name = "frmLblDadoVenda";
+            this.frmLblDadoVenda.Size = new System.Drawing.Size(163, 23);
+            this.frmLblDadoVenda.TabIndex = 92;
+            this.frmLblDadoVenda.Text = "Dados da Venda";
             // 
-            // FormTelaVendasslblAddProd
+            // frmLblAdicionaProduto
             // 
-            this.FormTelaVendasslblAddProd.AutoSize = true;
-            this.FormTelaVendasslblAddProd.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaVendasslblAddProd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaVendasslblAddProd.Location = new System.Drawing.Point(22, 89);
-            this.FormTelaVendasslblAddProd.Name = "FormTelaVendasslblAddProd";
-            this.FormTelaVendasslblAddProd.Size = new System.Drawing.Size(192, 23);
-            this.FormTelaVendasslblAddProd.TabIndex = 93;
-            this.FormTelaVendasslblAddProd.Text = "Adicionar Produtos";
+            this.frmLblAdicionaProduto.AutoSize = true;
+            this.frmLblAdicionaProduto.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.frmLblAdicionaProduto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.frmLblAdicionaProduto.Location = new System.Drawing.Point(22, 89);
+            this.frmLblAdicionaProduto.Name = "frmLblAdicionaProduto";
+            this.frmLblAdicionaProduto.Size = new System.Drawing.Size(192, 23);
+            this.frmLblAdicionaProduto.TabIndex = 93;
+            this.frmLblAdicionaProduto.Text = "Adicionar Produtos";
             // 
-            // FormTelaVendasslblItens
+            // frmLblItens
             // 
-            this.FormTelaVendasslblItens.AutoSize = true;
-            this.FormTelaVendasslblItens.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaVendasslblItens.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaVendasslblItens.Location = new System.Drawing.Point(22, 210);
-            this.FormTelaVendasslblItens.Name = "FormTelaVendasslblItens";
-            this.FormTelaVendasslblItens.Size = new System.Drawing.Size(154, 23);
-            this.FormTelaVendasslblItens.TabIndex = 94;
-            this.FormTelaVendasslblItens.Text = "Itens da Venda";
+            this.frmLblItens.AutoSize = true;
+            this.frmLblItens.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.frmLblItens.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.frmLblItens.Location = new System.Drawing.Point(22, 210);
+            this.frmLblItens.Name = "frmLblItens";
+            this.frmLblItens.Size = new System.Drawing.Size(154, 23);
+            this.frmLblItens.TabIndex = 94;
+            this.frmLblItens.Text = "Itens da Venda";
             // 
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.label4.Location = new System.Drawing.Point(27, 201);
+            this.label4.Location = new System.Drawing.Point(27, 198);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(874, 2);
             this.label4.TabIndex = 95;
             // 
-            // FormTelaFuncionariolblPesq
+            // frmLblPesquisar
             // 
-            this.FormTelaFuncionariolblPesq.AutoSize = true;
-            this.FormTelaFuncionariolblPesq.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaFuncionariolblPesq.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaFuncionariolblPesq.Location = new System.Drawing.Point(26, 128);
-            this.FormTelaFuncionariolblPesq.Name = "FormTelaFuncionariolblPesq";
-            this.FormTelaFuncionariolblPesq.Size = new System.Drawing.Size(164, 19);
-            this.FormTelaFuncionariolblPesq.TabIndex = 96;
-            this.FormTelaFuncionariolblPesq.Text = "Pesquisar Produto:";
+            this.frmLblPesquisar.AutoSize = true;
+            this.frmLblPesquisar.BackColor = System.Drawing.Color.Transparent;
+            this.frmLblPesquisar.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.frmLblPesquisar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.frmLblPesquisar.Location = new System.Drawing.Point(22, 124);
+            this.frmLblPesquisar.Name = "frmLblPesquisar";
+            this.frmLblPesquisar.Size = new System.Drawing.Size(134, 19);
+            this.frmLblPesquisar.TabIndex = 96;
+            this.frmLblPesquisar.Text = "Pesq. Produto.:";
+            // 
+            // panelVendedor
+            // 
+            this.panelVendedor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelVendedor.Controls.Add(this.cmbFuncionario);
+            this.panelVendedor.Location = new System.Drawing.Point(649, 43);
+            this.panelVendedor.Name = "panelVendedor";
+            this.panelVendedor.Size = new System.Drawing.Size(252, 21);
+            this.panelVendedor.TabIndex = 97;
+            // 
+            // cmbFuncionario
+            // 
+            this.cmbFuncionario.BackColor = System.Drawing.Color.White;
+            this.cmbFuncionario.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cmbFuncionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbFuncionario.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbFuncionario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.cmbFuncionario.FormattingEnabled = true;
+            this.cmbFuncionario.Location = new System.Drawing.Point(0, 0);
+            this.cmbFuncionario.Name = "cmbFuncionario";
+            this.cmbFuncionario.Size = new System.Drawing.Size(250, 24);
+            this.cmbFuncionario.TabIndex = 71;
+            // 
+            // panelEstoque
+            // 
+            this.panelEstoque.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelEstoque.Controls.Add(this.txtEstoqueDisponivel);
+            this.panelEstoque.Location = new System.Drawing.Point(530, 126);
+            this.panelEstoque.Name = "panelEstoque";
+            this.panelEstoque.Size = new System.Drawing.Size(46, 21);
+            this.panelEstoque.TabIndex = 28;
+            // 
+            // txtEstoqueDisponivel
+            // 
+            this.txtEstoqueDisponivel.BackColor = System.Drawing.Color.White;
+            this.txtEstoqueDisponivel.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEstoqueDisponivel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtEstoqueDisponivel.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEstoqueDisponivel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.txtEstoqueDisponivel.Location = new System.Drawing.Point(0, 0);
+            this.txtEstoqueDisponivel.Multiline = true;
+            this.txtEstoqueDisponivel.Name = "txtEstoqueDisponivel";
+            this.txtEstoqueDisponivel.ReadOnly = true;
+            this.txtEstoqueDisponivel.Size = new System.Drawing.Size(44, 19);
+            this.txtEstoqueDisponivel.TabIndex = 18;
+            this.txtEstoqueDisponivel.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // frmLblEstoque
+            // 
+            this.frmLblEstoque.AutoSize = true;
+            this.frmLblEstoque.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.frmLblEstoque.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.frmLblEstoque.Location = new System.Drawing.Point(450, 125);
+            this.frmLblEstoque.Name = "frmLblEstoque";
+            this.frmLblEstoque.Size = new System.Drawing.Size(74, 19);
+            this.frmLblEstoque.TabIndex = 27;
+            this.frmLblEstoque.Text = "Estoque";
+            // 
+            // panelDesconto
+            // 
+            this.panelDesconto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelDesconto.Controls.Add(this.UDDesconto);
+            this.panelDesconto.Location = new System.Drawing.Point(588, 163);
+            this.panelDesconto.Name = "panelDesconto";
+            this.panelDesconto.Size = new System.Drawing.Size(124, 22);
+            this.panelDesconto.TabIndex = 99;
+            // 
+            // UDDesconto
+            // 
+            this.UDDesconto.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.UDDesconto.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.UDDesconto.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UDDesconto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.UDDesconto.Location = new System.Drawing.Point(0, 0);
+            this.UDDesconto.Name = "UDDesconto";
+            this.UDDesconto.Size = new System.Drawing.Size(122, 23);
+            this.UDDesconto.TabIndex = 98;
+            this.UDDesconto.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // dgvPesquisaProdutos
+            // 
+            this.dgvPesquisaProdutos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvPesquisaProdutos.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPesquisaProdutos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvPesquisaProdutos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPesquisaProdutos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvPesquisaProdutos.EnableHeadersVisualStyles = false;
+            this.dgvPesquisaProdutos.Location = new System.Drawing.Point(0, 0);
+            this.dgvPesquisaProdutos.Name = "dgvPesquisaProdutos";
+            this.dgvPesquisaProdutos.ReadOnly = true;
+            this.dgvPesquisaProdutos.Size = new System.Drawing.Size(875, 121);
+            this.dgvPesquisaProdutos.TabIndex = 100;
+            this.dgvPesquisaProdutos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPesquisaProdutos_CellClick_1);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.dgvPesquisaProdutos);
+            this.panel2.Controls.Add(this.dataGridView);
+            this.panel2.Location = new System.Drawing.Point(26, 245);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(875, 121);
+            this.panel2.TabIndex = 101;
             // 
             // FormTelaVendas
             // 
@@ -517,34 +601,36 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
             this.ClientSize = new System.Drawing.Size(928, 500);
-            this.Controls.Add(this.FormTelaFuncionariolblPesq);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.FormTelaVendasslblItens);
-            this.Controls.Add(this.FormTelaVendasslblAddProd);
-            this.Controls.Add(this.FormTelaVendasslblDados);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.ValorTotallbl);
-            this.Controls.Add(this.FormTelaVendasLimparbtn);
-            this.Controls.Add(this.FormTelaVendasEditarBtn);
-            this.Controls.Add(this.FormTelaVendascCancelarBtn);
-            this.Controls.Add(this.FormTelaVendasFinalizarBtn);
-            this.Controls.Add(this.FormTelaVendasDataGridView);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.FormTelaVendasDescontoBtn);
-            this.Controls.Add(this.panelVendedor);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panelDesconto);
+            this.Controls.Add(this.panelEstoque);
+            this.Controls.Add(this.frmLblEstoque);
+            this.Controls.Add(this.panelVendedor);
+            this.Controls.Add(this.frmLblPesquisar);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.frmLblItens);
+            this.Controls.Add(this.frmLblAdicionaProduto);
+            this.Controls.Add(this.frmLblDadoVenda);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.frmLblValTotal);
+            this.Controls.Add(this.btnLimpar);
+            this.Controls.Add(this.btnEditar);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnFinalizar);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnAdicionar);
             this.Controls.Add(this.panelData);
-            this.Controls.Add(this.FormTelaVendaslblQuantidade);
-            this.Controls.Add(this.FormTelaVendaslblVendas);
-            this.Controls.Add(this.FormTelaVendaslblDesconto);
+            this.Controls.Add(this.frmLblqtd);
+            this.Controls.Add(this.frmLblCodVenda);
+            this.Controls.Add(this.frmLblDesc);
             this.Controls.Add(this.PanelCodigo);
-            this.Controls.Add(this.FormTelaVendasProcurarbtn);
-            this.Controls.Add(this.FormTelaVendaslblVendendor);
+            this.Controls.Add(this.frmLblVendedor);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.FormTelaVendaslblData);
+            this.Controls.Add(this.frmLblData);
             this.Controls.Add(this.panelProcurar);
             this.Controls.Add(this.panelQuantidade);
-            this.Controls.Add(this.FormTelaVendaslblPreco);
+            this.Controls.Add(this.frmLblPreco);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormTelaVendas";
             this.Text = "git ";
@@ -553,19 +639,23 @@
             this.PanelCodigo.PerformLayout();
             this.panelData.ResumeLayout(false);
             this.panelData.PerformLayout();
-            this.panelVendedor.ResumeLayout(false);
-            this.panelVendedor.PerformLayout();
             this.panelProcurar.ResumeLayout(false);
             this.panelProcurar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxImgProc)).EndInit();
             this.panelQuantidade.ResumeLayout(false);
-            this.panelQuantidade.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.UDQuantidade)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.FormTelaVendasDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            this.panelVendedor.ResumeLayout(false);
+            this.panelEstoque.ResumeLayout(false);
+            this.panelEstoque.PerformLayout();
+            this.panelDesconto.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.UDDesconto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPesquisaProdutos)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -573,41 +663,46 @@
 
         #endregion
 
-        private System.Windows.Forms.Label FormTelaVendaslblVendas;
-        private System.Windows.Forms.Label FormTelaVendaslblData;
-        private System.Windows.Forms.Label FormTelaVendaslblQuantidade;
-        private System.Windows.Forms.Label FormTelaVendaslblVendendor;
-        private System.Windows.Forms.Button FormTelaVendasProcurarbtn;
-        private System.Windows.Forms.TextBox FormTelaVendasCodigoTexBox;
+        private System.Windows.Forms.Label frmLblCodVenda;
+        private System.Windows.Forms.Label frmLblData;
+        private System.Windows.Forms.Label frmLblqtd;
+        private System.Windows.Forms.Label frmLblVendedor;
+        private System.Windows.Forms.TextBox txtCodigoVenda;
         private System.Windows.Forms.Panel PanelCodigo;
         private System.Windows.Forms.Panel panelData;
-        private System.Windows.Forms.TextBox FormTelaVendasDataTextBox;
-        private System.Windows.Forms.Panel panelVendedor;
-        private System.Windows.Forms.TextBox FormTelaVendasVendedorTextBox;
+        private System.Windows.Forms.TextBox txtData;
         private System.Windows.Forms.Panel panelProcurar;
-        private System.Windows.Forms.TextBox FormTelaVendasProcurarTextbox;
+        private System.Windows.Forms.TextBox txtPesqProduto;
         private System.Windows.Forms.Panel panelQuantidade;
-        private System.Windows.Forms.TextBox FormTelaVendasQtdTextBox;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox FormTelaVendaPrecoTextBox;
-        private System.Windows.Forms.Label FormTelaVendaslblPreco;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox FormTelaVendasDescontoTextBox;
-        private System.Windows.Forms.Label FormTelaVendaslblDesconto;
-        private System.Windows.Forms.Button FormTelaVendasDescontoBtn;
+        private System.Windows.Forms.TextBox txtPreco;
+        private System.Windows.Forms.Label frmLblPreco;
+        private System.Windows.Forms.Label frmLblDesc;
+        private System.Windows.Forms.Button btnAdicionar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView FormTelaVendasDataGridView;
-        private System.Windows.Forms.Button FormTelaVendasFinalizarBtn;
-        private System.Windows.Forms.Button FormTelaVendascCancelarBtn;
-        private System.Windows.Forms.Button FormTelaVendasEditarBtn;
-        private System.Windows.Forms.Button FormTelaVendasLimparbtn;
+        private System.Windows.Forms.DataGridView dataGridView;
+        private System.Windows.Forms.Button btnFinalizar;
+        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox ValorTotalTextBox;
-        private System.Windows.Forms.Label ValorTotallbl;
-        private System.Windows.Forms.Label FormTelaVendasslblDados;
-        private System.Windows.Forms.Label FormTelaVendasslblAddProd;
-        private System.Windows.Forms.Label FormTelaVendasslblItens;
+        private System.Windows.Forms.TextBox txtValTotal;
+        private System.Windows.Forms.Label frmLblValTotal;
+        private System.Windows.Forms.Label frmLblDadoVenda;
+        private System.Windows.Forms.Label frmLblAdicionaProduto;
+        private System.Windows.Forms.Label frmLblItens;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label FormTelaFuncionariolblPesq;
+        private System.Windows.Forms.Label frmLblPesquisar;
+        private System.Windows.Forms.Panel panelVendedor;
+        private System.Windows.Forms.ComboBox cmbFuncionario;
+        private System.Windows.Forms.Panel panelEstoque;
+        private System.Windows.Forms.TextBox txtEstoqueDisponivel;
+        private System.Windows.Forms.Label frmLblEstoque;
+        private System.Windows.Forms.NumericUpDown UDQuantidade;
+        private System.Windows.Forms.Panel panelDesconto;
+        private System.Windows.Forms.NumericUpDown UDDesconto;
+        private System.Windows.Forms.PictureBox pictureBoxImgProc;
+        private System.Windows.Forms.DataGridView dgvPesquisaProdutos;
+        private System.Windows.Forms.Panel panel2;
     }
 }

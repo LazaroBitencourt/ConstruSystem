@@ -82,7 +82,7 @@
             // FormTelaFuncionarioPesqbtn
             // 
             this.FormTelaFuncionarioPesqbtn.BackColor = System.Drawing.Color.Transparent;
-            this.FormTelaFuncionarioPesqbtn.Image = global::ContruSystem.Properties.Resources.iconProcurar2;
+            this.FormTelaFuncionarioPesqbtn.Image = global::ContruSystem.Properties.Resources.iconProcurar;
             this.FormTelaFuncionarioPesqbtn.Location = new System.Drawing.Point(881, 84);
             this.FormTelaFuncionarioPesqbtn.Name = "FormTelaFuncionarioPesqbtn";
             this.FormTelaFuncionarioPesqbtn.Padding = new System.Windows.Forms.Padding(1);

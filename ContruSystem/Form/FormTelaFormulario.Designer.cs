@@ -39,13 +39,13 @@
             this.FormTelaFormulariolblDataFinal = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.FormTelaFormularioDataFinal = new System.Windows.Forms.DateTimePicker();
-            this.FormTelaFormularioGerarBtn = new System.Windows.Forms.Button();
             this.FormTelaFormularioExportarExcBtn = new System.Windows.Forms.Button();
             this.panelFormulario = new System.Windows.Forms.Panel();
             this.FormTelaFormularioValorTotal = new System.Windows.Forms.Label();
             this.FormTelaFormulariolblValorTotal = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.FormTelaFormularioGerarBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.FormTelaFormularioDataGridView)).BeginInit();
             this.PanelDataInicial.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -167,25 +167,6 @@
             this.FormTelaFormularioDataFinal.Size = new System.Drawing.Size(125, 23);
             this.FormTelaFormularioDataFinal.TabIndex = 0;
             // 
-            // FormTelaFormularioGerarBtn
-            // 
-            this.FormTelaFormularioGerarBtn.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.FormTelaFormularioGerarBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaFormularioGerarBtn.FlatAppearance.BorderSize = 0;
-            this.FormTelaFormularioGerarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FormTelaFormularioGerarBtn.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaFormularioGerarBtn.ForeColor = System.Drawing.Color.White;
-            this.FormTelaFormularioGerarBtn.Image = global::ContruSystem.Properties.Resources.iconReport;
-            this.FormTelaFormularioGerarBtn.Location = new System.Drawing.Point(592, 28);
-            this.FormTelaFormularioGerarBtn.Name = "FormTelaFormularioGerarBtn";
-            this.FormTelaFormularioGerarBtn.Padding = new System.Windows.Forms.Padding(1);
-            this.FormTelaFormularioGerarBtn.Size = new System.Drawing.Size(181, 37);
-            this.FormTelaFormularioGerarBtn.TabIndex = 105;
-            this.FormTelaFormularioGerarBtn.Text = "Gerar Relatório";
-            this.FormTelaFormularioGerarBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.FormTelaFormularioGerarBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.FormTelaFormularioGerarBtn.UseVisualStyleBackColor = false;
-            // 
             // FormTelaFormularioExportarExcBtn
             // 
             this.FormTelaFormularioExportarExcBtn.BackColor = System.Drawing.Color.Gray;
@@ -194,7 +175,7 @@
             this.FormTelaFormularioExportarExcBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.FormTelaFormularioExportarExcBtn.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormTelaFormularioExportarExcBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.FormTelaFormularioExportarExcBtn.Image = global::ContruSystem.Properties.Resources.IconExcel1;
+            this.FormTelaFormularioExportarExcBtn.Image = global::ContruSystem.Properties.Resources.IconExcel;
             this.FormTelaFormularioExportarExcBtn.Location = new System.Drawing.Point(309, 440);
             this.FormTelaFormularioExportarExcBtn.Name = "FormTelaFormularioExportarExcBtn";
             this.FormTelaFormularioExportarExcBtn.Padding = new System.Windows.Forms.Padding(1);
@@ -250,7 +231,6 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::ContruSystem.Properties.Resources.IconPrint1;
             this.button1.Location = new System.Drawing.Point(515, 440);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(1);
@@ -276,6 +256,25 @@
             this.button2.TabIndex = 120;
             this.button2.Text = "Fechar";
             this.button2.UseVisualStyleBackColor = false;
+            // 
+            // FormTelaFormularioGerarBtn
+            // 
+            this.FormTelaFormularioGerarBtn.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.FormTelaFormularioGerarBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.FormTelaFormularioGerarBtn.FlatAppearance.BorderSize = 0;
+            this.FormTelaFormularioGerarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.FormTelaFormularioGerarBtn.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormTelaFormularioGerarBtn.ForeColor = System.Drawing.Color.White;
+            this.FormTelaFormularioGerarBtn.Image = global::ContruSystem.Properties.Resources.iconReport;
+            this.FormTelaFormularioGerarBtn.Location = new System.Drawing.Point(592, 28);
+            this.FormTelaFormularioGerarBtn.Name = "FormTelaFormularioGerarBtn";
+            this.FormTelaFormularioGerarBtn.Padding = new System.Windows.Forms.Padding(1);
+            this.FormTelaFormularioGerarBtn.Size = new System.Drawing.Size(181, 37);
+            this.FormTelaFormularioGerarBtn.TabIndex = 105;
+            this.FormTelaFormularioGerarBtn.Text = "Gerar Relatório";
+            this.FormTelaFormularioGerarBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.FormTelaFormularioGerarBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.FormTelaFormularioGerarBtn.UseVisualStyleBackColor = false;
             // 
             // FormTelaRelatorio
             // 

@@ -183,12 +183,6 @@
     <None Include="Resources\iconProcurar.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\iconProcurar1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\iconProcurar2.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\IconPrint.png" />
   </ItemGroup>
   <ItemGroup>
@@ -204,6 +198,14 @@
     <None Include="Resources\iconReport.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\IconExcel2.png" />
+    <None Include="Resources\iconReport1.png" />
+    <None Include="Resources\iconReport2.png" />
+    <None Include="Resources\iconReport3.png" />
+    <None Include="Resources\IconExcel3.png" />
+    <None Include="Resources\iconProcurar1.png" />
+    <None Include="Resources\iconProcurar2.png" />
+    <None Include="Resources\iconProcurar3.png" />
     <Content Include="Scritps\Create_Data_Base.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

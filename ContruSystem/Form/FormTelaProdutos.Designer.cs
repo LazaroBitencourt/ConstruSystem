@@ -327,7 +327,7 @@
             // FormTelaProdutosProcurarbtn
             // 
             this.FormTelaProdutosProcurarbtn.BackColor = System.Drawing.Color.Transparent;
-            this.FormTelaProdutosProcurarbtn.Image = global::ContruSystem.Properties.Resources.iconProcurar2;
+            this.FormTelaProdutosProcurarbtn.Image = global::ContruSystem.Properties.Resources.iconProcurar;
             this.FormTelaProdutosProcurarbtn.Location = new System.Drawing.Point(881, 84);
             this.FormTelaProdutosProcurarbtn.Name = "FormTelaProdutosProcurarbtn";
             this.FormTelaProdutosProcurarbtn.Padding = new System.Windows.Forms.Padding(1);

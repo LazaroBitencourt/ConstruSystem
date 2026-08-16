@@ -73,36 +73,6 @@ namespace ContruSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap IconExcel1 {
-            get {
-                object obj = ResourceManager.GetObject("IconExcel1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap IconPrint {
-            get {
-                object obj = ResourceManager.GetObject("IconPrint", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap IconPrint1 {
-            get {
-                object obj = ResourceManager.GetObject("IconPrint1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap iconProcurar {
             get {
                 object obj = ResourceManager.GetObject("iconProcurar", resourceCulture);
@@ -136,6 +106,16 @@ namespace ContruSystem.Properties {
         internal static System.Drawing.Bitmap iconReport {
             get {
                 object obj = ResourceManager.GetObject("iconReport", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconReport1 {
+            get {
+                object obj = ResourceManager.GetObject("iconReport1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
