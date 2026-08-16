@@ -291,6 +291,7 @@ namespace ContruSystem
 
         private void LimparCampos()
         {
+            dataGridView.DataSource = null;
             txtCodigoProduto.Clear();
             txtDescricao.Clear();
             cmbCategoria.SelectedIndex = -1;

@@ -327,6 +327,7 @@ namespace ContruSystem
             txtSalario.Clear();
             dtpDataAdmissao.Value = DateTime.Now;
             txtNome.Focus();
+            dataGridView.DataSource = null;
         }
 
         private void CarregarCargos()
