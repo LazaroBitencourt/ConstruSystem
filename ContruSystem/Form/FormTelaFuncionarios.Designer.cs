@@ -28,38 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.FormTelaFuncionariolblPesq = new System.Windows.Forms.Label();
-            this.FormTelaFuncionarioPesqbtn = new System.Windows.Forms.Button();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.frmLblPesquisar = new System.Windows.Forms.Label();
             this.panelProcurar = new System.Windows.Forms.Panel();
-            this.FormTelaFuncionarioPesqTextBox = new System.Windows.Forms.TextBox();
-            this.FormTelaProdutosEditarBtn = new System.Windows.Forms.Button();
-            this.FormTelaProdutosExcluirBtn = new System.Windows.Forms.Button();
-            this.FormTelaProdutosSalvarBtn = new System.Windows.Forms.Button();
-            this.FormTelaFuncionarioDataGridView = new System.Windows.Forms.DataGridView();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtPesquisar = new System.Windows.Forms.TextBox();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
+            this.btnSalvar = new System.Windows.Forms.Button();
+            this.dataGridView = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.FormTelaProdutosLimparBtn = new System.Windows.Forms.Button();
+            this.btnLimpar = new System.Windows.Forms.Button();
             this.panelData = new System.Windows.Forms.Panel();
-            this.FormTelaFuncionarionNomeTextBox = new System.Windows.Forms.TextBox();
-            this.FormTelaFuncionariolblSalario = new System.Windows.Forms.Label();
-            this.FormTelaFuncionariolblCodigo = new System.Windows.Forms.Label();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.frmLblSalario = new System.Windows.Forms.Label();
+            this.frmLblCodigoFunc = new System.Windows.Forms.Label();
             this.PanelCodigo = new System.Windows.Forms.Panel();
-            this.FormTelaFuncionarioCodigoTexBox = new System.Windows.Forms.TextBox();
-            this.FormTelaFuncionariolblNome = new System.Windows.Forms.Label();
+            this.txtCodigoFuncionario = new System.Windows.Forms.TextBox();
+            this.frmLblNome = new System.Windows.Forms.Label();
             this.panelQuantidade = new System.Windows.Forms.Panel();
-            this.FormTelaFuncionarioSalarioTextBox = new System.Windows.Forms.TextBox();
-            this.FormTelaFuncionariolblCargo = new System.Windows.Forms.Label();
-            this.FormTelaFuncionarioCargocomboBox = new System.Windows.Forms.ComboBox();
+            this.txtSalario = new System.Windows.Forms.TextBox();
+            this.frmLblCargo = new System.Windows.Forms.Label();
+            this.cmbCargo = new System.Windows.Forms.ComboBox();
             this.panelProduto = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.FormTelaFuncionarioCpfTextBox = new System.Windows.Forms.TextBox();
-            this.FormTelaFuncionariolblCpf = new System.Windows.Forms.Label();
-            this.FormTelaFuncionariolblDataAd = new System.Windows.Forms.Label();
+            this.mskCpf = new System.Windows.Forms.MaskedTextBox();
+            this.frmLblCpf = new System.Windows.Forms.Label();
+            this.frmLblDataAdmissao = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.FormTelaFuncionarioDataAdTextBox = new System.Windows.Forms.TextBox();
-            this.FormTelaFuncionariolbl = new System.Windows.Forms.Label();
-            this.FormTelaFuncionariolblCad = new System.Windows.Forms.Label();
+            this.dtpDataAdmissao = new System.Windows.Forms.DateTimePicker();
+            this.frmLblDadosFucionario = new System.Windows.Forms.Label();
+            this.frmLblFuncionario = new System.Windows.Forms.Label();
             this.panelProcurar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.FormTelaFuncionarioDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.panelData.SuspendLayout();
             this.PanelCodigo.SuspendLayout();
             this.panelQuantidade.SuspendLayout();
@@ -68,109 +71,130 @@
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // FormTelaFuncionariolblPesq
+            // frmLblPesquisar
             // 
-            this.FormTelaFuncionariolblPesq.AutoSize = true;
-            this.FormTelaFuncionariolblPesq.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaFuncionariolblPesq.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaFuncionariolblPesq.Location = new System.Drawing.Point(519, 87);
-            this.FormTelaFuncionariolblPesq.Name = "FormTelaFuncionariolblPesq";
-            this.FormTelaFuncionariolblPesq.Size = new System.Drawing.Size(94, 19);
-            this.FormTelaFuncionariolblPesq.TabIndex = 85;
-            this.FormTelaFuncionariolblPesq.Text = "Pesquisar:";
-            // 
-            // FormTelaFuncionarioPesqbtn
-            // 
-            this.FormTelaFuncionarioPesqbtn.BackColor = System.Drawing.Color.Transparent;
-            this.FormTelaFuncionarioPesqbtn.Image = global::ContruSystem.Properties.Resources.iconProcurar;
-            this.FormTelaFuncionarioPesqbtn.Location = new System.Drawing.Point(881, 84);
-            this.FormTelaFuncionarioPesqbtn.Name = "FormTelaFuncionarioPesqbtn";
-            this.FormTelaFuncionarioPesqbtn.Padding = new System.Windows.Forms.Padding(1);
-            this.FormTelaFuncionarioPesqbtn.Size = new System.Drawing.Size(24, 24);
-            this.FormTelaFuncionarioPesqbtn.TabIndex = 83;
-            this.FormTelaFuncionarioPesqbtn.UseVisualStyleBackColor = false;
+            this.frmLblPesquisar.AutoSize = true;
+            this.frmLblPesquisar.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.frmLblPesquisar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.frmLblPesquisar.Location = new System.Drawing.Point(519, 87);
+            this.frmLblPesquisar.Name = "frmLblPesquisar";
+            this.frmLblPesquisar.Size = new System.Drawing.Size(94, 19);
+            this.frmLblPesquisar.TabIndex = 85;
+            this.frmLblPesquisar.Text = "Pesquisar:";
             // 
             // panelProcurar
             // 
             this.panelProcurar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelProcurar.Controls.Add(this.FormTelaFuncionarioPesqTextBox);
+            this.panelProcurar.Controls.Add(this.pictureBox1);
+            this.panelProcurar.Controls.Add(this.txtPesquisar);
             this.panelProcurar.Location = new System.Drawing.Point(617, 87);
             this.panelProcurar.Name = "panelProcurar";
-            this.panelProcurar.Size = new System.Drawing.Size(256, 21);
+            this.panelProcurar.Size = new System.Drawing.Size(288, 21);
             this.panelProcurar.TabIndex = 84;
             // 
-            // FormTelaFuncionarioPesqTextBox
+            // pictureBox1
             // 
-            this.FormTelaFuncionarioPesqTextBox.BackColor = System.Drawing.Color.White;
-            this.FormTelaFuncionarioPesqTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.FormTelaFuncionarioPesqTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.FormTelaFuncionarioPesqTextBox.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaFuncionarioPesqTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaFuncionarioPesqTextBox.Location = new System.Drawing.Point(0, 0);
-            this.FormTelaFuncionarioPesqTextBox.Multiline = true;
-            this.FormTelaFuncionarioPesqTextBox.Name = "FormTelaFuncionarioPesqTextBox";
-            this.FormTelaFuncionarioPesqTextBox.ReadOnly = true;
-            this.FormTelaFuncionarioPesqTextBox.Size = new System.Drawing.Size(254, 19);
-            this.FormTelaFuncionarioPesqTextBox.TabIndex = 18;
-            this.FormTelaFuncionarioPesqTextBox.Text = "Cimento";
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox1.Image = global::ContruSystem.Properties.Resources.iconProcurar2;
+            this.pictureBox1.Location = new System.Drawing.Point(267, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(19, 19);
+            this.pictureBox1.TabIndex = 92;
+            this.pictureBox1.TabStop = false;
             // 
-            // FormTelaProdutosEditarBtn
+            // txtPesquisar
             // 
-            this.FormTelaProdutosEditarBtn.BackColor = System.Drawing.Color.Gray;
-            this.FormTelaProdutosEditarBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaProdutosEditarBtn.FlatAppearance.BorderSize = 0;
-            this.FormTelaProdutosEditarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FormTelaProdutosEditarBtn.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaProdutosEditarBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.FormTelaProdutosEditarBtn.Location = new System.Drawing.Point(145, 352);
-            this.FormTelaProdutosEditarBtn.Name = "FormTelaProdutosEditarBtn";
-            this.FormTelaProdutosEditarBtn.Padding = new System.Windows.Forms.Padding(1);
-            this.FormTelaProdutosEditarBtn.Size = new System.Drawing.Size(90, 37);
-            this.FormTelaProdutosEditarBtn.TabIndex = 82;
-            this.FormTelaProdutosEditarBtn.Text = "Editar";
-            this.FormTelaProdutosEditarBtn.UseVisualStyleBackColor = false;
+            this.txtPesquisar.BackColor = System.Drawing.Color.White;
+            this.txtPesquisar.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPesquisar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtPesquisar.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPesquisar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.txtPesquisar.Location = new System.Drawing.Point(0, 0);
+            this.txtPesquisar.Multiline = true;
+            this.txtPesquisar.Name = "txtPesquisar";
+            this.txtPesquisar.Size = new System.Drawing.Size(286, 19);
+            this.txtPesquisar.TabIndex = 18;
+            this.txtPesquisar.TextChanged += new System.EventHandler(this.txtPesquisar_TextChanged);
             // 
-            // FormTelaProdutosExcluirBtn
+            // btnEditar
             // 
-            this.FormTelaProdutosExcluirBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.FormTelaProdutosExcluirBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaProdutosExcluirBtn.FlatAppearance.BorderSize = 0;
-            this.FormTelaProdutosExcluirBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FormTelaProdutosExcluirBtn.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaProdutosExcluirBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.FormTelaProdutosExcluirBtn.Location = new System.Drawing.Point(259, 352);
-            this.FormTelaProdutosExcluirBtn.Name = "FormTelaProdutosExcluirBtn";
-            this.FormTelaProdutosExcluirBtn.Padding = new System.Windows.Forms.Padding(1);
-            this.FormTelaProdutosExcluirBtn.Size = new System.Drawing.Size(90, 37);
-            this.FormTelaProdutosExcluirBtn.TabIndex = 81;
-            this.FormTelaProdutosExcluirBtn.Text = "Excluir";
-            this.FormTelaProdutosExcluirBtn.UseVisualStyleBackColor = false;
+            this.btnEditar.BackColor = System.Drawing.Color.Gray;
+            this.btnEditar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.btnEditar.FlatAppearance.BorderSize = 0;
+            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditar.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.btnEditar.Location = new System.Drawing.Point(145, 352);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Padding = new System.Windows.Forms.Padding(1);
+            this.btnEditar.Size = new System.Drawing.Size(90, 37);
+            this.btnEditar.TabIndex = 82;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
-            // FormTelaProdutosSalvarBtn
+            // btnExcluir
             // 
-            this.FormTelaProdutosSalvarBtn.BackColor = System.Drawing.Color.Green;
-            this.FormTelaProdutosSalvarBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaProdutosSalvarBtn.FlatAppearance.BorderSize = 0;
-            this.FormTelaProdutosSalvarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FormTelaProdutosSalvarBtn.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaProdutosSalvarBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.FormTelaProdutosSalvarBtn.Location = new System.Drawing.Point(31, 352);
-            this.FormTelaProdutosSalvarBtn.Name = "FormTelaProdutosSalvarBtn";
-            this.FormTelaProdutosSalvarBtn.Padding = new System.Windows.Forms.Padding(1);
-            this.FormTelaProdutosSalvarBtn.Size = new System.Drawing.Size(90, 37);
-            this.FormTelaProdutosSalvarBtn.TabIndex = 80;
-            this.FormTelaProdutosSalvarBtn.Text = "Salvar";
-            this.FormTelaProdutosSalvarBtn.UseVisualStyleBackColor = false;
+            this.btnExcluir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnExcluir.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.btnExcluir.FlatAppearance.BorderSize = 0;
+            this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExcluir.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcluir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.btnExcluir.Location = new System.Drawing.Point(259, 352);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Padding = new System.Windows.Forms.Padding(1);
+            this.btnExcluir.Size = new System.Drawing.Size(90, 37);
+            this.btnExcluir.TabIndex = 81;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.UseVisualStyleBackColor = false;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
-            // FormTelaFuncionarioDataGridView
+            // btnSalvar
             // 
-            this.FormTelaFuncionarioDataGridView.BackgroundColor = System.Drawing.Color.White;
-            this.FormTelaFuncionarioDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.FormTelaFuncionarioDataGridView.Location = new System.Drawing.Point(523, 127);
-            this.FormTelaFuncionarioDataGridView.Name = "FormTelaFuncionarioDataGridView";
-            this.FormTelaFuncionarioDataGridView.ReadOnly = true;
-            this.FormTelaFuncionarioDataGridView.Size = new System.Drawing.Size(382, 311);
-            this.FormTelaFuncionarioDataGridView.TabIndex = 79;
+            this.btnSalvar.BackColor = System.Drawing.Color.Green;
+            this.btnSalvar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.btnSalvar.FlatAppearance.BorderSize = 0;
+            this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalvar.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.btnSalvar.Location = new System.Drawing.Point(31, 352);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Padding = new System.Windows.Forms.Padding(1);
+            this.btnSalvar.Size = new System.Drawing.Size(90, 37);
+            this.btnSalvar.TabIndex = 80;
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            // 
+            // dataGridView
+            // 
+            this.dataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle16;
+            this.dataGridView.Location = new System.Drawing.Point(523, 127);
+            this.dataGridView.Name = "dataGridView";
+            this.dataGridView.ReadOnly = true;
+            this.dataGridView.Size = new System.Drawing.Size(382, 311);
+            this.dataGridView.TabIndex = 79;
+            this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
             // 
             // label1
             // 
@@ -180,157 +204,153 @@
             this.label1.Size = new System.Drawing.Size(2, 462);
             this.label1.TabIndex = 78;
             // 
-            // FormTelaProdutosLimparBtn
+            // btnLimpar
             // 
-            this.FormTelaProdutosLimparBtn.BackColor = System.Drawing.Color.Gray;
-            this.FormTelaProdutosLimparBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaProdutosLimparBtn.FlatAppearance.BorderSize = 0;
-            this.FormTelaProdutosLimparBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FormTelaProdutosLimparBtn.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaProdutosLimparBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.FormTelaProdutosLimparBtn.Location = new System.Drawing.Point(372, 352);
-            this.FormTelaProdutosLimparBtn.Name = "FormTelaProdutosLimparBtn";
-            this.FormTelaProdutosLimparBtn.Padding = new System.Windows.Forms.Padding(1);
-            this.FormTelaProdutosLimparBtn.Size = new System.Drawing.Size(90, 37);
-            this.FormTelaProdutosLimparBtn.TabIndex = 77;
-            this.FormTelaProdutosLimparBtn.Text = "Limpar";
-            this.FormTelaProdutosLimparBtn.UseVisualStyleBackColor = false;
+            this.btnLimpar.BackColor = System.Drawing.Color.Gray;
+            this.btnLimpar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.btnLimpar.FlatAppearance.BorderSize = 0;
+            this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpar.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.btnLimpar.Location = new System.Drawing.Point(372, 352);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Padding = new System.Windows.Forms.Padding(1);
+            this.btnLimpar.Size = new System.Drawing.Size(90, 37);
+            this.btnLimpar.TabIndex = 77;
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // panelData
             // 
             this.panelData.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelData.Controls.Add(this.FormTelaFuncionarionNomeTextBox);
+            this.panelData.Controls.Add(this.txtNome);
             this.panelData.Location = new System.Drawing.Point(170, 127);
             this.panelData.Name = "panelData";
             this.panelData.Size = new System.Drawing.Size(293, 21);
             this.panelData.TabIndex = 72;
             // 
-            // FormTelaFuncionarionNomeTextBox
+            // txtNome
             // 
-            this.FormTelaFuncionarionNomeTextBox.BackColor = System.Drawing.Color.White;
-            this.FormTelaFuncionarionNomeTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.FormTelaFuncionarionNomeTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.FormTelaFuncionarionNomeTextBox.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaFuncionarionNomeTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaFuncionarionNomeTextBox.Location = new System.Drawing.Point(0, 0);
-            this.FormTelaFuncionarionNomeTextBox.Multiline = true;
-            this.FormTelaFuncionarionNomeTextBox.Name = "FormTelaFuncionarionNomeTextBox";
-            this.FormTelaFuncionarionNomeTextBox.ReadOnly = true;
-            this.FormTelaFuncionarionNomeTextBox.Size = new System.Drawing.Size(291, 19);
-            this.FormTelaFuncionarionNomeTextBox.TabIndex = 18;
-            this.FormTelaFuncionarionNomeTextBox.Text = "25/05/2026";
+            this.txtNome.BackColor = System.Drawing.Color.White;
+            this.txtNome.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNome.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtNome.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.txtNome.Location = new System.Drawing.Point(0, 0);
+            this.txtNome.Multiline = true;
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(291, 19);
+            this.txtNome.TabIndex = 18;
             // 
-            // FormTelaFuncionariolblSalario
+            // frmLblSalario
             // 
-            this.FormTelaFuncionariolblSalario.AutoSize = true;
-            this.FormTelaFuncionariolblSalario.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaFuncionariolblSalario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaFuncionariolblSalario.Location = new System.Drawing.Point(28, 244);
-            this.FormTelaFuncionariolblSalario.Name = "FormTelaFuncionariolblSalario";
-            this.FormTelaFuncionariolblSalario.Size = new System.Drawing.Size(72, 19);
-            this.FormTelaFuncionariolblSalario.TabIndex = 70;
-            this.FormTelaFuncionariolblSalario.Text = "Salário:";
+            this.frmLblSalario.AutoSize = true;
+            this.frmLblSalario.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.frmLblSalario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.frmLblSalario.Location = new System.Drawing.Point(28, 244);
+            this.frmLblSalario.Name = "frmLblSalario";
+            this.frmLblSalario.Size = new System.Drawing.Size(72, 19);
+            this.frmLblSalario.TabIndex = 70;
+            this.frmLblSalario.Text = "Salário:";
             // 
-            // FormTelaFuncionariolblCodigo
+            // frmLblCodigoFunc
             // 
-            this.FormTelaFuncionariolblCodigo.AutoSize = true;
-            this.FormTelaFuncionariolblCodigo.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaFuncionariolblCodigo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaFuncionariolblCodigo.Location = new System.Drawing.Point(27, 90);
-            this.FormTelaFuncionariolblCodigo.Name = "FormTelaFuncionariolblCodigo";
-            this.FormTelaFuncionariolblCodigo.Size = new System.Drawing.Size(71, 19);
-            this.FormTelaFuncionariolblCodigo.TabIndex = 67;
-            this.FormTelaFuncionariolblCodigo.Text = "Código:";
+            this.frmLblCodigoFunc.AutoSize = true;
+            this.frmLblCodigoFunc.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.frmLblCodigoFunc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.frmLblCodigoFunc.Location = new System.Drawing.Point(27, 90);
+            this.frmLblCodigoFunc.Name = "frmLblCodigoFunc";
+            this.frmLblCodigoFunc.Size = new System.Drawing.Size(71, 19);
+            this.frmLblCodigoFunc.TabIndex = 67;
+            this.frmLblCodigoFunc.Text = "Código:";
             // 
             // PanelCodigo
             // 
             this.PanelCodigo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanelCodigo.Controls.Add(this.FormTelaFuncionarioCodigoTexBox);
+            this.PanelCodigo.Controls.Add(this.txtCodigoFuncionario);
             this.PanelCodigo.Location = new System.Drawing.Point(170, 88);
             this.PanelCodigo.Name = "PanelCodigo";
             this.PanelCodigo.Size = new System.Drawing.Size(89, 21);
             this.PanelCodigo.TabIndex = 71;
             // 
-            // FormTelaFuncionarioCodigoTexBox
+            // txtCodigoFuncionario
             // 
-            this.FormTelaFuncionarioCodigoTexBox.BackColor = System.Drawing.Color.White;
-            this.FormTelaFuncionarioCodigoTexBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.FormTelaFuncionarioCodigoTexBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.FormTelaFuncionarioCodigoTexBox.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaFuncionarioCodigoTexBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaFuncionarioCodigoTexBox.Location = new System.Drawing.Point(0, 0);
-            this.FormTelaFuncionarioCodigoTexBox.Multiline = true;
-            this.FormTelaFuncionarioCodigoTexBox.Name = "FormTelaFuncionarioCodigoTexBox";
-            this.FormTelaFuncionarioCodigoTexBox.ReadOnly = true;
-            this.FormTelaFuncionarioCodigoTexBox.Size = new System.Drawing.Size(87, 19);
-            this.FormTelaFuncionarioCodigoTexBox.TabIndex = 18;
-            this.FormTelaFuncionarioCodigoTexBox.Text = "00001";
-            this.FormTelaFuncionarioCodigoTexBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtCodigoFuncionario.BackColor = System.Drawing.Color.White;
+            this.txtCodigoFuncionario.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCodigoFuncionario.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtCodigoFuncionario.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodigoFuncionario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.txtCodigoFuncionario.Location = new System.Drawing.Point(0, 0);
+            this.txtCodigoFuncionario.Multiline = true;
+            this.txtCodigoFuncionario.Name = "txtCodigoFuncionario";
+            this.txtCodigoFuncionario.ReadOnly = true;
+            this.txtCodigoFuncionario.Size = new System.Drawing.Size(87, 19);
+            this.txtCodigoFuncionario.TabIndex = 18;
+            this.txtCodigoFuncionario.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // FormTelaFuncionariolblNome
+            // frmLblNome
             // 
-            this.FormTelaFuncionariolblNome.AutoSize = true;
-            this.FormTelaFuncionariolblNome.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaFuncionariolblNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaFuncionariolblNome.Location = new System.Drawing.Point(27, 127);
-            this.FormTelaFuncionariolblNome.Name = "FormTelaFuncionariolblNome";
-            this.FormTelaFuncionariolblNome.Size = new System.Drawing.Size(62, 19);
-            this.FormTelaFuncionariolblNome.TabIndex = 68;
-            this.FormTelaFuncionariolblNome.Text = "Nome:";
+            this.frmLblNome.AutoSize = true;
+            this.frmLblNome.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.frmLblNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.frmLblNome.Location = new System.Drawing.Point(27, 127);
+            this.frmLblNome.Name = "frmLblNome";
+            this.frmLblNome.Size = new System.Drawing.Size(62, 19);
+            this.frmLblNome.TabIndex = 68;
+            this.frmLblNome.Text = "Nome:";
             // 
             // panelQuantidade
             // 
             this.panelQuantidade.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelQuantidade.Controls.Add(this.FormTelaFuncionarioSalarioTextBox);
+            this.panelQuantidade.Controls.Add(this.txtSalario);
             this.panelQuantidade.Location = new System.Drawing.Point(169, 244);
             this.panelQuantidade.Name = "panelQuantidade";
             this.panelQuantidade.Size = new System.Drawing.Size(145, 21);
             this.panelQuantidade.TabIndex = 74;
             // 
-            // FormTelaFuncionarioSalarioTextBox
+            // txtSalario
             // 
-            this.FormTelaFuncionarioSalarioTextBox.BackColor = System.Drawing.Color.White;
-            this.FormTelaFuncionarioSalarioTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.FormTelaFuncionarioSalarioTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.FormTelaFuncionarioSalarioTextBox.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaFuncionarioSalarioTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaFuncionarioSalarioTextBox.Location = new System.Drawing.Point(0, 0);
-            this.FormTelaFuncionarioSalarioTextBox.Multiline = true;
-            this.FormTelaFuncionarioSalarioTextBox.Name = "FormTelaFuncionarioSalarioTextBox";
-            this.FormTelaFuncionarioSalarioTextBox.ReadOnly = true;
-            this.FormTelaFuncionarioSalarioTextBox.Size = new System.Drawing.Size(143, 19);
-            this.FormTelaFuncionarioSalarioTextBox.TabIndex = 18;
-            this.FormTelaFuncionarioSalarioTextBox.Text = "R$ 0,01";
-            this.FormTelaFuncionarioSalarioTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtSalario.BackColor = System.Drawing.Color.White;
+            this.txtSalario.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSalario.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtSalario.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSalario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.txtSalario.Location = new System.Drawing.Point(0, 0);
+            this.txtSalario.Multiline = true;
+            this.txtSalario.Name = "txtSalario";
+            this.txtSalario.Size = new System.Drawing.Size(143, 19);
+            this.txtSalario.TabIndex = 18;
+            this.txtSalario.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // FormTelaFuncionariolblCargo
+            // frmLblCargo
             // 
-            this.FormTelaFuncionariolblCargo.AutoSize = true;
-            this.FormTelaFuncionariolblCargo.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaFuncionariolblCargo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaFuncionariolblCargo.Location = new System.Drawing.Point(27, 166);
-            this.FormTelaFuncionariolblCargo.Name = "FormTelaFuncionariolblCargo";
-            this.FormTelaFuncionariolblCargo.Size = new System.Drawing.Size(63, 19);
-            this.FormTelaFuncionariolblCargo.TabIndex = 69;
-            this.FormTelaFuncionariolblCargo.Text = "Cargo:";
+            this.frmLblCargo.AutoSize = true;
+            this.frmLblCargo.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.frmLblCargo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.frmLblCargo.Location = new System.Drawing.Point(27, 166);
+            this.frmLblCargo.Name = "frmLblCargo";
+            this.frmLblCargo.Size = new System.Drawing.Size(63, 19);
+            this.frmLblCargo.TabIndex = 69;
+            this.frmLblCargo.Text = "Cargo:";
             // 
-            // FormTelaFuncionarioCargocomboBox
+            // cmbCargo
             // 
-            this.FormTelaFuncionarioCargocomboBox.BackColor = System.Drawing.Color.White;
-            this.FormTelaFuncionarioCargocomboBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.FormTelaFuncionarioCargocomboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FormTelaFuncionarioCargocomboBox.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaFuncionarioCargocomboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaFuncionarioCargocomboBox.FormattingEnabled = true;
-            this.FormTelaFuncionarioCargocomboBox.Location = new System.Drawing.Point(0, 0);
-            this.FormTelaFuncionarioCargocomboBox.Name = "FormTelaFuncionarioCargocomboBox";
-            this.FormTelaFuncionarioCargocomboBox.Size = new System.Drawing.Size(292, 31);
-            this.FormTelaFuncionarioCargocomboBox.TabIndex = 71;
+            this.cmbCargo.BackColor = System.Drawing.Color.White;
+            this.cmbCargo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cmbCargo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbCargo.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCargo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.cmbCargo.Location = new System.Drawing.Point(0, 0);
+            this.cmbCargo.Name = "cmbCargo";
+            this.cmbCargo.Size = new System.Drawing.Size(292, 22);
+            this.cmbCargo.TabIndex = 71;
+            this.cmbCargo.DropDown += new System.EventHandler(this.cmbCargo_DropDown);
             // 
             // panelProduto
             // 
             this.panelProduto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelProduto.Controls.Add(this.FormTelaFuncionarioCargocomboBox);
+            this.panelProduto.Controls.Add(this.cmbCargo);
             this.panelProduto.Location = new System.Drawing.Point(169, 166);
             this.panelProduto.Name = "panelProduto";
             this.panelProduto.Size = new System.Drawing.Size(294, 21);
@@ -339,96 +359,90 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.FormTelaFuncionarioCpfTextBox);
+            this.panel2.Controls.Add(this.mskCpf);
             this.panel2.Location = new System.Drawing.Point(169, 205);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(293, 21);
+            this.panel2.Size = new System.Drawing.Size(144, 21);
             this.panel2.TabIndex = 87;
             // 
-            // FormTelaFuncionarioCpfTextBox
+            // mskCpf
             // 
-            this.FormTelaFuncionarioCpfTextBox.BackColor = System.Drawing.Color.White;
-            this.FormTelaFuncionarioCpfTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.FormTelaFuncionarioCpfTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.FormTelaFuncionarioCpfTextBox.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaFuncionarioCpfTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaFuncionarioCpfTextBox.Location = new System.Drawing.Point(0, 0);
-            this.FormTelaFuncionarioCpfTextBox.Multiline = true;
-            this.FormTelaFuncionarioCpfTextBox.Name = "FormTelaFuncionarioCpfTextBox";
-            this.FormTelaFuncionarioCpfTextBox.ReadOnly = true;
-            this.FormTelaFuncionarioCpfTextBox.Size = new System.Drawing.Size(291, 19);
-            this.FormTelaFuncionarioCpfTextBox.TabIndex = 18;
-            this.FormTelaFuncionarioCpfTextBox.Text = "25/05/2026";
+            this.mskCpf.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.mskCpf.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mskCpf.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mskCpf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.mskCpf.Location = new System.Drawing.Point(0, 0);
+            this.mskCpf.Mask = "000\\.000\\.000-00";
+            this.mskCpf.Name = "mskCpf";
+            this.mskCpf.Size = new System.Drawing.Size(142, 19);
+            this.mskCpf.TabIndex = 19;
+            this.mskCpf.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // FormTelaFuncionariolblCpf
+            // frmLblCpf
             // 
-            this.FormTelaFuncionariolblCpf.AutoSize = true;
-            this.FormTelaFuncionariolblCpf.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaFuncionariolblCpf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaFuncionariolblCpf.Location = new System.Drawing.Point(27, 205);
-            this.FormTelaFuncionariolblCpf.Name = "FormTelaFuncionariolblCpf";
-            this.FormTelaFuncionariolblCpf.Size = new System.Drawing.Size(46, 19);
-            this.FormTelaFuncionariolblCpf.TabIndex = 86;
-            this.FormTelaFuncionariolblCpf.Text = "CPF:";
+            this.frmLblCpf.AutoSize = true;
+            this.frmLblCpf.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.frmLblCpf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.frmLblCpf.Location = new System.Drawing.Point(27, 205);
+            this.frmLblCpf.Name = "frmLblCpf";
+            this.frmLblCpf.Size = new System.Drawing.Size(46, 19);
+            this.frmLblCpf.TabIndex = 86;
+            this.frmLblCpf.Text = "CPF:";
             // 
-            // FormTelaFuncionariolblDataAd
+            // frmLblDataAdmissao
             // 
-            this.FormTelaFuncionariolblDataAd.AutoSize = true;
-            this.FormTelaFuncionariolblDataAd.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaFuncionariolblDataAd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaFuncionariolblDataAd.Location = new System.Drawing.Point(27, 284);
-            this.FormTelaFuncionariolblDataAd.Name = "FormTelaFuncionariolblDataAd";
-            this.FormTelaFuncionariolblDataAd.Size = new System.Drawing.Size(137, 19);
-            this.FormTelaFuncionariolblDataAd.TabIndex = 88;
-            this.FormTelaFuncionariolblDataAd.Text = "Data Admissão:";
-            this.FormTelaFuncionariolblDataAd.Click += new System.EventHandler(this.label3_Click);
+            this.frmLblDataAdmissao.AutoSize = true;
+            this.frmLblDataAdmissao.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.frmLblDataAdmissao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.frmLblDataAdmissao.Location = new System.Drawing.Point(27, 284);
+            this.frmLblDataAdmissao.Name = "frmLblDataAdmissao";
+            this.frmLblDataAdmissao.Size = new System.Drawing.Size(137, 19);
+            this.frmLblDataAdmissao.TabIndex = 88;
+            this.frmLblDataAdmissao.Text = "Data Admissão:";
             // 
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.FormTelaFuncionarioDataAdTextBox);
+            this.panel3.Controls.Add(this.dtpDataAdmissao);
             this.panel3.Location = new System.Drawing.Point(170, 283);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(145, 21);
             this.panel3.TabIndex = 89;
             // 
-            // FormTelaFuncionarioDataAdTextBox
+            // dtpDataAdmissao
             // 
-            this.FormTelaFuncionarioDataAdTextBox.BackColor = System.Drawing.Color.White;
-            this.FormTelaFuncionarioDataAdTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.FormTelaFuncionarioDataAdTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.FormTelaFuncionarioDataAdTextBox.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaFuncionarioDataAdTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaFuncionarioDataAdTextBox.Location = new System.Drawing.Point(0, 0);
-            this.FormTelaFuncionarioDataAdTextBox.Multiline = true;
-            this.FormTelaFuncionarioDataAdTextBox.Name = "FormTelaFuncionarioDataAdTextBox";
-            this.FormTelaFuncionarioDataAdTextBox.ReadOnly = true;
-            this.FormTelaFuncionarioDataAdTextBox.Size = new System.Drawing.Size(143, 19);
-            this.FormTelaFuncionarioDataAdTextBox.TabIndex = 18;
-            this.FormTelaFuncionarioDataAdTextBox.Text = "R$ 0,01";
-            this.FormTelaFuncionarioDataAdTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.dtpDataAdmissao.CalendarForeColor = System.Drawing.Color.Black;
+            this.dtpDataAdmissao.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtpDataAdmissao.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.dtpDataAdmissao.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpDataAdmissao.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDataAdmissao.Location = new System.Drawing.Point(0, 0);
+            this.dtpDataAdmissao.Name = "dtpDataAdmissao";
+            this.dtpDataAdmissao.Size = new System.Drawing.Size(143, 23);
+            this.dtpDataAdmissao.TabIndex = 92;
+            this.dtpDataAdmissao.Value = new System.DateTime(2026, 8, 16, 17, 15, 41, 0);
             // 
-            // FormTelaFuncionariolbl
+            // frmLblDadosFucionario
             // 
-            this.FormTelaFuncionariolbl.AutoSize = true;
-            this.FormTelaFuncionariolbl.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaFuncionariolbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaFuncionariolbl.Location = new System.Drawing.Point(26, 35);
-            this.FormTelaFuncionariolbl.Name = "FormTelaFuncionariolbl";
-            this.FormTelaFuncionariolbl.Size = new System.Drawing.Size(217, 23);
-            this.FormTelaFuncionariolbl.TabIndex = 90;
-            this.FormTelaFuncionariolbl.Text = "Dados do Funcionário";
+            this.frmLblDadosFucionario.AutoSize = true;
+            this.frmLblDadosFucionario.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.frmLblDadosFucionario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.frmLblDadosFucionario.Location = new System.Drawing.Point(26, 35);
+            this.frmLblDadosFucionario.Name = "frmLblDadosFucionario";
+            this.frmLblDadosFucionario.Size = new System.Drawing.Size(217, 23);
+            this.frmLblDadosFucionario.TabIndex = 90;
+            this.frmLblDadosFucionario.Text = "Dados do Funcionário";
             // 
-            // FormTelaFuncionariolblCad
+            // frmLblFuncionario
             // 
-            this.FormTelaFuncionariolblCad.AutoSize = true;
-            this.FormTelaFuncionariolblCad.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTelaFuncionariolblCad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.FormTelaFuncionariolblCad.Location = new System.Drawing.Point(515, 35);
-            this.FormTelaFuncionariolblCad.Name = "FormTelaFuncionariolblCad";
-            this.FormTelaFuncionariolblCad.Size = new System.Drawing.Size(256, 23);
-            this.FormTelaFuncionariolblCad.TabIndex = 91;
-            this.FormTelaFuncionariolblCad.Text = "Funcionários Cadastrados";
+            this.frmLblFuncionario.AutoSize = true;
+            this.frmLblFuncionario.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.frmLblFuncionario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.frmLblFuncionario.Location = new System.Drawing.Point(518, 35);
+            this.frmLblFuncionario.Name = "frmLblFuncionario";
+            this.frmLblFuncionario.Size = new System.Drawing.Size(256, 23);
+            this.frmLblFuncionario.TabIndex = 91;
+            this.frmLblFuncionario.Text = "Funcionários Cadastrados";
             // 
             // FormTelaFuncionarios
             // 
@@ -436,36 +450,35 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
             this.ClientSize = new System.Drawing.Size(928, 500);
-            this.Controls.Add(this.FormTelaFuncionariolblCad);
-            this.Controls.Add(this.FormTelaFuncionariolbl);
-            this.Controls.Add(this.FormTelaFuncionariolblDataAd);
+            this.Controls.Add(this.frmLblFuncionario);
+            this.Controls.Add(this.frmLblDadosFucionario);
+            this.Controls.Add(this.frmLblDataAdmissao);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.FormTelaFuncionariolblCpf);
-            this.Controls.Add(this.FormTelaFuncionariolblPesq);
-            this.Controls.Add(this.FormTelaFuncionarioPesqbtn);
+            this.Controls.Add(this.frmLblCpf);
+            this.Controls.Add(this.frmLblPesquisar);
             this.Controls.Add(this.panelProcurar);
-            this.Controls.Add(this.FormTelaProdutosEditarBtn);
-            this.Controls.Add(this.FormTelaProdutosExcluirBtn);
-            this.Controls.Add(this.FormTelaProdutosSalvarBtn);
-            this.Controls.Add(this.FormTelaFuncionarioDataGridView);
+            this.Controls.Add(this.btnEditar);
+            this.Controls.Add(this.btnExcluir);
+            this.Controls.Add(this.btnSalvar);
+            this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panelProduto);
-            this.Controls.Add(this.FormTelaProdutosLimparBtn);
-            this.Controls.Add(this.FormTelaFuncionariolblCargo);
+            this.Controls.Add(this.btnLimpar);
+            this.Controls.Add(this.frmLblCargo);
             this.Controls.Add(this.panelData);
-            this.Controls.Add(this.FormTelaFuncionariolblSalario);
-            this.Controls.Add(this.FormTelaFuncionariolblCodigo);
+            this.Controls.Add(this.frmLblSalario);
+            this.Controls.Add(this.frmLblCodigoFunc);
             this.Controls.Add(this.PanelCodigo);
-            this.Controls.Add(this.FormTelaFuncionariolblNome);
+            this.Controls.Add(this.frmLblNome);
             this.Controls.Add(this.panelQuantidade);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormTelaFuncionarios";
             this.Text = "FormTelaFuncionarios";
-            this.Load += new System.EventHandler(this.FormTelaFuncionarios_Load);
             this.panelProcurar.ResumeLayout(false);
             this.panelProcurar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.FormTelaFuncionarioDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.panelData.ResumeLayout(false);
             this.panelData.PerformLayout();
             this.PanelCodigo.ResumeLayout(false);
@@ -476,7 +489,6 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -484,35 +496,35 @@
 
         #endregion
 
-        private System.Windows.Forms.Label FormTelaFuncionariolblPesq;
-        private System.Windows.Forms.Button FormTelaFuncionarioPesqbtn;
+        private System.Windows.Forms.Label frmLblPesquisar;
         private System.Windows.Forms.Panel panelProcurar;
-        private System.Windows.Forms.TextBox FormTelaFuncionarioPesqTextBox;
-        private System.Windows.Forms.Button FormTelaProdutosEditarBtn;
-        private System.Windows.Forms.Button FormTelaProdutosExcluirBtn;
-        private System.Windows.Forms.Button FormTelaProdutosSalvarBtn;
-        private System.Windows.Forms.DataGridView FormTelaFuncionarioDataGridView;
+        private System.Windows.Forms.TextBox txtPesquisar;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Button btnExcluir;
+        private System.Windows.Forms.Button btnSalvar;
+        private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button FormTelaProdutosLimparBtn;
+        private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Panel panelData;
-        private System.Windows.Forms.TextBox FormTelaFuncionarionNomeTextBox;
-        private System.Windows.Forms.Label FormTelaFuncionariolblSalario;
-        private System.Windows.Forms.Label FormTelaFuncionariolblCodigo;
+        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.Label frmLblSalario;
+        private System.Windows.Forms.Label frmLblCodigoFunc;
         private System.Windows.Forms.Panel PanelCodigo;
-        private System.Windows.Forms.TextBox FormTelaFuncionarioCodigoTexBox;
-        private System.Windows.Forms.Label FormTelaFuncionariolblNome;
+        private System.Windows.Forms.TextBox txtCodigoFuncionario;
+        private System.Windows.Forms.Label frmLblNome;
         private System.Windows.Forms.Panel panelQuantidade;
-        private System.Windows.Forms.TextBox FormTelaFuncionarioSalarioTextBox;
-        private System.Windows.Forms.Label FormTelaFuncionariolblCargo;
-        private System.Windows.Forms.ComboBox FormTelaFuncionarioCargocomboBox;
+        private System.Windows.Forms.TextBox txtSalario;
+        private System.Windows.Forms.Label frmLblCargo;
+        private System.Windows.Forms.ComboBox cmbCargo;
         private System.Windows.Forms.Panel panelProduto;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox FormTelaFuncionarioCpfTextBox;
-        private System.Windows.Forms.Label FormTelaFuncionariolblCpf;
-        private System.Windows.Forms.Label FormTelaFuncionariolblDataAd;
+        private System.Windows.Forms.Label frmLblCpf;
+        private System.Windows.Forms.Label frmLblDataAdmissao;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox FormTelaFuncionarioDataAdTextBox;
-        private System.Windows.Forms.Label FormTelaFuncionariolbl;
-        private System.Windows.Forms.Label FormTelaFuncionariolblCad;
+        private System.Windows.Forms.Label frmLblDadosFucionario;
+        private System.Windows.Forms.Label frmLblFuncionario;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.MaskedTextBox mskCpf;
+        private System.Windows.Forms.DateTimePicker dtpDataAdmissao;
     }
 }
