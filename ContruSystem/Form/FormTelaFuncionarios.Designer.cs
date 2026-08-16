@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             this.frmLblPesquisar = new System.Windows.Forms.Label();
             this.panelProcurar = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -53,13 +53,13 @@
             this.cmbCargo = new System.Windows.Forms.ComboBox();
             this.panelProduto = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.mskCpf = new System.Windows.Forms.MaskedTextBox();
             this.frmLblCpf = new System.Windows.Forms.Label();
             this.frmLblDataAdmissao = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.dtpDataAdmissao = new System.Windows.Forms.DateTimePicker();
             this.frmLblDadosFucionario = new System.Windows.Forms.Label();
             this.frmLblFuncionario = new System.Windows.Forms.Label();
-            this.mskCpf = new System.Windows.Forms.MaskedTextBox();
-            this.dtpDataAdmissao = new System.Windows.Forms.DateTimePicker();
             this.panelProcurar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
@@ -89,7 +89,7 @@
             this.panelProcurar.Controls.Add(this.txtPesquisar);
             this.panelProcurar.Location = new System.Drawing.Point(617, 87);
             this.panelProcurar.Name = "panelProcurar";
-            this.panelProcurar.Size = new System.Drawing.Size(256, 21);
+            this.panelProcurar.Size = new System.Drawing.Size(288, 21);
             this.panelProcurar.TabIndex = 84;
             // 
             // pictureBox1
@@ -97,7 +97,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
             this.pictureBox1.Image = global::ContruSystem.Properties.Resources.iconProcurar2;
-            this.pictureBox1.Location = new System.Drawing.Point(235, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(267, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(19, 19);
             this.pictureBox1.TabIndex = 92;
@@ -113,7 +113,7 @@
             this.txtPesquisar.Location = new System.Drawing.Point(0, 0);
             this.txtPesquisar.Multiline = true;
             this.txtPesquisar.Name = "txtPesquisar";
-            this.txtPesquisar.Size = new System.Drawing.Size(254, 19);
+            this.txtPesquisar.Size = new System.Drawing.Size(286, 19);
             this.txtPesquisar.TabIndex = 18;
             this.txtPesquisar.TextChanged += new System.EventHandler(this.txtPesquisar_TextChanged);
             // 
@@ -172,23 +172,23 @@
             // 
             this.dataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle15;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle16;
             this.dataGridView.Location = new System.Drawing.Point(523, 127);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.ReadOnly = true;
@@ -339,7 +339,7 @@
             this.cmbCargo.BackColor = System.Drawing.Color.White;
             this.cmbCargo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cmbCargo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbCargo.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCargo.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCargo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
             this.cmbCargo.Location = new System.Drawing.Point(0, 0);
             this.cmbCargo.Name = "cmbCargo";
@@ -364,6 +364,19 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(144, 21);
             this.panel2.TabIndex = 87;
+            // 
+            // mskCpf
+            // 
+            this.mskCpf.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.mskCpf.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mskCpf.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mskCpf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.mskCpf.Location = new System.Drawing.Point(0, 0);
+            this.mskCpf.Mask = "000\\.000\\.000-00";
+            this.mskCpf.Name = "mskCpf";
+            this.mskCpf.Size = new System.Drawing.Size(142, 19);
+            this.mskCpf.TabIndex = 19;
+            this.mskCpf.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // frmLblCpf
             // 
@@ -396,6 +409,19 @@
             this.panel3.Size = new System.Drawing.Size(145, 21);
             this.panel3.TabIndex = 89;
             // 
+            // dtpDataAdmissao
+            // 
+            this.dtpDataAdmissao.CalendarForeColor = System.Drawing.Color.Black;
+            this.dtpDataAdmissao.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtpDataAdmissao.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.dtpDataAdmissao.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpDataAdmissao.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDataAdmissao.Location = new System.Drawing.Point(0, 0);
+            this.dtpDataAdmissao.Name = "dtpDataAdmissao";
+            this.dtpDataAdmissao.Size = new System.Drawing.Size(143, 23);
+            this.dtpDataAdmissao.TabIndex = 92;
+            this.dtpDataAdmissao.Value = new System.DateTime(2026, 8, 16, 17, 15, 41, 0);
+            // 
             // frmLblDadosFucionario
             // 
             this.frmLblDadosFucionario.AutoSize = true;
@@ -412,38 +438,11 @@
             this.frmLblFuncionario.AutoSize = true;
             this.frmLblFuncionario.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.frmLblFuncionario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.frmLblFuncionario.Location = new System.Drawing.Point(515, 35);
+            this.frmLblFuncionario.Location = new System.Drawing.Point(518, 35);
             this.frmLblFuncionario.Name = "frmLblFuncionario";
             this.frmLblFuncionario.Size = new System.Drawing.Size(256, 23);
             this.frmLblFuncionario.TabIndex = 91;
             this.frmLblFuncionario.Text = "Funcionários Cadastrados";
-            // 
-            // mskCpf
-            // 
-            this.mskCpf.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.mskCpf.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mskCpf.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mskCpf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.mskCpf.HidePromptOnLeave = true;
-            this.mskCpf.Location = new System.Drawing.Point(0, 0);
-            this.mskCpf.Mask = "000.000.000-00";
-            this.mskCpf.Name = "mskCpf";
-            this.mskCpf.PromptChar = ' ';
-            this.mskCpf.Size = new System.Drawing.Size(142, 19);
-            this.mskCpf.TabIndex = 19;
-            this.mskCpf.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // dtpDataAdmissao
-            // 
-            this.dtpDataAdmissao.CalendarForeColor = System.Drawing.Color.Black;
-            this.dtpDataAdmissao.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtpDataAdmissao.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.dtpDataAdmissao.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpDataAdmissao.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDataAdmissao.Location = new System.Drawing.Point(0, 0);
-            this.dtpDataAdmissao.Name = "dtpDataAdmissao";
-            this.dtpDataAdmissao.Size = new System.Drawing.Size(143, 23);
-            this.dtpDataAdmissao.TabIndex = 92;
             // 
             // FormTelaFuncionarios
             // 
