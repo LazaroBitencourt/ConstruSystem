@@ -28,8 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.frmLblPesquisar = new System.Windows.Forms.Label();
             this.panelProcurar = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtPesquisar = new System.Windows.Forms.TextBox();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
@@ -42,7 +45,7 @@
             this.frmLblSalario = new System.Windows.Forms.Label();
             this.frmLblCodigoFunc = new System.Windows.Forms.Label();
             this.PanelCodigo = new System.Windows.Forms.Panel();
-            this.txtCodigoFuncinario = new System.Windows.Forms.TextBox();
+            this.txtCodigoFuncionario = new System.Windows.Forms.TextBox();
             this.frmLblNome = new System.Windows.Forms.Label();
             this.panelQuantidade = new System.Windows.Forms.Panel();
             this.txtSalario = new System.Windows.Forms.TextBox();
@@ -50,15 +53,15 @@
             this.cmbCargo = new System.Windows.Forms.ComboBox();
             this.panelProduto = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.txtCpf = new System.Windows.Forms.TextBox();
             this.frmLblCpf = new System.Windows.Forms.Label();
             this.frmLblDataAdmissao = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.txtDataAdmissao = new System.Windows.Forms.TextBox();
             this.frmLblDadosFucionario = new System.Windows.Forms.Label();
             this.frmLblFuncionario = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.mskCpf = new System.Windows.Forms.MaskedTextBox();
+            this.dtpDataAdmissao = new System.Windows.Forms.DateTimePicker();
             this.panelProcurar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.panelData.SuspendLayout();
             this.PanelCodigo.SuspendLayout();
@@ -66,7 +69,6 @@
             this.panelProduto.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // frmLblPesquisar
@@ -90,6 +92,17 @@
             this.panelProcurar.Size = new System.Drawing.Size(256, 21);
             this.panelProcurar.TabIndex = 84;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox1.Image = global::ContruSystem.Properties.Resources.iconProcurar2;
+            this.pictureBox1.Location = new System.Drawing.Point(235, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(19, 19);
+            this.pictureBox1.TabIndex = 92;
+            this.pictureBox1.TabStop = false;
+            // 
             // txtPesquisar
             // 
             this.txtPesquisar.BackColor = System.Drawing.Color.White;
@@ -100,9 +113,9 @@
             this.txtPesquisar.Location = new System.Drawing.Point(0, 0);
             this.txtPesquisar.Multiline = true;
             this.txtPesquisar.Name = "txtPesquisar";
-            this.txtPesquisar.ReadOnly = true;
             this.txtPesquisar.Size = new System.Drawing.Size(254, 19);
             this.txtPesquisar.TabIndex = 18;
+            this.txtPesquisar.TextChanged += new System.EventHandler(this.txtPesquisar_TextChanged);
             // 
             // btnEditar
             // 
@@ -119,6 +132,7 @@
             this.btnEditar.TabIndex = 82;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnExcluir
             // 
@@ -135,6 +149,7 @@
             this.btnExcluir.TabIndex = 81;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = false;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnSalvar
             // 
@@ -151,16 +166,35 @@
             this.btnSalvar.TabIndex = 80;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // dataGridView
             // 
+            this.dataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView.Location = new System.Drawing.Point(523, 127);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.ReadOnly = true;
             this.dataGridView.Size = new System.Drawing.Size(382, 311);
             this.dataGridView.TabIndex = 79;
+            this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
             // 
             // label1
             // 
@@ -185,6 +219,7 @@
             this.btnLimpar.TabIndex = 77;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // panelData
             // 
@@ -205,7 +240,6 @@
             this.txtNome.Location = new System.Drawing.Point(0, 0);
             this.txtNome.Multiline = true;
             this.txtNome.Name = "txtNome";
-            this.txtNome.ReadOnly = true;
             this.txtNome.Size = new System.Drawing.Size(291, 19);
             this.txtNome.TabIndex = 18;
             // 
@@ -234,26 +268,26 @@
             // PanelCodigo
             // 
             this.PanelCodigo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanelCodigo.Controls.Add(this.txtCodigoFuncinario);
+            this.PanelCodigo.Controls.Add(this.txtCodigoFuncionario);
             this.PanelCodigo.Location = new System.Drawing.Point(170, 88);
             this.PanelCodigo.Name = "PanelCodigo";
             this.PanelCodigo.Size = new System.Drawing.Size(89, 21);
             this.PanelCodigo.TabIndex = 71;
             // 
-            // txtCodigoFuncinario
+            // txtCodigoFuncionario
             // 
-            this.txtCodigoFuncinario.BackColor = System.Drawing.Color.White;
-            this.txtCodigoFuncinario.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCodigoFuncinario.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtCodigoFuncinario.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodigoFuncinario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.txtCodigoFuncinario.Location = new System.Drawing.Point(0, 0);
-            this.txtCodigoFuncinario.Multiline = true;
-            this.txtCodigoFuncinario.Name = "txtCodigoFuncinario";
-            this.txtCodigoFuncinario.ReadOnly = true;
-            this.txtCodigoFuncinario.Size = new System.Drawing.Size(87, 19);
-            this.txtCodigoFuncinario.TabIndex = 18;
-            this.txtCodigoFuncinario.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtCodigoFuncionario.BackColor = System.Drawing.Color.White;
+            this.txtCodigoFuncionario.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCodigoFuncionario.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtCodigoFuncionario.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodigoFuncionario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.txtCodigoFuncionario.Location = new System.Drawing.Point(0, 0);
+            this.txtCodigoFuncionario.Multiline = true;
+            this.txtCodigoFuncionario.Name = "txtCodigoFuncionario";
+            this.txtCodigoFuncionario.ReadOnly = true;
+            this.txtCodigoFuncionario.Size = new System.Drawing.Size(87, 19);
+            this.txtCodigoFuncionario.TabIndex = 18;
+            this.txtCodigoFuncionario.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // frmLblNome
             // 
@@ -285,7 +319,6 @@
             this.txtSalario.Location = new System.Drawing.Point(0, 0);
             this.txtSalario.Multiline = true;
             this.txtSalario.Name = "txtSalario";
-            this.txtSalario.ReadOnly = true;
             this.txtSalario.Size = new System.Drawing.Size(143, 19);
             this.txtSalario.TabIndex = 18;
             this.txtSalario.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -306,13 +339,13 @@
             this.cmbCargo.BackColor = System.Drawing.Color.White;
             this.cmbCargo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cmbCargo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbCargo.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCargo.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCargo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.cmbCargo.FormattingEnabled = true;
             this.cmbCargo.Location = new System.Drawing.Point(0, 0);
             this.cmbCargo.Name = "cmbCargo";
-            this.cmbCargo.Size = new System.Drawing.Size(292, 31);
+            this.cmbCargo.Size = new System.Drawing.Size(292, 22);
             this.cmbCargo.TabIndex = 71;
+            this.cmbCargo.DropDown += new System.EventHandler(this.cmbCargo_DropDown);
             // 
             // panelProduto
             // 
@@ -326,25 +359,11 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.txtCpf);
+            this.panel2.Controls.Add(this.mskCpf);
             this.panel2.Location = new System.Drawing.Point(169, 205);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(293, 21);
+            this.panel2.Size = new System.Drawing.Size(144, 21);
             this.panel2.TabIndex = 87;
-            // 
-            // txtCpf
-            // 
-            this.txtCpf.BackColor = System.Drawing.Color.White;
-            this.txtCpf.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCpf.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtCpf.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCpf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.txtCpf.Location = new System.Drawing.Point(0, 0);
-            this.txtCpf.Multiline = true;
-            this.txtCpf.Name = "txtCpf";
-            this.txtCpf.ReadOnly = true;
-            this.txtCpf.Size = new System.Drawing.Size(291, 19);
-            this.txtCpf.TabIndex = 18;
             // 
             // frmLblCpf
             // 
@@ -367,31 +386,15 @@
             this.frmLblDataAdmissao.Size = new System.Drawing.Size(137, 19);
             this.frmLblDataAdmissao.TabIndex = 88;
             this.frmLblDataAdmissao.Text = "Data Admissão:";
-            this.frmLblDataAdmissao.Click += new System.EventHandler(this.label3_Click);
             // 
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.txtDataAdmissao);
+            this.panel3.Controls.Add(this.dtpDataAdmissao);
             this.panel3.Location = new System.Drawing.Point(170, 283);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(145, 21);
             this.panel3.TabIndex = 89;
-            // 
-            // txtDataAdmissao
-            // 
-            this.txtDataAdmissao.BackColor = System.Drawing.Color.White;
-            this.txtDataAdmissao.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDataAdmissao.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtDataAdmissao.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDataAdmissao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.txtDataAdmissao.Location = new System.Drawing.Point(0, 0);
-            this.txtDataAdmissao.Multiline = true;
-            this.txtDataAdmissao.Name = "txtDataAdmissao";
-            this.txtDataAdmissao.ReadOnly = true;
-            this.txtDataAdmissao.Size = new System.Drawing.Size(143, 19);
-            this.txtDataAdmissao.TabIndex = 18;
-            this.txtDataAdmissao.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // frmLblDadosFucionario
             // 
@@ -415,16 +418,32 @@
             this.frmLblFuncionario.TabIndex = 91;
             this.frmLblFuncionario.Text = "Funcionários Cadastrados";
             // 
-            // pictureBox1
+            // mskCpf
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox1.Image = global::ContruSystem.Properties.Resources.iconProcurar2;
-            this.pictureBox1.Location = new System.Drawing.Point(235, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(19, 19);
-            this.pictureBox1.TabIndex = 92;
-            this.pictureBox1.TabStop = false;
+            this.mskCpf.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.mskCpf.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mskCpf.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mskCpf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.mskCpf.HidePromptOnLeave = true;
+            this.mskCpf.Location = new System.Drawing.Point(0, 0);
+            this.mskCpf.Mask = "000.000.000-00";
+            this.mskCpf.Name = "mskCpf";
+            this.mskCpf.PromptChar = ' ';
+            this.mskCpf.Size = new System.Drawing.Size(142, 19);
+            this.mskCpf.TabIndex = 19;
+            this.mskCpf.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // dtpDataAdmissao
+            // 
+            this.dtpDataAdmissao.CalendarForeColor = System.Drawing.Color.Black;
+            this.dtpDataAdmissao.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtpDataAdmissao.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.dtpDataAdmissao.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpDataAdmissao.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDataAdmissao.Location = new System.Drawing.Point(0, 0);
+            this.dtpDataAdmissao.Name = "dtpDataAdmissao";
+            this.dtpDataAdmissao.Size = new System.Drawing.Size(143, 23);
+            this.dtpDataAdmissao.TabIndex = 92;
             // 
             // FormTelaFuncionarios
             // 
@@ -457,9 +476,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormTelaFuncionarios";
             this.Text = "FormTelaFuncionarios";
-            this.Load += new System.EventHandler(this.FormTelaFuncionarios_Load);
             this.panelProcurar.ResumeLayout(false);
             this.panelProcurar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.panelData.ResumeLayout(false);
             this.panelData.PerformLayout();
@@ -471,8 +490,6 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -494,7 +511,7 @@
         private System.Windows.Forms.Label frmLblSalario;
         private System.Windows.Forms.Label frmLblCodigoFunc;
         private System.Windows.Forms.Panel PanelCodigo;
-        private System.Windows.Forms.TextBox txtCodigoFuncinario;
+        private System.Windows.Forms.TextBox txtCodigoFuncionario;
         private System.Windows.Forms.Label frmLblNome;
         private System.Windows.Forms.Panel panelQuantidade;
         private System.Windows.Forms.TextBox txtSalario;
@@ -502,13 +519,13 @@
         private System.Windows.Forms.ComboBox cmbCargo;
         private System.Windows.Forms.Panel panelProduto;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox txtCpf;
         private System.Windows.Forms.Label frmLblCpf;
         private System.Windows.Forms.Label frmLblDataAdmissao;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox txtDataAdmissao;
         private System.Windows.Forms.Label frmLblDadosFucionario;
         private System.Windows.Forms.Label frmLblFuncionario;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.MaskedTextBox mskCpf;
+        private System.Windows.Forms.DateTimePicker dtpDataAdmissao;
     }
 }
