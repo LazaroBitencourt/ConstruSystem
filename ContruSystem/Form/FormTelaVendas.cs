@@ -199,6 +199,11 @@ namespace ContruSystem
 
             if (e.RowIndex >= 0)
             {
+                if (dataGridView.Rows[e.RowIndex].Cells["Codigo"].Value == null ||
+            dataGridView.Rows[e.RowIndex].Cells["Codigo"].Value == DBNull.Value)
+                {
+                    return;
+                }
                 linhaItemSelecionado = e.RowIndex;
                 idProdutoSelecionado = Convert.ToInt32(dataGridView.Rows[e.RowIndex].Cells["Codigo"].Value);
                 precoProdutoSelecionado = Convert.ToDecimal(dataGridView.Rows[e.RowIndex].Cells["Preco"].Value);

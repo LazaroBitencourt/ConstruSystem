@@ -134,7 +134,7 @@
             this.btnEntrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
             this.btnEntrar.Location = new System.Drawing.Point(249, 417);
             this.btnEntrar.Name = "btnEntrar";
-            this.btnEntrar.Size = new System.Drawing.Size(120, 30);
+            this.btnEntrar.Size = new System.Drawing.Size(120, 36);
             this.btnEntrar.TabIndex = 7;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = false;
@@ -149,7 +149,7 @@
             this.btnSair.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
             this.btnSair.Location = new System.Drawing.Point(423, 417);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(120, 30);
+            this.btnSair.Size = new System.Drawing.Size(120, 36);
             this.btnSair.TabIndex = 8;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = false;

@@ -19,6 +19,7 @@ namespace ContruSystem
         {
             InitializeComponent();
             strConexao = ConfigurationManager.ConnectionStrings["SistemaVendas"].ConnectionString;
+            this.ActiveControl = txtUsuario;
             txtSenha.UseSystemPasswordChar = true;
             this.AcceptButton = btnEntrar;
         }
@@ -67,7 +68,6 @@ namespace ContruSystem
                     else
                     {
                         MessageBox.Show("Login ou senha inválidos.", "Acesso negado", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        txtUsuario.Clear();
                         txtSenha.Clear();
                         txtUsuario.Focus();
                     }
