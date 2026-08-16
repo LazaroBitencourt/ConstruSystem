@@ -69,8 +69,8 @@
             this.frmLblEstoque = new System.Windows.Forms.Label();
             this.panelDesconto = new System.Windows.Forms.Panel();
             this.UDDesconto = new System.Windows.Forms.NumericUpDown();
-            this.dgvPesquisaProdutos = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.dgvPesquisaProdutos = new System.Windows.Forms.DataGridView();
             this.PanelCodigo.SuspendLayout();
             this.panelData.SuspendLayout();
             this.panelProcurar.SuspendLayout();
@@ -84,8 +84,8 @@
             this.panelEstoque.SuspendLayout();
             this.panelDesconto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UDDesconto)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPesquisaProdutos)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPesquisaProdutos)).BeginInit();
             this.SuspendLayout();
             // 
             // frmLblCodVenda
@@ -564,6 +564,15 @@
             this.UDDesconto.TabIndex = 98;
             this.UDDesconto.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.dgvPesquisaProdutos);
+            this.panel2.Controls.Add(this.dataGridView);
+            this.panel2.Location = new System.Drawing.Point(26, 245);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(875, 121);
+            this.panel2.TabIndex = 101;
+            // 
             // dgvPesquisaProdutos
             // 
             this.dgvPesquisaProdutos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -585,15 +594,6 @@
             this.dgvPesquisaProdutos.Size = new System.Drawing.Size(875, 121);
             this.dgvPesquisaProdutos.TabIndex = 100;
             this.dgvPesquisaProdutos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPesquisaProdutos_CellClick_1);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.dgvPesquisaProdutos);
-            this.panel2.Controls.Add(this.dataGridView);
-            this.panel2.Location = new System.Drawing.Point(26, 245);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(875, 121);
-            this.panel2.TabIndex = 101;
             // 
             // FormTelaVendas
             // 
@@ -633,7 +633,6 @@
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormTelaVendas";
-            this.Text = "git ";
             this.Load += new System.EventHandler(this.FormTelaVendas_Load);
             this.PanelCodigo.ResumeLayout(false);
             this.PanelCodigo.PerformLayout();
@@ -654,8 +653,8 @@
             this.panelEstoque.PerformLayout();
             this.panelDesconto.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.UDDesconto)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPesquisaProdutos)).EndInit();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPesquisaProdutos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -702,7 +701,7 @@
         private System.Windows.Forms.Panel panelDesconto;
         private System.Windows.Forms.NumericUpDown UDDesconto;
         private System.Windows.Forms.PictureBox pictureBoxImgProc;
-        private System.Windows.Forms.DataGridView dgvPesquisaProdutos;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.DataGridView dgvPesquisaProdutos;
     }
 }
