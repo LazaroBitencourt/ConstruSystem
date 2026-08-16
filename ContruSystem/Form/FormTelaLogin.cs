@@ -61,7 +61,7 @@ namespace ContruSystem
 
                         MessageBox.Show("Bem-vindo, " + nomeUsuario + "!", "Login realizado", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                        FormTelaPrincipal menu = new FormTelaPrincipal();
+                        FormTelaPrincipal menu = new FormTelaPrincipal(nomeUsuario);
                         menu.Show();
                         this.Hide();
                     }

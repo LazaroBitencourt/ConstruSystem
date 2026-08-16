@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTelaPrincipal));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -47,10 +48,10 @@
             this.labelPainelVendaHoje = new System.Windows.Forms.Label();
             this.panelInformacao = new System.Windows.Forms.Panel();
             this.labelPainelInformacao = new System.Windows.Forms.Label();
-            this.labelMesagemUsuario = new System.Windows.Forms.Label();
-            this.labelHoraTelaPrincipal = new System.Windows.Forms.Label();
-            this.labelDataTelaPrincipal = new System.Windows.Forms.Label();
-            this.labelData = new System.Windows.Forms.Label();
+            this.frmLblSaudacao = new System.Windows.Forms.Label();
+            this.frmLblHoraAtual = new System.Windows.Forms.Label();
+            this.frmLblDataHoje = new System.Windows.Forms.Label();
+            this.frmLblData = new System.Windows.Forms.Label();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBoxPainelLogo = new System.Windows.Forms.PictureBox();
             this.panelMenuTelaPrincipal = new System.Windows.Forms.Panel();
@@ -61,6 +62,7 @@
             this.btnVendas = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panelFormTelaPrincipal.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panelQtdVendasHoje.SuspendLayout();
@@ -238,10 +240,10 @@
             // panelInformacao
             // 
             this.panelInformacao.Controls.Add(this.labelPainelInformacao);
-            this.panelInformacao.Controls.Add(this.labelMesagemUsuario);
-            this.panelInformacao.Controls.Add(this.labelHoraTelaPrincipal);
-            this.panelInformacao.Controls.Add(this.labelDataTelaPrincipal);
-            this.panelInformacao.Controls.Add(this.labelData);
+            this.panelInformacao.Controls.Add(this.frmLblSaudacao);
+            this.panelInformacao.Controls.Add(this.frmLblHoraAtual);
+            this.panelInformacao.Controls.Add(this.frmLblDataHoje);
+            this.panelInformacao.Controls.Add(this.frmLblData);
             this.panelInformacao.Location = new System.Drawing.Point(256, 8);
             this.panelInformacao.Name = "panelInformacao";
             this.panelInformacao.Size = new System.Drawing.Size(928, 100);
@@ -261,54 +263,54 @@
             this.labelPainelInformacao.Text = "Seu Sistema de Gestão e Vendas para Loja de Materiais de Construção";
             this.labelPainelInformacao.Click += new System.EventHandler(this.labelPainelInformacao_Click);
             // 
-            // labelMesagemUsuario
+            // frmLblSaudacao
             // 
-            this.labelMesagemUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.frmLblSaudacao.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.labelMesagemUsuario.AutoSize = true;
-            this.labelMesagemUsuario.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMesagemUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.labelMesagemUsuario.Location = new System.Drawing.Point(77, 32);
-            this.labelMesagemUsuario.Name = "labelMesagemUsuario";
-            this.labelMesagemUsuario.Size = new System.Drawing.Size(272, 33);
-            this.labelMesagemUsuario.TabIndex = 3;
-            this.labelMesagemUsuario.Text = "Bem-vindo, admin!";
+            this.frmLblSaudacao.AutoSize = true;
+            this.frmLblSaudacao.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.frmLblSaudacao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.frmLblSaudacao.Location = new System.Drawing.Point(77, 32);
+            this.frmLblSaudacao.Name = "frmLblSaudacao";
+            this.frmLblSaudacao.Size = new System.Drawing.Size(272, 33);
+            this.frmLblSaudacao.TabIndex = 3;
+            this.frmLblSaudacao.Text = "Bem-vindo, admin!";
             // 
-            // labelHoraTelaPrincipal
+            // frmLblHoraAtual
             // 
-            this.labelHoraTelaPrincipal.AutoSize = true;
-            this.labelHoraTelaPrincipal.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelHoraTelaPrincipal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.labelHoraTelaPrincipal.Location = new System.Drawing.Point(825, 38);
-            this.labelHoraTelaPrincipal.Name = "labelHoraTelaPrincipal";
-            this.labelHoraTelaPrincipal.Size = new System.Drawing.Size(55, 19);
-            this.labelHoraTelaPrincipal.TabIndex = 2;
-            this.labelHoraTelaPrincipal.Text = "20:09";
-            this.labelHoraTelaPrincipal.Click += new System.EventHandler(this.label1_Click);
+            this.frmLblHoraAtual.AutoSize = true;
+            this.frmLblHoraAtual.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.frmLblHoraAtual.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.frmLblHoraAtual.Location = new System.Drawing.Point(825, 38);
+            this.frmLblHoraAtual.Name = "frmLblHoraAtual";
+            this.frmLblHoraAtual.Size = new System.Drawing.Size(55, 19);
+            this.frmLblHoraAtual.TabIndex = 2;
+            this.frmLblHoraAtual.Text = "20:09";
+            this.frmLblHoraAtual.Click += new System.EventHandler(this.label1_Click);
             // 
-            // labelDataTelaPrincipal
+            // frmLblDataHoje
             // 
-            this.labelDataTelaPrincipal.AutoSize = true;
-            this.labelDataTelaPrincipal.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDataTelaPrincipal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.labelDataTelaPrincipal.Location = new System.Drawing.Point(712, 38);
-            this.labelDataTelaPrincipal.Name = "labelDataTelaPrincipal";
-            this.labelDataTelaPrincipal.Size = new System.Drawing.Size(107, 19);
-            this.labelDataTelaPrincipal.TabIndex = 1;
-            this.labelDataTelaPrincipal.Text = "02/08/2026";
-            this.labelDataTelaPrincipal.Click += new System.EventHandler(this.labelDataTelaPrincipal_Click);
+            this.frmLblDataHoje.AutoSize = true;
+            this.frmLblDataHoje.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.frmLblDataHoje.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.frmLblDataHoje.Location = new System.Drawing.Point(712, 38);
+            this.frmLblDataHoje.Name = "frmLblDataHoje";
+            this.frmLblDataHoje.Size = new System.Drawing.Size(107, 19);
+            this.frmLblDataHoje.TabIndex = 1;
+            this.frmLblDataHoje.Text = "02/08/2026";
+            this.frmLblDataHoje.Click += new System.EventHandler(this.labelDataTelaPrincipal_Click);
             // 
-            // labelData
+            // frmLblData
             // 
-            this.labelData.AutoSize = true;
-            this.labelData.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelData.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.labelData.Location = new System.Drawing.Point(652, 38);
-            this.labelData.Name = "labelData";
-            this.labelData.Size = new System.Drawing.Size(54, 19);
-            this.labelData.TabIndex = 0;
-            this.labelData.Text = "Data:";
-            this.labelData.Click += new System.EventHandler(this.labelData_Click);
+            this.frmLblData.AutoSize = true;
+            this.frmLblData.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.frmLblData.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.frmLblData.Location = new System.Drawing.Point(652, 38);
+            this.frmLblData.Name = "frmLblData";
+            this.frmLblData.Size = new System.Drawing.Size(54, 19);
+            this.frmLblData.TabIndex = 0;
+            this.frmLblData.Text = "Data:";
+            this.frmLblData.Click += new System.EventHandler(this.labelData_Click);
             // 
             // panelLogo
             // 
@@ -484,6 +486,12 @@
             this.btnHome.UseVisualStyleBackColor = false;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // FormTelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -498,6 +506,7 @@
             this.Name = "FormTelaPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ConstruSystem";
+            this.Load += new System.EventHandler(this.FormTelaPrincipal_Load);
             this.panelFormTelaPrincipal.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
@@ -533,11 +542,11 @@
         private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.PictureBox pictureBoxPainelLogo;
         private System.Windows.Forms.Panel panelMenuTelaPrincipal;
-        private System.Windows.Forms.Label labelData;
+        private System.Windows.Forms.Label frmLblData;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.Label labelHoraTelaPrincipal;
-        private System.Windows.Forms.Label labelDataTelaPrincipal;
-        private System.Windows.Forms.Label labelMesagemUsuario;
+        private System.Windows.Forms.Label frmLblHoraAtual;
+        private System.Windows.Forms.Label frmLblDataHoje;
+        private System.Windows.Forms.Label frmLblSaudacao;
         private System.Windows.Forms.Label labelPainelInformacao;
         private System.Windows.Forms.Panel panelVendasHoje;
         private System.Windows.Forms.Label labelValorVendasHoje;
@@ -548,5 +557,6 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label labelValorProdutosBaixoEst;
         private System.Windows.Forms.Label labelProdutosEstBaixo;
+        private System.Windows.Forms.Timer timer1;
     }
 }

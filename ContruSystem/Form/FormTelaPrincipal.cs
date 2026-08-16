@@ -19,9 +19,17 @@ namespace ContruSystem
 
     {
         private Form frmAtivo;
-        public FormTelaPrincipal()
+        private string nomeUsuarioLogado;
+        public FormTelaPrincipal(string nomeUsuario)
         {
             InitializeComponent();
+            nomeUsuarioLogado = nomeUsuario;
+        }
+        private void FormTelaPrincipal_Load(object sender, EventArgs e)
+        {
+            frmLblSaudacao.Text = "Bem-vindo, " + nomeUsuarioLogado;
+            frmLblDataHoje.Text = DateTime.Now.ToString("dd/MM/yyyy");
+            frmLblHoraAtual.Text = DateTime.Now.ToString("HH:mm:ss");
         }
         private void formShow(Form frm)
         {
@@ -48,11 +56,6 @@ namespace ContruSystem
                 frmAtivo.ForeColor = Color.FromArgb(247, 250, 252);
 
             }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnRelatorio_Click(object sender, EventArgs e)
@@ -135,6 +138,11 @@ namespace ContruSystem
         private void btnSair_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.Exit();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            frmLblHoraAtual.Text = DateTime.Now.ToString("HH:mm:ss");
         }
     }
 }
