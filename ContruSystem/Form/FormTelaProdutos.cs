@@ -23,6 +23,7 @@ namespace ContruSystem
 
         private void FrmProduto_Load(object sender, EventArgs e)
         {
+            txtCodigoProduto.ReadOnly = true;
             CarregarProdutos();
         }
 
@@ -293,10 +294,42 @@ namespace ContruSystem
             txtCodigoProduto.Clear();
             txtDescricao.Clear();
             cmbCategoria.SelectedIndex = -1;
+            cmbCategoria.Text = string.Empty;
             txtPreco.Clear();
             txtEstoque.Clear();
             txtDescricao.Focus();
         }
 
+        private void CarregarCategorias()
+        {
+            try
+            {
+                using (MySqlConnection conexao = new MySqlConnection(strConexao))
+                {
+                    conexao.Open();
+                    string sql = "SELECT DISTINCT categoria FROM produtos ORDER BY categoria";
+                    MySqlCommand comando = new MySqlCommand(sql, conexao);
+
+                    cmbCategoria.Items.Clear();
+
+                    using (MySqlDataReader leitor = comando.ExecuteReader())
+                    {
+                        while (leitor.Read())
+                        {
+                            cmbCategoria.Items.Add(leitor["categoria"].ToString());
+                        }
+                    }
+                }
+            }
+            catch (MySqlException erro)
+            {
+                MessageBox.Show("Erro ao carregar categorias.\n\n" + erro.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void cmbCategoria_DropDown(object sender, EventArgs e)
+        {
+            CarregarCategorias();
+        }
     }
 }

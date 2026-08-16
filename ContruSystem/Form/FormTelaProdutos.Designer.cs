@@ -131,6 +131,7 @@
             this.cmbCategoria.Name = "cmbCategoria";
             this.cmbCategoria.Size = new System.Drawing.Size(306, 24);
             this.cmbCategoria.TabIndex = 71;
+            this.cmbCategoria.DropDown += new System.EventHandler(this.cmbCategoria_DropDown);
             // 
             // btnLimpar
             // 
@@ -179,7 +180,6 @@
             this.txtDescricao.Location = new System.Drawing.Point(0, 0);
             this.txtDescricao.Multiline = true;
             this.txtDescricao.Name = "txtDescricao";
-            this.txtDescricao.ReadOnly = true;
             this.txtDescricao.Size = new System.Drawing.Size(305, 19);
             this.txtDescricao.TabIndex = 18;
             // 
@@ -224,6 +224,7 @@
             this.txtCodigoProduto.Location = new System.Drawing.Point(0, 0);
             this.txtCodigoProduto.Multiline = true;
             this.txtCodigoProduto.Name = "txtCodigoProduto";
+            this.txtCodigoProduto.ReadOnly = true;
             this.txtCodigoProduto.Size = new System.Drawing.Size(98, 19);
             this.txtCodigoProduto.TabIndex = 18;
             this.txtCodigoProduto.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -247,7 +248,6 @@
             this.txtEstoque.Location = new System.Drawing.Point(0, 0);
             this.txtEstoque.Multiline = true;
             this.txtEstoque.Name = "txtEstoque";
-            this.txtEstoque.ReadOnly = true;
             this.txtEstoque.Size = new System.Drawing.Size(100, 19);
             this.txtEstoque.TabIndex = 18;
             this.txtEstoque.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -282,7 +282,6 @@
             this.txtPreco.Location = new System.Drawing.Point(0, 0);
             this.txtPreco.Multiline = true;
             this.txtPreco.Name = "txtPreco";
-            this.txtPreco.ReadOnly = true;
             this.txtPreco.Size = new System.Drawing.Size(98, 19);
             this.txtPreco.TabIndex = 18;
             this.txtPreco.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -399,7 +398,7 @@
             this.dataGridView.BackgroundColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;

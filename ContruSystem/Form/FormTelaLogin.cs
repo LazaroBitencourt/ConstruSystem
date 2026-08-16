@@ -68,7 +68,6 @@ namespace ContruSystem
                     else
                     {
                         MessageBox.Show("Login ou senha inválidos.", "Acesso negado", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        txtUsuario.Clear();
                         txtSenha.Clear();
                         txtUsuario.Focus();
                     }
