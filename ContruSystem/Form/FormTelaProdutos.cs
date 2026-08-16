@@ -126,7 +126,7 @@ namespace ContruSystem
                     MySqlDataAdapter adaptador = new MySqlDataAdapter(sql, conexao);
                     DataTable tabela = new DataTable();
                     adaptador.Fill(tabela);
-                    dataGridView.DataSource= tabela;
+                    dataGridView.DataSource = tabela;
                 }
             }
             catch (MySqlException erro)

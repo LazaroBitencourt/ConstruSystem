@@ -16,7 +16,7 @@ using Control = System.Windows.Forms.Control;
 namespace ContruSystem
 {
     public partial class FormTelaPrincipal : Form
- 
+
     {
         private Form frmAtivo;
         public FormTelaPrincipal()
@@ -39,14 +39,14 @@ namespace ContruSystem
                 frmAtivo.Close();
             }
         }
-            
+
         private void botaoAtivado(Button frmAtivo)
         {
             foreach (Control controle in panelMenuTelaPrincipal.Controls)
             {
                 controle.ForeColor = Color.FromArgb(26, 54, 93);
-                frmAtivo.ForeColor = Color.FromArgb(247,250, 252);
-                
+                frmAtivo.ForeColor = Color.FromArgb(247, 250, 252);
+
             }
         }
 

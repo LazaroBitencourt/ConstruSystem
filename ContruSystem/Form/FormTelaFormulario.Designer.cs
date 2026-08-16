@@ -279,6 +279,7 @@
             this.btnImprimir.Text = "Imprimir Relatório";
             this.btnImprimir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnImprimir.UseVisualStyleBackColor = false;
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
             // btnGerarRelatorio
             // 
