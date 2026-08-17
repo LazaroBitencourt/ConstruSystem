@@ -241,7 +241,7 @@
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.txtPreco);
-            this.panel1.Location = new System.Drawing.Point(416, 163);
+            this.panel1.Location = new System.Drawing.Point(429, 162);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(102, 21);
             this.panel1.TabIndex = 26;
@@ -266,11 +266,11 @@
             this.frmLblPreco.AutoSize = true;
             this.frmLblPreco.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.frmLblPreco.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.frmLblPreco.Location = new System.Drawing.Point(281, 162);
+            this.frmLblPreco.Location = new System.Drawing.Point(275, 162);
             this.frmLblPreco.Name = "frmLblPreco";
-            this.frmLblPreco.Size = new System.Drawing.Size(119, 18);
+            this.frmLblPreco.Size = new System.Drawing.Size(148, 18);
             this.frmLblPreco.TabIndex = 25;
-            this.frmLblPreco.Text = "Preço unitário:";
+            this.frmLblPreco.Text = "Preço unitário:  R$";
             // 
             // frmLblDesc
             // 
@@ -427,11 +427,11 @@
             this.frmLblValTotal.AutoSize = true;
             this.frmLblValTotal.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.frmLblValTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.frmLblValTotal.Location = new System.Drawing.Point(557, 390);
+            this.frmLblValTotal.Location = new System.Drawing.Point(524, 388);
             this.frmLblValTotal.Name = "frmLblValTotal";
-            this.frmLblValTotal.Size = new System.Drawing.Size(106, 19);
+            this.frmLblValTotal.Size = new System.Drawing.Size(138, 19);
             this.frmLblValTotal.TabIndex = 40;
-            this.frmLblValTotal.Text = "Valor Total:";
+            this.frmLblValTotal.Text = "Valor Total:  R$";
             // 
             // frmLblDadoVenda
             // 

@@ -220,11 +220,11 @@
             this.frmLblValorTotal.BackColor = System.Drawing.Color.Transparent;
             this.frmLblValorTotal.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.frmLblValorTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.frmLblValorTotal.Location = new System.Drawing.Point(582, 288);
+            this.frmLblValorTotal.Location = new System.Drawing.Point(540, 286);
             this.frmLblValorTotal.Name = "frmLblValorTotal";
-            this.frmLblValorTotal.Size = new System.Drawing.Size(122, 23);
+            this.frmLblValorTotal.Size = new System.Drawing.Size(160, 23);
             this.frmLblValorTotal.TabIndex = 116;
-            this.frmLblValorTotal.Text = "Valor Total:";
+            this.frmLblValorTotal.Text = "Valor Total:  R$";
             // 
             // btnFechar
             // 
