@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-using System.Configuration;
 using ClosedXML.Excel;
 using System.Drawing.Printing;
 
@@ -16,13 +15,11 @@ namespace ContruSystem
 {
     public partial class FormTelaRelatorio : Form
     {
-        private String strConexao;
         private PrintDocument documentoImpressao = new PrintDocument();
         private int linhaAtualImpressao = 0;
         public FormTelaRelatorio()
         {
             InitializeComponent();
-            strConexao = ConfigurationManager.ConnectionStrings["SistemaVendas"].ConnectionString;
         }
 
         private void FormTelaRelatorio_Load(object sender, EventArgs e)
@@ -46,7 +43,7 @@ namespace ContruSystem
 
             try
             {
-                using (MySqlConnection conexao = new MySqlConnection(strConexao))
+                using (MySqlConnection conexao = ConexaoBanco.CriarConexao())
                 {
                     conexao.Open();
 

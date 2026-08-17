@@ -7,13 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Configuration;
 using MySql.Data.MySqlClient;
 namespace ContruSystem
 {
     public partial class FormTelaVendas : Form
     {
-        private String strConexao;
         private DataTable tabelaItens = new DataTable();
         private int idProdutoSelecionado = 0;
         private int estoqueSelecionado = 0;
@@ -24,7 +22,6 @@ namespace ContruSystem
         public FormTelaVendas()
         {
             InitializeComponent();
-            strConexao = ConfigurationManager.ConnectionStrings["SistemaVendas"].ConnectionString;
         }
 
         private void FormTelaVendas_Load(object sender, EventArgs e)
@@ -60,7 +57,7 @@ namespace ContruSystem
         {
             try
             {
-                using (MySqlConnection conexao = new MySqlConnection(strConexao))
+                using (MySqlConnection conexao = ConexaoBanco.CriarConexao())
                 {
                     conexao.Open();
                     string sql = "SELECT id_funcionario, nome FROM funcionarios ORDER BY nome";
@@ -94,7 +91,7 @@ namespace ContruSystem
 
             try
             {
-                using (MySqlConnection conexao = new MySqlConnection(strConexao))
+                using (MySqlConnection conexao = ConexaoBanco.CriarConexao())
                 {
                     conexao.Open();
                     string sql = "SELECT id_produto AS Codigo, descricao AS Descricao, preco AS Preco, estoque AS Estoque FROM produtos WHERE estoque > 0 AND (descricao LIKE @pesquisa OR CAST(id_produto AS CHAR) LIKE @pesquisa) ORDER BY descricao LIMIT 10";
@@ -223,7 +220,7 @@ namespace ContruSystem
 
             try
             {
-                using (MySqlConnection conexao = new MySqlConnection(strConexao))
+                using (MySqlConnection conexao = ConexaoBanco.CriarConexao())
                 {
                     conexao.Open();
                     string sql = "SELECT estoque FROM produtos WHERE id_produto = @codigo";
@@ -319,7 +316,7 @@ namespace ContruSystem
                 return;
             }
 
-            using (MySqlConnection conexao = new MySqlConnection(strConexao))
+            using (MySqlConnection conexao = ConexaoBanco.CriarConexao())
             {
                 conexao.Open();
                 MySqlTransaction transacao = conexao.BeginTransaction();
