@@ -64,51 +64,6 @@ namespace ContruSystem
             formShow(new FormTelaRelatorio());
         }
 
-        private void labelDesenvolvedor_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelDataTelaPrincipal_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelData_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_2(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelPainelInformacao_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelQtdVendasHoje_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnHome_Click(object sender, EventArgs e)
         {
             botaoAtivado(btnHome);

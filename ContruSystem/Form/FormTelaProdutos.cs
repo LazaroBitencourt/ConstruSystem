@@ -288,6 +288,7 @@ namespace ContruSystem
 
         private void LimparCampos()
         {
+            txtPesquisarProduto.Clear();
             dataGridView.DataSource = null;
             txtCodigoProduto.Clear();
             txtDescricao.Clear();

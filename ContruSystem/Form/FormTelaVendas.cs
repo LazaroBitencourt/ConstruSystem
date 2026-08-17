@@ -27,7 +27,7 @@ namespace ContruSystem
         private void FormTelaVendas_Load(object sender, EventArgs e)
         {
             dataVendaAtual = DateTime.Now;
-            txtData.Text = dataVendaAtual.ToString();
+            txtData.Text = dataVendaAtual.ToShortDateString();
             txtCodigoVenda.ReadOnly = true;
             txtEstoqueDisponivel.ReadOnly = true;
             txtPreco.ReadOnly = true;

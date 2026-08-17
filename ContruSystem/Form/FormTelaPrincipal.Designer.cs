@@ -124,7 +124,6 @@
             this.labelDesenvolvedor.TabIndex = 14;
             this.labelDesenvolvedor.Text = "Desenvolvido por Lázaro-Dev";
             this.labelDesenvolvedor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelDesenvolvedor.Click += new System.EventHandler(this.labelDesenvolvedor_Click);
             // 
             // panelFormTelaPrincipal
             // 
@@ -189,7 +188,6 @@
             this.labelValorQtdVendasHoje.Size = new System.Drawing.Size(68, 45);
             this.labelValorQtdVendasHoje.TabIndex = 1;
             this.labelValorQtdVendasHoje.Text = "19";
-            this.labelValorQtdVendasHoje.Click += new System.EventHandler(this.label1_Click_2);
             // 
             // labelQtdVendasHoje
             // 
@@ -201,7 +199,6 @@
             this.labelQtdVendasHoje.Size = new System.Drawing.Size(194, 23);
             this.labelQtdVendasHoje.TabIndex = 0;
             this.labelQtdVendasHoje.Text = "QTD VENDAS HOJE";
-            this.labelQtdVendasHoje.Click += new System.EventHandler(this.labelQtdVendasHoje_Click);
             // 
             // panelVendasHoje
             // 
@@ -223,7 +220,6 @@
             this.labelValorVendasHoje.Size = new System.Drawing.Size(250, 45);
             this.labelValorVendasHoje.TabIndex = 1;
             this.labelValorVendasHoje.Text = "R$ 4.250,00";
-            this.labelValorVendasHoje.Click += new System.EventHandler(this.label2_Click);
             // 
             // labelPainelVendaHoje
             // 
@@ -235,7 +231,6 @@
             this.labelPainelVendaHoje.Size = new System.Drawing.Size(147, 23);
             this.labelPainelVendaHoje.TabIndex = 0;
             this.labelPainelVendaHoje.Text = "VENDAS HOJE";
-            this.labelPainelVendaHoje.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // panelInformacao
             // 
@@ -261,7 +256,6 @@
             this.labelPainelInformacao.Size = new System.Drawing.Size(404, 13);
             this.labelPainelInformacao.TabIndex = 4;
             this.labelPainelInformacao.Text = "Seu Sistema de Gestão e Vendas para Loja de Materiais de Construção";
-            this.labelPainelInformacao.Click += new System.EventHandler(this.labelPainelInformacao_Click);
             // 
             // frmLblSaudacao
             // 
@@ -286,7 +280,6 @@
             this.frmLblHoraAtual.Size = new System.Drawing.Size(55, 19);
             this.frmLblHoraAtual.TabIndex = 2;
             this.frmLblHoraAtual.Text = "20:09";
-            this.frmLblHoraAtual.Click += new System.EventHandler(this.label1_Click);
             // 
             // frmLblDataHoje
             // 
@@ -298,7 +291,6 @@
             this.frmLblDataHoje.Size = new System.Drawing.Size(107, 19);
             this.frmLblDataHoje.TabIndex = 1;
             this.frmLblDataHoje.Text = "02/08/2026";
-            this.frmLblDataHoje.Click += new System.EventHandler(this.labelDataTelaPrincipal_Click);
             // 
             // frmLblData
             // 
@@ -310,7 +302,6 @@
             this.frmLblData.Size = new System.Drawing.Size(54, 19);
             this.frmLblData.TabIndex = 0;
             this.frmLblData.Text = "Data:";
-            this.frmLblData.Click += new System.EventHandler(this.labelData_Click);
             // 
             // panelLogo
             // 
