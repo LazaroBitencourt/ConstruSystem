@@ -7,18 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Configuration;
 using MySql.Data.MySqlClient;
 
 namespace ContruSystem
 {
     public partial class FormTelaLogin : Form
     {
-        private String strConexao;
+
         public FormTelaLogin()
         {
             InitializeComponent();
-            strConexao = ConfigurationManager.ConnectionStrings["SistemaVendas"].ConnectionString;
             this.ActiveControl = txtUsuario;
             txtSenha.UseSystemPasswordChar = true;
             this.AcceptButton = btnEntrar;
@@ -42,7 +40,7 @@ namespace ContruSystem
 
             try
             {
-                using (MySqlConnection conexao = new MySqlConnection(strConexao))
+                using (MySqlConnection conexao = ConexaoBanco.CriarConexao())
                 {
                     conexao.Open();
 

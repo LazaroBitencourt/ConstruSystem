@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -14,11 +13,9 @@ namespace ContruSystem
 {
     public partial class FormTelaProdutos : Form
     {
-        private String strConexao;
         public FormTelaProdutos()
         {
             InitializeComponent();
-            strConexao = ConfigurationManager.ConnectionStrings["SistemaVendas"].ConnectionString;
         }
 
         private void FrmProduto_Load(object sender, EventArgs e)
@@ -77,7 +74,7 @@ namespace ContruSystem
 
             try
             {
-                using (MySqlConnection conexao = new MySqlConnection(strConexao))
+                using (MySqlConnection conexao = ConexaoBanco.CriarConexao())
                 {
                     conexao.Open();
 
@@ -118,7 +115,7 @@ namespace ContruSystem
         {
             try
             {
-                using (MySqlConnection conexao = new MySqlConnection(strConexao))
+                using (MySqlConnection conexao = ConexaoBanco.CriarConexao())
                 {
                     conexao.Open();
 
@@ -139,7 +136,7 @@ namespace ContruSystem
         {
             try
             {
-                using (MySqlConnection conexao = new MySqlConnection(strConexao))
+                using (MySqlConnection conexao = ConexaoBanco.CriarConexao())
                 {
                     conexao.Open();
 
@@ -212,7 +209,7 @@ namespace ContruSystem
 
             try
             {
-                using (MySqlConnection conexao = new MySqlConnection(strConexao))
+                using (MySqlConnection conexao = ConexaoBanco.CriarConexao())
                 {
                     conexao.Open();
 
@@ -251,7 +248,7 @@ namespace ContruSystem
             {
                 try
                 {
-                    using (MySqlConnection conexao = new MySqlConnection(strConexao))
+                    using (MySqlConnection conexao = ConexaoBanco.CriarConexao())
                     {
                         conexao.Open();
 
@@ -305,7 +302,7 @@ namespace ContruSystem
         {
             try
             {
-                using (MySqlConnection conexao = new MySqlConnection(strConexao))
+                using (MySqlConnection conexao = ConexaoBanco.CriarConexao())
                 {
                     conexao.Open();
                     string sql = "SELECT DISTINCT categoria FROM produtos ORDER BY categoria";

@@ -120,6 +120,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database\ConexaoBanco.cs" />
     <Compile Include="Form\FormTelaFormulario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -236,5 +237,6 @@
     <None Include="Resources\iconLimpar.png" />
     <Content Include="Scritps\Create_Data_Base.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
