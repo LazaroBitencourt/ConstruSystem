@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -78,7 +77,7 @@
             this.btnExcluir.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExcluir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
             this.btnExcluir.Location = new System.Drawing.Point(324, 440);
-            this.btnExcluir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExcluir.Margin = new System.Windows.Forms.Padding(4);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Padding = new System.Windows.Forms.Padding(1);
             this.btnExcluir.Size = new System.Drawing.Size(112, 46);
@@ -96,7 +95,7 @@
             this.btnSalvar.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
             this.btnSalvar.Location = new System.Drawing.Point(39, 440);
-            this.btnSalvar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSalvar.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Padding = new System.Windows.Forms.Padding(1);
             this.btnSalvar.Size = new System.Drawing.Size(112, 46);
@@ -119,7 +118,7 @@
             this.panelProduto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelProduto.Controls.Add(this.cmbCategoria);
             this.panelProduto.Location = new System.Drawing.Point(196, 208);
-            this.panelProduto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelProduto.Margin = new System.Windows.Forms.Padding(4);
             this.panelProduto.Name = "panelProduto";
             this.panelProduto.Size = new System.Drawing.Size(384, 26);
             this.panelProduto.TabIndex = 51;
@@ -133,7 +132,7 @@
             this.cmbCategoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
             this.cmbCategoria.FormattingEnabled = true;
             this.cmbCategoria.Location = new System.Drawing.Point(0, 0);
-            this.cmbCategoria.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbCategoria.Margin = new System.Windows.Forms.Padding(4);
             this.cmbCategoria.Name = "cmbCategoria";
             this.cmbCategoria.Size = new System.Drawing.Size(382, 27);
             this.cmbCategoria.TabIndex = 71;
@@ -148,7 +147,7 @@
             this.btnLimpar.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
             this.btnLimpar.Location = new System.Drawing.Point(468, 440);
-            this.btnLimpar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLimpar.Margin = new System.Windows.Forms.Padding(4);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Padding = new System.Windows.Forms.Padding(1);
             this.btnLimpar.Size = new System.Drawing.Size(112, 46);
@@ -174,7 +173,7 @@
             this.panelData.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelData.Controls.Add(this.txtDescricao);
             this.panelData.Location = new System.Drawing.Point(196, 159);
-            this.panelData.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelData.Margin = new System.Windows.Forms.Padding(4);
             this.panelData.Name = "panelData";
             this.panelData.Size = new System.Drawing.Size(383, 26);
             this.panelData.TabIndex = 49;
@@ -187,7 +186,7 @@
             this.txtDescricao.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescricao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
             this.txtDescricao.Location = new System.Drawing.Point(0, 0);
-            this.txtDescricao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDescricao.Margin = new System.Windows.Forms.Padding(4);
             this.txtDescricao.Multiline = true;
             this.txtDescricao.Name = "txtDescricao";
             this.txtDescricao.Size = new System.Drawing.Size(381, 24);
@@ -222,7 +221,7 @@
             this.PanelCodigo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PanelCodigo.Controls.Add(this.txtCodigoProduto);
             this.PanelCodigo.Location = new System.Drawing.Point(196, 112);
-            this.PanelCodigo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PanelCodigo.Margin = new System.Windows.Forms.Padding(4);
             this.PanelCodigo.Name = "PanelCodigo";
             this.PanelCodigo.Size = new System.Drawing.Size(124, 26);
             this.PanelCodigo.TabIndex = 48;
@@ -235,7 +234,7 @@
             this.txtCodigoProduto.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodigoProduto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
             this.txtCodigoProduto.Location = new System.Drawing.Point(0, 0);
-            this.txtCodigoProduto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCodigoProduto.Margin = new System.Windows.Forms.Padding(4);
             this.txtCodigoProduto.Multiline = true;
             this.txtCodigoProduto.Name = "txtCodigoProduto";
             this.txtCodigoProduto.ReadOnly = true;
@@ -248,7 +247,7 @@
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.txtEstoque);
             this.panel1.Location = new System.Drawing.Point(196, 305);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(127, 26);
             this.panel1.TabIndex = 55;
@@ -261,7 +260,7 @@
             this.txtEstoque.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEstoque.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
             this.txtEstoque.Location = new System.Drawing.Point(0, 0);
-            this.txtEstoque.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEstoque.Margin = new System.Windows.Forms.Padding(4);
             this.txtEstoque.Multiline = true;
             this.txtEstoque.Name = "txtEstoque";
             this.txtEstoque.Size = new System.Drawing.Size(125, 24);
@@ -285,7 +284,7 @@
             this.panelQuantidade.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelQuantidade.Controls.Add(this.txtPreco);
             this.panelQuantidade.Location = new System.Drawing.Point(196, 256);
-            this.panelQuantidade.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelQuantidade.Margin = new System.Windows.Forms.Padding(4);
             this.panelQuantidade.Name = "panelQuantidade";
             this.panelQuantidade.Size = new System.Drawing.Size(124, 26);
             this.panelQuantidade.TabIndex = 53;
@@ -298,7 +297,7 @@
             this.txtPreco.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPreco.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
             this.txtPreco.Location = new System.Drawing.Point(0, 0);
-            this.txtPreco.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPreco.Margin = new System.Windows.Forms.Padding(4);
             this.txtPreco.Multiline = true;
             this.txtPreco.Name = "txtPreco";
             this.txtPreco.Size = new System.Drawing.Size(122, 24);
@@ -326,7 +325,7 @@
             this.btnEditar.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
             this.btnEditar.Location = new System.Drawing.Point(180, 440);
-            this.btnEditar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Padding = new System.Windows.Forms.Padding(1);
             this.btnEditar.Size = new System.Drawing.Size(112, 46);
@@ -341,7 +340,7 @@
             this.panelProcurar.Controls.Add(this.pictureBoxProcurar);
             this.panelProcurar.Controls.Add(this.txtPesquisarProduto);
             this.panelProcurar.Location = new System.Drawing.Point(774, 109);
-            this.panelProcurar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelProcurar.Margin = new System.Windows.Forms.Padding(4);
             this.panelProcurar.Name = "panelProcurar";
             this.panelProcurar.Size = new System.Drawing.Size(357, 26);
             this.panelProcurar.TabIndex = 65;
@@ -352,7 +351,7 @@
             this.pictureBoxProcurar.Dock = System.Windows.Forms.DockStyle.Right;
             this.pictureBoxProcurar.Image = global::ContruSystem.Properties.Resources.iconProcurar2;
             this.pictureBoxProcurar.Location = new System.Drawing.Point(331, 0);
-            this.pictureBoxProcurar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxProcurar.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxProcurar.Name = "pictureBoxProcurar";
             this.pictureBoxProcurar.Size = new System.Drawing.Size(24, 24);
             this.pictureBoxProcurar.TabIndex = 93;
@@ -366,7 +365,7 @@
             this.txtPesquisarProduto.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPesquisarProduto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
             this.txtPesquisarProduto.Location = new System.Drawing.Point(0, 0);
-            this.txtPesquisarProduto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPesquisarProduto.Margin = new System.Windows.Forms.Padding(4);
             this.txtPesquisarProduto.Multiline = true;
             this.txtPesquisarProduto.Name = "txtPesquisarProduto";
             this.txtPesquisarProduto.Size = new System.Drawing.Size(355, 24);
@@ -415,7 +414,7 @@
             this.panelDataGridView.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelDataGridView.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
             this.panelDataGridView.Location = new System.Drawing.Point(652, 159);
-            this.panelDataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.panelDataGridView.Name = "panelDataGridView";
             this.panelDataGridView.Size = new System.Drawing.Size(479, 389);
             this.panelDataGridView.TabIndex = 93;
@@ -433,18 +432,10 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView.EnableHeadersVisualStyles = false;
             this.dataGridView.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.ReadOnly = true;
             this.dataGridView.RowHeadersWidth = 51;
@@ -480,7 +471,7 @@
             this.Controls.Add(this.frmLblEstoque);
             this.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormTelaProdutos";
             this.Text = "FormTelaProdutos1";
             this.panelProduto.ResumeLayout(false);
