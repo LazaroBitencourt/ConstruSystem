@@ -280,6 +280,7 @@
             this.frmLblHoraAtual.Size = new System.Drawing.Size(55, 19);
             this.frmLblHoraAtual.TabIndex = 2;
             this.frmLblHoraAtual.Text = "20:09";
+            this.frmLblHoraAtual.Click += new System.EventHandler(this.frmLblHoraAtual_Click);
             // 
             // frmLblDataHoje
             // 

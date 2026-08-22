@@ -12,6 +12,8 @@ namespace ContruSystem
 {
     public partial class FormTelaVendas : Form
     {
+        public event EventHandler VendaFinalizada;
+
         private DataTable tabelaItens = new DataTable();
         private int idProdutoSelecionado = 0;
         private int estoqueSelecionado = 0;
@@ -378,8 +380,11 @@ namespace ContruSystem
                     txtCodigoVenda.Text = codigoVenda.ToString();
                     MessageBox.Show("Venda nº " + codigoVenda + " finalizada com sucesso.", "Venda finalizada", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+                    VendaFinalizada?.Invoke(this, EventArgs.Empty);
+
                     LimparVenda();
                     txtCodigoVenda.Text = (codigoVenda + 1).ToString();
+                    
                 }
                 catch (Exception erro)
                 {

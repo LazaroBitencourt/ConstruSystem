@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,9 @@ using System.Windows.Controls;
 using System.Windows.Forms;
 using Button = System.Windows.Forms.Button;
 using Control = System.Windows.Forms.Control;
+using MessageBox = System.Windows.Forms.MessageBox;
+
+
 
 namespace ContruSystem
 {
@@ -20,6 +24,7 @@ namespace ContruSystem
     {
         private Form frmAtivo;
         private string nomeUsuarioLogado;
+
         public FormTelaPrincipal(string nomeUsuario)
         {
             InitializeComponent();
@@ -30,6 +35,7 @@ namespace ContruSystem
             frmLblSaudacao.Text = "Bem-vindo, " + nomeUsuarioLogado;
             frmLblDataHoje.Text = DateTime.Now.ToString("dd/MM/yyyy");
             frmLblHoraAtual.Text = DateTime.Now.ToString("HH:mm:ss");
+            CarregarDashboard();
         }
         private void formShow(Form frm)
         {
@@ -74,7 +80,10 @@ namespace ContruSystem
         private void btnVendas_Click(object sender, EventArgs e)
         {
             botaoAtivado(btnVendas);
-            formShow(new FormTelaVendas());
+            FormTelaVendas frmVendas = new FormTelaVendas();
+            frmVendas.VendaFinalizada += (s, ev) => CarregarDashboard();
+
+            formShow(frmVendas);
         }
 
         private void btnProdutos_Click(object sender, EventArgs e)
@@ -99,5 +108,43 @@ namespace ContruSystem
         {
             frmLblHoraAtual.Text = DateTime.Now.ToString("HH:mm:ss");
         }
+
+        private void frmLblHoraAtual_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void CarregarDashboard()
+        {
+            try
+            {
+                using (MySqlConnection conexao = ConexaoBanco.CriarConexao())
+                {
+                    conexao.Open();
+
+                    string sql = @"
+                SELECT 
+                    (SELECT COALESCE(SUM(total_venda), 0) FROM vendas WHERE DATE(data_venda) = CURDATE()) AS TotalVendas,
+                    (SELECT COUNT(*) FROM vendas WHERE DATE(data_venda) = CURDATE()) AS QtdVendas,
+                    (SELECT COUNT(*) FROM produtos WHERE estoque <= 10) AS EstoqueBaixo";
+
+                    using (MySqlCommand comando = new MySqlCommand(sql, conexao))
+                    using (MySqlDataReader leitor = comando.ExecuteReader())
+                    {
+                        if (leitor.Read())
+                        {
+                            labelValorVendasHoje.Text = "R$ " + Convert.ToDecimal(leitor["TotalVendas"]).ToString("N2");
+                            labelValorQtdVendasHoje.Text = leitor["QtdVendas"].ToString();
+                            labelValorProdutosBaixoEst.Text = leitor["EstoqueBaixo"].ToString();
+                        }
+                    }
+                }
+            }
+            catch (MySqlException erro)
+            {
+                MessageBox.Show("Erro ao carregar o dashboard.\n\n" + erro.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
     }
 }
