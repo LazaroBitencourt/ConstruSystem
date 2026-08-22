@@ -29,7 +29,8 @@ namespace ContruSystem
             dtpDataFinal.Value = DateTime.Now.Date;
             txtTotalGeral.Text = "0,00";
             frmLblDataRelatorio.Text = "Período: " + DateTime.Now.ToShortDateString() + " a " + DateTime.Now.ToShortDateString();
-
+            dataGridView.EnableHeadersVisualStyles=false;
+            dataGridView.ColumnHeadersDefaultCellStyle.Font = new Font(dataGridView.Font, FontStyle.Bold);
         }
 
         private void btnGerarRelatorio_Click(object sender, EventArgs e)
@@ -57,7 +58,7 @@ namespace ContruSystem
                     DataTable tabela = new DataTable();
                     adaptador.Fill(tabela);
                     dataGridView.DataSource = tabela;
-
+                    
                     if (tabela.Rows.Count == 0)
                     {
                         MessageBox.Show("Nenhuma venda foi encontrada no período informado.", "Relatório", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -306,6 +307,11 @@ namespace ContruSystem
         private void btnImprimir_Click(object sender, EventArgs e)
         {
             ImprimirRelatorio();
+        }
+
+        private void dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
