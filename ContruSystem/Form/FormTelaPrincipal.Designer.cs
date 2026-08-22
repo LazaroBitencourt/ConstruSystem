@@ -63,6 +63,7 @@
             this.btnHome = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
             this.panelFormTelaPrincipal.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panelQtdVendasHoje.SuspendLayout();
@@ -76,7 +77,7 @@
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(7, 177);
+            this.panel1.Location = new System.Drawing.Point(7, 175);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(243, 16);
             this.panel1.TabIndex = 3;
@@ -84,7 +85,7 @@
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(7, 329);
+            this.panel2.Location = new System.Drawing.Point(7, 327);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(243, 16);
             this.panel2.TabIndex = 5;
@@ -92,7 +93,7 @@
             // panel3
             // 
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(7, 405);
+            this.panel3.Location = new System.Drawing.Point(7, 403);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(243, 16);
             this.panel3.TabIndex = 7;
@@ -100,7 +101,7 @@
             // panel4
             // 
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(7, 253);
+            this.panel4.Location = new System.Drawing.Point(7, 251);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(243, 16);
             this.panel4.TabIndex = 9;
@@ -108,7 +109,7 @@
             // panel5
             // 
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(7, 481);
+            this.panel5.Location = new System.Drawing.Point(7, 479);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(243, 16);
             this.panel5.TabIndex = 11;
@@ -234,6 +235,7 @@
             // 
             // panelInformacao
             // 
+            this.panelInformacao.Controls.Add(this.label1);
             this.panelInformacao.Controls.Add(this.labelPainelInformacao);
             this.panelInformacao.Controls.Add(this.frmLblSaudacao);
             this.panelInformacao.Controls.Add(this.frmLblHoraAtual);
@@ -311,7 +313,7 @@
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(7, 0);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(243, 117);
+            this.panelLogo.Size = new System.Drawing.Size(243, 115);
             this.panelLogo.TabIndex = 0;
             // 
             // pictureBoxPainelLogo
@@ -357,7 +359,7 @@
             this.btnSair.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
             this.btnSair.Image = ((System.Drawing.Image)(resources.GetObject("btnSair.Image")));
             this.btnSair.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSair.Location = new System.Drawing.Point(7, 497);
+            this.btnSair.Location = new System.Drawing.Point(7, 495);
             this.btnSair.Margin = new System.Windows.Forms.Padding(3, 3, 3, 5);
             this.btnSair.Name = "btnSair";
             this.btnSair.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
@@ -379,7 +381,7 @@
             this.btnRelatorio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
             this.btnRelatorio.Image = ((System.Drawing.Image)(resources.GetObject("btnRelatorio.Image")));
             this.btnRelatorio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRelatorio.Location = new System.Drawing.Point(7, 421);
+            this.btnRelatorio.Location = new System.Drawing.Point(7, 419);
             this.btnRelatorio.Margin = new System.Windows.Forms.Padding(3, 3, 3, 5);
             this.btnRelatorio.Name = "btnRelatorio";
             this.btnRelatorio.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
@@ -401,7 +403,7 @@
             this.btnFuncionarios.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
             this.btnFuncionarios.Image = ((System.Drawing.Image)(resources.GetObject("btnFuncionarios.Image")));
             this.btnFuncionarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFuncionarios.Location = new System.Drawing.Point(7, 345);
+            this.btnFuncionarios.Location = new System.Drawing.Point(7, 343);
             this.btnFuncionarios.Margin = new System.Windows.Forms.Padding(3, 3, 3, 5);
             this.btnFuncionarios.Name = "btnFuncionarios";
             this.btnFuncionarios.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
@@ -423,7 +425,7 @@
             this.btnProdutos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
             this.btnProdutos.Image = ((System.Drawing.Image)(resources.GetObject("btnProdutos.Image")));
             this.btnProdutos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProdutos.Location = new System.Drawing.Point(7, 269);
+            this.btnProdutos.Location = new System.Drawing.Point(7, 267);
             this.btnProdutos.Margin = new System.Windows.Forms.Padding(3, 3, 3, 5);
             this.btnProdutos.Name = "btnProdutos";
             this.btnProdutos.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
@@ -445,7 +447,7 @@
             this.btnVendas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
             this.btnVendas.Image = ((System.Drawing.Image)(resources.GetObject("btnVendas.Image")));
             this.btnVendas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVendas.Location = new System.Drawing.Point(7, 193);
+            this.btnVendas.Location = new System.Drawing.Point(7, 191);
             this.btnVendas.Margin = new System.Windows.Forms.Padding(3, 3, 3, 5);
             this.btnVendas.Name = "btnVendas";
             this.btnVendas.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
@@ -467,7 +469,7 @@
             this.btnHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
             this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
             this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.Location = new System.Drawing.Point(7, 117);
+            this.btnHome.Location = new System.Drawing.Point(7, 115);
             this.btnHome.Margin = new System.Windows.Forms.Padding(3, 3, 3, 5);
             this.btnHome.Name = "btnHome";
             this.btnHome.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
@@ -483,6 +485,17 @@
             this.timer1.Enabled = true;
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(854, 1);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "version 1.0.0";
             // 
             // FormTelaPrincipal
             // 
@@ -550,5 +563,6 @@
         private System.Windows.Forms.Label labelValorProdutosBaixoEst;
         private System.Windows.Forms.Label labelProdutosEstBaixo;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label1;
     }
 }
