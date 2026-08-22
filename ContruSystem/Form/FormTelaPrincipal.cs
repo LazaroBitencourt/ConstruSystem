@@ -81,8 +81,7 @@ namespace ContruSystem
         {
             botaoAtivado(btnVendas);
             FormTelaVendas frmVendas = new FormTelaVendas();
-            frmVendas.VendaFinalizada += (s, ev) => CarregarDashboard();
-
+            frmVendas.VendaFinalizada += FrmVendas_VendaFinalizada;
             formShow(frmVendas);
         }
 
@@ -143,6 +142,11 @@ namespace ContruSystem
             {
                 MessageBox.Show("Erro ao carregar o dashboard.\n\n" + erro.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void FrmVendas_VendaFinalizada(object sender, EventArgs e)
+        {
+            CarregarDashboard();
         }
 
 
