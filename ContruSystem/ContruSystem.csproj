@@ -121,11 +121,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database\ConexaoBanco.cs" />
-    <Compile Include="Form\FormTelaFormulario.cs">
+    <Compile Include="Form\FormTelaRelatorio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FormTelaFormulario.Designer.cs">
-      <DependentUpon>FormTelaFormulario.cs</DependentUpon>
+    <Compile Include="Form\FormTelaRelatorio.Designer.cs">
+      <DependentUpon>FormTelaRelatorio.cs</DependentUpon>
     </Compile>
     <Compile Include="Form\FormTelaFuncionarios.cs">
       <SubType>Form</SubType>
@@ -159,8 +159,8 @@
     <Compile Include="Form\FormTelaPrincipal.Designer.cs">
       <DependentUpon>FormTelaPrincipal.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form\FormTelaFormulario.resx">
-      <DependentUpon>FormTelaFormulario.cs</DependentUpon>
+    <EmbeddedResource Include="Form\FormTelaRelatorio.resx">
+      <DependentUpon>FormTelaRelatorio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\FormTelaFuncionarios.resx">
       <DependentUpon>FormTelaFuncionarios.cs</DependentUpon>
