@@ -47,31 +47,33 @@
             this.labelValorVendasHoje = new System.Windows.Forms.Label();
             this.labelPainelVendaHoje = new System.Windows.Forms.Label();
             this.panelInformacao = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.labelPainelInformacao = new System.Windows.Forms.Label();
             this.frmLblSaudacao = new System.Windows.Forms.Label();
             this.frmLblHoraAtual = new System.Windows.Forms.Label();
             this.frmLblDataHoje = new System.Windows.Forms.Label();
             this.frmLblData = new System.Windows.Forms.Label();
             this.panelLogo = new System.Windows.Forms.Panel();
-            this.pictureBoxPainelLogo = new System.Windows.Forms.PictureBox();
             this.panelMenuTelaPrincipal = new System.Windows.Forms.Panel();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btnUsuarios = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
             this.btnRelatorio = new System.Windows.Forms.Button();
             this.btnFuncionarios = new System.Windows.Forms.Button();
             this.btnProdutos = new System.Windows.Forms.Button();
             this.btnVendas = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBoxPainelLogo = new System.Windows.Forms.PictureBox();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.panelFormTelaPrincipal.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panelQtdVendasHoje.SuspendLayout();
             this.panelVendasHoje.SuspendLayout();
             this.panelInformacao.SuspendLayout();
             this.panelLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPainelLogo)).BeginInit();
             this.panelMenuTelaPrincipal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPainelLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -119,7 +121,7 @@
             this.labelDesenvolvedor.AutoSize = true;
             this.labelDesenvolvedor.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDesenvolvedor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.labelDesenvolvedor.Location = new System.Drawing.Point(37, 582);
+            this.labelDesenvolvedor.Location = new System.Drawing.Point(452, 60);
             this.labelDesenvolvedor.Name = "labelDesenvolvedor";
             this.labelDesenvolvedor.Size = new System.Drawing.Size(172, 16);
             this.labelDesenvolvedor.TabIndex = 14;
@@ -134,7 +136,7 @@
             this.panelFormTelaPrincipal.Controls.Add(this.panelVendasHoje);
             this.panelFormTelaPrincipal.Location = new System.Drawing.Point(256, 115);
             this.panelFormTelaPrincipal.Name = "panelFormTelaPrincipal";
-            this.panelFormTelaPrincipal.Size = new System.Drawing.Size(928, 500);
+            this.panelFormTelaPrincipal.Size = new System.Drawing.Size(928, 516);
             this.panelFormTelaPrincipal.TabIndex = 1;
             // 
             // panel6
@@ -235,6 +237,7 @@
             // 
             // panelInformacao
             // 
+            this.panelInformacao.Controls.Add(this.labelDesenvolvedor);
             this.panelInformacao.Controls.Add(this.label1);
             this.panelInformacao.Controls.Add(this.labelPainelInformacao);
             this.panelInformacao.Controls.Add(this.frmLblSaudacao);
@@ -245,6 +248,17 @@
             this.panelInformacao.Name = "panelInformacao";
             this.panelInformacao.Size = new System.Drawing.Size(928, 100);
             this.panelInformacao.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(854, 1);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "version 1.0.0";
             // 
             // labelPainelInformacao
             // 
@@ -316,21 +330,12 @@
             this.panelLogo.Size = new System.Drawing.Size(243, 115);
             this.panelLogo.TabIndex = 0;
             // 
-            // pictureBoxPainelLogo
-            // 
-            this.pictureBoxPainelLogo.Image = global::ContruSystem.Properties.Resources.logo_ContruSystem;
-            this.pictureBoxPainelLogo.Location = new System.Drawing.Point(14, 21);
-            this.pictureBoxPainelLogo.Name = "pictureBoxPainelLogo";
-            this.pictureBoxPainelLogo.Size = new System.Drawing.Size(217, 75);
-            this.pictureBoxPainelLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxPainelLogo.TabIndex = 0;
-            this.pictureBoxPainelLogo.TabStop = false;
-            // 
             // panelMenuTelaPrincipal
             // 
             this.panelMenuTelaPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.panelMenuTelaPrincipal.Controls.Add(this.labelDesenvolvedor);
             this.panelMenuTelaPrincipal.Controls.Add(this.btnSair);
+            this.panelMenuTelaPrincipal.Controls.Add(this.panel7);
+            this.panelMenuTelaPrincipal.Controls.Add(this.btnUsuarios);
             this.panelMenuTelaPrincipal.Controls.Add(this.panel5);
             this.panelMenuTelaPrincipal.Controls.Add(this.btnRelatorio);
             this.panelMenuTelaPrincipal.Controls.Add(this.panel3);
@@ -346,8 +351,35 @@
             this.panelMenuTelaPrincipal.Location = new System.Drawing.Point(0, 0);
             this.panelMenuTelaPrincipal.Name = "panelMenuTelaPrincipal";
             this.panelMenuTelaPrincipal.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
-            this.panelMenuTelaPrincipal.Size = new System.Drawing.Size(250, 621);
+            this.panelMenuTelaPrincipal.Size = new System.Drawing.Size(250, 661);
             this.panelMenuTelaPrincipal.TabIndex = 0;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // btnUsuarios
+            // 
+            this.btnUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(107)))), ((int)(((byte)(32)))));
+            this.btnUsuarios.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnUsuarios.FlatAppearance.BorderSize = 0;
+            this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUsuarios.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsuarios.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.btnUsuarios.Image = global::ContruSystem.Properties.Resources.iconUsuario;
+            this.btnUsuarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUsuarios.Location = new System.Drawing.Point(7, 495);
+            this.btnUsuarios.Margin = new System.Windows.Forms.Padding(3, 3, 3, 5);
+            this.btnUsuarios.Name = "btnUsuarios";
+            this.btnUsuarios.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.btnUsuarios.Size = new System.Drawing.Size(243, 60);
+            this.btnUsuarios.TabIndex = 14;
+            this.btnUsuarios.Text = "Usuários";
+            this.btnUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUsuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnUsuarios.UseVisualStyleBackColor = false;
             // 
             // btnSair
             // 
@@ -359,7 +391,7 @@
             this.btnSair.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
             this.btnSair.Image = ((System.Drawing.Image)(resources.GetObject("btnSair.Image")));
             this.btnSair.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSair.Location = new System.Drawing.Point(7, 495);
+            this.btnSair.Location = new System.Drawing.Point(7, 571);
             this.btnSair.Margin = new System.Windows.Forms.Padding(3, 3, 3, 5);
             this.btnSair.Name = "btnSair";
             this.btnSair.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
@@ -480,29 +512,30 @@
             this.btnHome.UseVisualStyleBackColor = false;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
-            // timer1
+            // pictureBoxPainelLogo
             // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.pictureBoxPainelLogo.Image = global::ContruSystem.Properties.Resources.logo_ContruSystem;
+            this.pictureBoxPainelLogo.Location = new System.Drawing.Point(14, 21);
+            this.pictureBoxPainelLogo.Name = "pictureBoxPainelLogo";
+            this.pictureBoxPainelLogo.Size = new System.Drawing.Size(217, 75);
+            this.pictureBoxPainelLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxPainelLogo.TabIndex = 0;
+            this.pictureBoxPainelLogo.TabStop = false;
             // 
-            // label1
+            // panel7
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(854, 1);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "version 1.0.0";
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel7.Location = new System.Drawing.Point(7, 555);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(243, 16);
+            this.panel7.TabIndex = 13;
             // 
             // FormTelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.ClientSize = new System.Drawing.Size(1184, 621);
+            this.ClientSize = new System.Drawing.Size(1191, 661);
             this.Controls.Add(this.panelMenuTelaPrincipal);
             this.Controls.Add(this.panelInformacao);
             this.Controls.Add(this.panelFormTelaPrincipal);
@@ -522,9 +555,8 @@
             this.panelInformacao.ResumeLayout(false);
             this.panelInformacao.PerformLayout();
             this.panelLogo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPainelLogo)).EndInit();
             this.panelMenuTelaPrincipal.ResumeLayout(false);
-            this.panelMenuTelaPrincipal.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPainelLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -564,5 +596,7 @@
         private System.Windows.Forms.Label labelProdutosEstBaixo;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnUsuarios;
+        private System.Windows.Forms.Panel panel7;
     }
 }

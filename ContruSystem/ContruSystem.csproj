@@ -235,6 +235,8 @@
     <None Include="Resources\IconPrint2.png" />
     <None Include="Resources\IconPrint3.png" />
     <None Include="Resources\iconLimpar.png" />
+    <None Include="Resources\iconUsuarios.png" />
+    <None Include="Resources\iconUsuario.png" />
     <Content Include="Scritps\Create_Data_Base.txt" />
   </ItemGroup>
   <ItemGroup />
