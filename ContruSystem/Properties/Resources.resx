@@ -124,17 +124,23 @@
   <data name="iconProcurar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconProcurar1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="iconReport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconReport2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="IconPrint1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IconPrint3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IconPrint" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\IconPrint2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="iconLimpar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconLimpar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconUsuarios" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconUsuarios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iconProcurar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconProcurar2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iconReport" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconReport2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IconPrint" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconPrint2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iconReport1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconReport3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,7 +151,7 @@
   <data name="iconProcurar2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconProcurar3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iconLimpar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconLimpar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="iconUsuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconUsuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

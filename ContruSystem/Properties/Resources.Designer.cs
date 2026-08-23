@@ -153,6 +153,26 @@ namespace ContruSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap iconUsuario {
+            get {
+                object obj = ResourceManager.GetObject("iconUsuario", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconUsuarios {
+            get {
+                object obj = ResourceManager.GetObject("iconUsuarios", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo_ContruSystem {
             get {
                 object obj = ResourceManager.GetObject("logo ContruSystem", resourceCulture);
