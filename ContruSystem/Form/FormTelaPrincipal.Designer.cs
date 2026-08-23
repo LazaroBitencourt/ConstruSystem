@@ -54,26 +54,26 @@
             this.frmLblDataHoje = new System.Windows.Forms.Label();
             this.frmLblData = new System.Windows.Forms.Label();
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.pictureBoxPainelLogo = new System.Windows.Forms.PictureBox();
             this.panelMenuTelaPrincipal = new System.Windows.Forms.Panel();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.btnUsuarios = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.btnUsuarios = new System.Windows.Forms.Button();
             this.btnRelatorio = new System.Windows.Forms.Button();
             this.btnFuncionarios = new System.Windows.Forms.Button();
             this.btnProdutos = new System.Windows.Forms.Button();
             this.btnVendas = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
-            this.pictureBoxPainelLogo = new System.Windows.Forms.PictureBox();
-            this.panel7 = new System.Windows.Forms.Panel();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panelFormTelaPrincipal.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panelQtdVendasHoje.SuspendLayout();
             this.panelVendasHoje.SuspendLayout();
             this.panelInformacao.SuspendLayout();
             this.panelLogo.SuspendLayout();
-            this.panelMenuTelaPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPainelLogo)).BeginInit();
+            this.panelMenuTelaPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -330,6 +330,16 @@
             this.panelLogo.Size = new System.Drawing.Size(243, 115);
             this.panelLogo.TabIndex = 0;
             // 
+            // pictureBoxPainelLogo
+            // 
+            this.pictureBoxPainelLogo.Image = global::ContruSystem.Properties.Resources.logo_ContruSystem;
+            this.pictureBoxPainelLogo.Location = new System.Drawing.Point(14, 21);
+            this.pictureBoxPainelLogo.Name = "pictureBoxPainelLogo";
+            this.pictureBoxPainelLogo.Size = new System.Drawing.Size(217, 75);
+            this.pictureBoxPainelLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxPainelLogo.TabIndex = 0;
+            this.pictureBoxPainelLogo.TabStop = false;
+            // 
             // panelMenuTelaPrincipal
             // 
             this.panelMenuTelaPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
@@ -354,33 +364,6 @@
             this.panelMenuTelaPrincipal.Size = new System.Drawing.Size(250, 661);
             this.panelMenuTelaPrincipal.TabIndex = 0;
             // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // btnUsuarios
-            // 
-            this.btnUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(107)))), ((int)(((byte)(32)))));
-            this.btnUsuarios.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnUsuarios.FlatAppearance.BorderSize = 0;
-            this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUsuarios.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUsuarios.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.btnUsuarios.Image = global::ContruSystem.Properties.Resources.iconUsuario;
-            this.btnUsuarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUsuarios.Location = new System.Drawing.Point(7, 495);
-            this.btnUsuarios.Margin = new System.Windows.Forms.Padding(3, 3, 3, 5);
-            this.btnUsuarios.Name = "btnUsuarios";
-            this.btnUsuarios.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnUsuarios.Size = new System.Drawing.Size(243, 60);
-            this.btnUsuarios.TabIndex = 14;
-            this.btnUsuarios.Text = "Usuários";
-            this.btnUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUsuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnUsuarios.UseVisualStyleBackColor = false;
-            // 
             // btnSair
             // 
             this.btnSair.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(107)))), ((int)(((byte)(32)))));
@@ -402,6 +385,36 @@
             this.btnSair.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSair.UseVisualStyleBackColor = false;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
+            // 
+            // panel7
+            // 
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel7.Location = new System.Drawing.Point(7, 555);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(243, 16);
+            this.panel7.TabIndex = 13;
+            // 
+            // btnUsuarios
+            // 
+            this.btnUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(107)))), ((int)(((byte)(32)))));
+            this.btnUsuarios.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnUsuarios.FlatAppearance.BorderSize = 0;
+            this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUsuarios.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsuarios.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.btnUsuarios.Image = global::ContruSystem.Properties.Resources.iconUsuario;
+            this.btnUsuarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUsuarios.Location = new System.Drawing.Point(7, 495);
+            this.btnUsuarios.Margin = new System.Windows.Forms.Padding(3, 3, 3, 5);
+            this.btnUsuarios.Name = "btnUsuarios";
+            this.btnUsuarios.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.btnUsuarios.Size = new System.Drawing.Size(243, 60);
+            this.btnUsuarios.TabIndex = 14;
+            this.btnUsuarios.Text = "Usuários";
+            this.btnUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUsuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnUsuarios.UseVisualStyleBackColor = false;
+            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
             // btnRelatorio
             // 
@@ -512,23 +525,11 @@
             this.btnHome.UseVisualStyleBackColor = false;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
-            // pictureBoxPainelLogo
+            // timer1
             // 
-            this.pictureBoxPainelLogo.Image = global::ContruSystem.Properties.Resources.logo_ContruSystem;
-            this.pictureBoxPainelLogo.Location = new System.Drawing.Point(14, 21);
-            this.pictureBoxPainelLogo.Name = "pictureBoxPainelLogo";
-            this.pictureBoxPainelLogo.Size = new System.Drawing.Size(217, 75);
-            this.pictureBoxPainelLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxPainelLogo.TabIndex = 0;
-            this.pictureBoxPainelLogo.TabStop = false;
-            // 
-            // panel7
-            // 
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(7, 555);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(243, 16);
-            this.panel7.TabIndex = 13;
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // FormTelaPrincipal
             // 
@@ -555,8 +556,8 @@
             this.panelInformacao.ResumeLayout(false);
             this.panelInformacao.PerformLayout();
             this.panelLogo.ResumeLayout(false);
-            this.panelMenuTelaPrincipal.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPainelLogo)).EndInit();
+            this.panelMenuTelaPrincipal.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

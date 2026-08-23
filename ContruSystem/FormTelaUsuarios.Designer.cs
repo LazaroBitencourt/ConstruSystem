@@ -1,6 +1,6 @@
 ﻿namespace ContruSystem
 {
-    partial class FormTelaFuncionarios
+    partial class FormTelaUsuarios
     {
         /// <summary>
         /// Required designer variable.
@@ -446,7 +446,7 @@
             this.frmLblFuncionario.TabIndex = 91;
             this.frmLblFuncionario.Text = "Funcionários Cadastrados";
             // 
-            // FormTelaFuncionarios
+            // FormTelaUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
@@ -475,8 +475,8 @@
             this.Controls.Add(this.frmLblNome);
             this.Controls.Add(this.panelQuantidade);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormTelaFuncionarios";
-            this.Text = "FormTelaFuncionarios";
+            this.Name = "FormTelaUsuarios";
+            this.Text = "FormTelaUsuarios";
             this.panelProcurar.ResumeLayout(false);
             this.panelProcurar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

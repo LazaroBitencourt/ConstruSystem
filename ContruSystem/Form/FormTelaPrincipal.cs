@@ -97,6 +97,11 @@ namespace ContruSystem
             formShow(new FormTelaFuncionarios());
 
         }
+        private void btnUsuarios_Click(object sender, EventArgs e)
+        {
+            botaoAtivado(btnUsuarios);
+            formShow(new FormTelaUsuario());
+        }
 
         private void btnSair_Click(object sender, EventArgs e)
         {
@@ -149,6 +154,6 @@ namespace ContruSystem
             CarregarDashboard();
         }
 
-
+        
     }
 }
