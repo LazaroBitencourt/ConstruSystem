@@ -44,30 +44,31 @@ namespace ContruSystem
                 {
                     conexao.Open();
 
-                    string sql = "SELECT nome FROM usuarios WHERE login = @login AND senha = @senha";
+                    string sql = "SELECT nome, tipo_usuario FROM usuarios WHERE login = @login AND senha = @senha";
 
                     MySqlCommand comando = new MySqlCommand(sql, conexao);
 
                     comando.Parameters.AddWithValue("@login", txtUsuario.Text.Trim());
                     comando.Parameters.AddWithValue("@senha", txtSenha.Text.Trim());
 
-                    object resultado = comando.ExecuteScalar();
-
-                    if (resultado != null)
+                    using (MySqlDataReader leitor = comando.ExecuteReader())
                     {
-                        string nomeUsuario = resultado.ToString();
+                        if (leitor.Read())
+                        {
+                            string nomeUsuario = leitor["nome"].ToString();
+                            string tipoUsuario = leitor["tipo_usuario"].ToString();
 
-                        MessageBox.Show("Bem-vindo, " + nomeUsuario + "!", "Login realizado", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                        FormTelaPrincipal menu = new FormTelaPrincipal(nomeUsuario);
-                        menu.Show();
-                        this.Hide();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Login ou senha inválidos.", "Acesso negado", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        txtSenha.Clear();
-                        txtUsuario.Focus();
+                            MessageBox.Show("Bem-vindo, " + nomeUsuario + "!", "Login realizado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            FormTelaPrincipal menu = new FormTelaPrincipal(nomeUsuario, tipoUsuario);
+                            menu.Show();
+                            this.Hide();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Login ou senha inválidos.", "Acesso negado", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            txtSenha.Clear();
+                            txtUsuario.Focus();
+                        }
                     }
                 }
             }
@@ -92,7 +93,6 @@ namespace ContruSystem
             }
 
         }
-
 
     }
 

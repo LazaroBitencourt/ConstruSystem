@@ -24,11 +24,13 @@ namespace ContruSystem
     {
         private Form frmAtivo;
         private string nomeUsuarioLogado;
+        private string tipoUsuarioLogado;
 
-        public FormTelaPrincipal(string nomeUsuario)
+        public FormTelaPrincipal(string nomeUsuario, string tipoUsuario)
         {
             InitializeComponent();
             nomeUsuarioLogado = nomeUsuario;
+            tipoUsuarioLogado = tipoUsuario;
         }
         private void FormTelaPrincipal_Load(object sender, EventArgs e)
         {
@@ -36,6 +38,15 @@ namespace ContruSystem
             frmLblDataHoje.Text = DateTime.Now.ToString("dd/MM/yyyy");
             frmLblHoraAtual.Text = DateTime.Now.ToString("HH:mm:ss");
             CarregarDashboard();
+
+            bool ehAdministrador = tipoUsuarioLogado.Equals("administrador", StringComparison.OrdinalIgnoreCase);
+            btnUsuarios.Enabled = ehAdministrador;
+
+            if (!ehAdministrador)
+            {
+                btnUsuarios.BackColor = Color.FromArgb(180, 180, 180);
+            }
+
         }
         private void formShow(Form frm)
         {
@@ -97,6 +108,11 @@ namespace ContruSystem
             formShow(new FormTelaFuncionarios());
 
         }
+        private void btnUsuarios_Click(object sender, EventArgs e)
+        {
+            botaoAtivado(btnUsuarios);
+            formShow(new FormTelaUsuario());
+        }
 
         private void btnSair_Click(object sender, EventArgs e)
         {
@@ -149,6 +165,6 @@ namespace ContruSystem
             CarregarDashboard();
         }
 
-
+        
     }
 }
