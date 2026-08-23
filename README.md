@@ -160,7 +160,4 @@ Desenvolvido por **Lázaro Bitencourt**
 
 ---
 
-## Autor
 
-Desenvolvido por **Lázaro Bitencourt**
-[github.com/LazaroBitencourt](https://github.com/LazaroBitencourt)
