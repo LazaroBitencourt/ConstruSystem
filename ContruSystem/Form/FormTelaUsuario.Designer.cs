@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.frmLblUsuarios = new System.Windows.Forms.Label();
             this.frmLblDadosUsuarios = new System.Windows.Forms.Label();
             this.frmLblPesquisar = new System.Windows.Forms.Label();
@@ -54,6 +54,9 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtData = new System.Windows.Forms.TextBox();
             this.frmLblData = new System.Windows.Forms.Label();
+            this.panelProduto = new System.Windows.Forms.Panel();
+            this.cmbTipoUsuario = new System.Windows.Forms.ComboBox();
+            this.frmLblTipoUsuario = new System.Windows.Forms.Label();
             this.panelProcurar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
@@ -61,6 +64,7 @@
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panelProduto.SuspendLayout();
             this.SuspendLayout();
             // 
             // frmLblUsuarios
@@ -129,6 +133,7 @@
             this.txtPesquisar.Name = "txtPesquisar";
             this.txtPesquisar.Size = new System.Drawing.Size(286, 19);
             this.txtPesquisar.TabIndex = 18;
+            this.txtPesquisar.TextChanged += new System.EventHandler(this.txtPesquisar_TextChanged);
             // 
             // btnEditar
             // 
@@ -145,6 +150,7 @@
             this.btnEditar.TabIndex = 105;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnExcluir
             // 
@@ -161,6 +167,7 @@
             this.btnExcluir.TabIndex = 104;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = false;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnSalvar
             // 
@@ -177,28 +184,29 @@
             this.btnSalvar.TabIndex = 103;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // dataGridView
             // 
             this.dataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle12;
             this.dataGridView.EnableHeadersVisualStyles = false;
             this.dataGridView.Location = new System.Drawing.Point(522, 135);
             this.dataGridView.Name = "dataGridView";
@@ -206,6 +214,7 @@
             this.dataGridView.RowHeadersWidth = 51;
             this.dataGridView.Size = new System.Drawing.Size(382, 311);
             this.dataGridView.TabIndex = 102;
+            this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
             // 
             // label1
             // 
@@ -230,6 +239,7 @@
             this.btnLimpar.TabIndex = 100;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // panelData
             // 
@@ -334,9 +344,9 @@
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.txtData);
-            this.panel3.Location = new System.Drawing.Point(169, 210);
+            this.panel3.Location = new System.Drawing.Point(175, 248);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(293, 21);
+            this.panel3.Size = new System.Drawing.Size(101, 21);
             this.panel3.TabIndex = 117;
             // 
             // txtData
@@ -349,7 +359,7 @@
             this.txtData.Location = new System.Drawing.Point(0, 0);
             this.txtData.Multiline = true;
             this.txtData.Name = "txtData";
-            this.txtData.Size = new System.Drawing.Size(291, 19);
+            this.txtData.Size = new System.Drawing.Size(99, 19);
             this.txtData.TabIndex = 18;
             // 
             // frmLblData
@@ -357,11 +367,43 @@
             this.frmLblData.AutoSize = true;
             this.frmLblData.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.frmLblData.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.frmLblData.Location = new System.Drawing.Point(26, 210);
+            this.frmLblData.Location = new System.Drawing.Point(26, 248);
             this.frmLblData.Name = "frmLblData";
-            this.frmLblData.Size = new System.Drawing.Size(59, 19);
+            this.frmLblData.Size = new System.Drawing.Size(120, 19);
             this.frmLblData.TabIndex = 116;
-            this.frmLblData.Text = "Login:";
+            this.frmLblData.Text = "Data Criação:";
+            // 
+            // panelProduto
+            // 
+            this.panelProduto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelProduto.Controls.Add(this.cmbTipoUsuario);
+            this.panelProduto.Location = new System.Drawing.Point(175, 210);
+            this.panelProduto.Name = "panelProduto";
+            this.panelProduto.Size = new System.Drawing.Size(173, 21);
+            this.panelProduto.TabIndex = 75;
+            // 
+            // cmbTipoUsuario
+            // 
+            this.cmbTipoUsuario.BackColor = System.Drawing.Color.White;
+            this.cmbTipoUsuario.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cmbTipoUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbTipoUsuario.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbTipoUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.cmbTipoUsuario.Location = new System.Drawing.Point(0, 0);
+            this.cmbTipoUsuario.Name = "cmbTipoUsuario";
+            this.cmbTipoUsuario.Size = new System.Drawing.Size(171, 22);
+            this.cmbTipoUsuario.TabIndex = 71;
+            // 
+            // frmLblTipoUsuario
+            // 
+            this.frmLblTipoUsuario.AutoSize = true;
+            this.frmLblTipoUsuario.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.frmLblTipoUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.frmLblTipoUsuario.Location = new System.Drawing.Point(26, 210);
+            this.frmLblTipoUsuario.Name = "frmLblTipoUsuario";
+            this.frmLblTipoUsuario.Size = new System.Drawing.Size(143, 19);
+            this.frmLblTipoUsuario.TabIndex = 74;
+            this.frmLblTipoUsuario.Text = "Tipo de Usuário:";
             // 
             // FormTelaUsuario
             // 
@@ -369,6 +411,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
             this.ClientSize = new System.Drawing.Size(928, 516);
+            this.Controls.Add(this.panelProduto);
+            this.Controls.Add(this.frmLblTipoUsuario);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.frmLblData);
             this.Controls.Add(this.panel2);
@@ -403,6 +447,7 @@
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panelProduto.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -434,5 +479,8 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox txtData;
         private System.Windows.Forms.Label frmLblData;
+        private System.Windows.Forms.Panel panelProduto;
+        private System.Windows.Forms.ComboBox cmbTipoUsuario;
+        private System.Windows.Forms.Label frmLblTipoUsuario;
     }
 }

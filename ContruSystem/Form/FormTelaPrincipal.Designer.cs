@@ -35,7 +35,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.labelDesenvolvedor = new System.Windows.Forms.Label();
             this.panelFormTelaPrincipal = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.labelValorProdutosBaixoEst = new System.Windows.Forms.Label();
@@ -115,18 +114,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(243, 16);
             this.panel5.TabIndex = 11;
-            // 
-            // labelDesenvolvedor
-            // 
-            this.labelDesenvolvedor.AutoSize = true;
-            this.labelDesenvolvedor.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDesenvolvedor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.labelDesenvolvedor.Location = new System.Drawing.Point(452, 60);
-            this.labelDesenvolvedor.Name = "labelDesenvolvedor";
-            this.labelDesenvolvedor.Size = new System.Drawing.Size(172, 16);
-            this.labelDesenvolvedor.TabIndex = 14;
-            this.labelDesenvolvedor.Text = "Desenvolvido por Lázaro-Dev";
-            this.labelDesenvolvedor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panelFormTelaPrincipal
             // 
@@ -237,7 +224,6 @@
             // 
             // panelInformacao
             // 
-            this.panelInformacao.Controls.Add(this.labelDesenvolvedor);
             this.panelInformacao.Controls.Add(this.label1);
             this.panelInformacao.Controls.Add(this.labelPainelInformacao);
             this.panelInformacao.Controls.Add(this.frmLblSaudacao);
@@ -573,7 +559,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button btnFuncionarios;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label labelDesenvolvedor;
         private System.Windows.Forms.Panel panelFormTelaPrincipal;
         private System.Windows.Forms.Panel panelInformacao;
         private System.Windows.Forms.Button btnHome;
