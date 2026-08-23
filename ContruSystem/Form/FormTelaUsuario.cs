@@ -139,14 +139,22 @@ namespace ContruSystem
         private void dataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex < 0) return;
-            if (dataGridView.Rows[e.RowIndex].Cells["Codigo"].Value == null) return;
+            if (dataGridView.Rows[e.RowIndex].Cells["Codigo"].Value is DBNull) return;
 
             idUsuarioSelecionado = Convert.ToInt32(dataGridView.Rows[e.RowIndex].Cells["Codigo"].Value);
             txtNome.Text = dataGridView.Rows[e.RowIndex].Cells["Nome"].Value.ToString();
             txtLogin.Text = dataGridView.Rows[e.RowIndex].Cells["Login"].Value.ToString();
             txtSenha.Text = dataGridView.Rows[e.RowIndex].Cells["Senha"].Value.ToString();
             cmbTipoUsuario.SelectedItem = dataGridView.Rows[e.RowIndex].Cells["Tipo"].Value.ToString();
-            txtData.Text = Convert.ToDateTime(dataGridView.Rows[e.RowIndex].Cells["DataCriacao"].Value).ToString("dd/MM/yyyy");
+
+            if (dataGridView.Rows[e.RowIndex].Cells["DataCriacao"].Value is DBNull)
+            {
+                txtData.Clear();
+            }
+            else
+            {
+                txtData.Text = Convert.ToDateTime(dataGridView.Rows[e.RowIndex].Cells["DataCriacao"].Value).ToString("dd/MM/yyyy");
+            }
         }
 
         private void btnEditar_Click(object sender, EventArgs e)

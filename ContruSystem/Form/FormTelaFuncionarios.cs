@@ -158,7 +158,7 @@ namespace ContruSystem
 
         private void dataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0)
+            if (e.RowIndex >= 0 && !(dataGridView.Rows[e.RowIndex].Cells["Codigo"].Value is DBNull))
             {
                 txtCodigoFuncionario.Text = dataGridView.Rows[e.RowIndex].Cells["Codigo"].Value.ToString();
                 txtNome.Text = dataGridView.Rows[e.RowIndex].Cells["Nome"].Value.ToString();
@@ -358,6 +358,7 @@ namespace ContruSystem
         {
             CarregarCargos();
         }
+
     }
 }
 
