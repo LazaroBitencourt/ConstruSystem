@@ -264,5 +264,6 @@ namespace ContruSystem
                 MessageBox.Show("Erro ao excluir usuário.\n\n" + erro.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
     }
 }

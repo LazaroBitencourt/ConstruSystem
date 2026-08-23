@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             this.frmLblPesquisar = new System.Windows.Forms.Label();
             this.panelProcurar = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -76,7 +76,7 @@
             this.frmLblPesquisar.AutoSize = true;
             this.frmLblPesquisar.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.frmLblPesquisar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.frmLblPesquisar.Location = new System.Drawing.Point(519, 87);
+            this.frmLblPesquisar.Location = new System.Drawing.Point(20, 205);
             this.frmLblPesquisar.Name = "frmLblPesquisar";
             this.frmLblPesquisar.Size = new System.Drawing.Size(94, 19);
             this.frmLblPesquisar.TabIndex = 85;
@@ -87,7 +87,7 @@
             this.panelProcurar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelProcurar.Controls.Add(this.pictureBox1);
             this.panelProcurar.Controls.Add(this.txtPesquisar);
-            this.panelProcurar.Location = new System.Drawing.Point(617, 87);
+            this.panelProcurar.Location = new System.Drawing.Point(121, 205);
             this.panelProcurar.Name = "panelProcurar";
             this.panelProcurar.Size = new System.Drawing.Size(288, 21);
             this.panelProcurar.TabIndex = 84;
@@ -125,10 +125,10 @@
             this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditar.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.btnEditar.Location = new System.Drawing.Point(145, 352);
+            this.btnEditar.Location = new System.Drawing.Point(215, 455);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Padding = new System.Windows.Forms.Padding(1);
-            this.btnEditar.Size = new System.Drawing.Size(90, 37);
+            this.btnEditar.Size = new System.Drawing.Size(160, 37);
             this.btnEditar.TabIndex = 82;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = false;
@@ -142,10 +142,10 @@
             this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExcluir.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExcluir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.btnExcluir.Location = new System.Drawing.Point(259, 352);
+            this.btnExcluir.Location = new System.Drawing.Point(406, 455);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Padding = new System.Windows.Forms.Padding(1);
-            this.btnExcluir.Size = new System.Drawing.Size(90, 37);
+            this.btnExcluir.Size = new System.Drawing.Size(160, 37);
             this.btnExcluir.TabIndex = 81;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = false;
@@ -159,10 +159,10 @@
             this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalvar.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.btnSalvar.Location = new System.Drawing.Point(31, 352);
+            this.btnSalvar.Location = new System.Drawing.Point(24, 455);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Padding = new System.Windows.Forms.Padding(1);
-            this.btnSalvar.Size = new System.Drawing.Size(90, 37);
+            this.btnSalvar.Size = new System.Drawing.Size(160, 37);
             this.btnSalvar.TabIndex = 80;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = false;
@@ -172,38 +172,38 @@
             // 
             this.dataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle15;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle16;
             this.dataGridView.EnableHeadersVisualStyles = false;
-            this.dataGridView.Location = new System.Drawing.Point(523, 127);
+            this.dataGridView.Location = new System.Drawing.Point(25, 241);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.ReadOnly = true;
             this.dataGridView.RowHeadersWidth = 51;
-            this.dataGridView.Size = new System.Drawing.Size(382, 311);
+            this.dataGridView.Size = new System.Drawing.Size(875, 190);
             this.dataGridView.TabIndex = 79;
             this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.label1.Location = new System.Drawing.Point(492, 19);
+            this.label1.Location = new System.Drawing.Point(27, 155);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(2, 462);
+            this.label1.Size = new System.Drawing.Size(874, 2);
             this.label1.TabIndex = 78;
             // 
             // btnLimpar
@@ -214,10 +214,10 @@
             this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpar.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.btnLimpar.Location = new System.Drawing.Point(372, 352);
+            this.btnLimpar.Location = new System.Drawing.Point(597, 455);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Padding = new System.Windows.Forms.Padding(1);
-            this.btnLimpar.Size = new System.Drawing.Size(90, 37);
+            this.btnLimpar.Size = new System.Drawing.Size(160, 37);
             this.btnLimpar.TabIndex = 77;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = false;
@@ -227,7 +227,7 @@
             // 
             this.panelData.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelData.Controls.Add(this.txtNome);
-            this.panelData.Location = new System.Drawing.Point(170, 127);
+            this.panelData.Location = new System.Drawing.Point(152, 85);
             this.panelData.Name = "panelData";
             this.panelData.Size = new System.Drawing.Size(293, 21);
             this.panelData.TabIndex = 72;
@@ -250,7 +250,7 @@
             this.frmLblSalario.AutoSize = true;
             this.frmLblSalario.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.frmLblSalario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.frmLblSalario.Location = new System.Drawing.Point(28, 244);
+            this.frmLblSalario.Location = new System.Drawing.Point(493, 46);
             this.frmLblSalario.Name = "frmLblSalario";
             this.frmLblSalario.Size = new System.Drawing.Size(104, 19);
             this.frmLblSalario.TabIndex = 70;
@@ -261,7 +261,7 @@
             this.frmLblCodigoFunc.AutoSize = true;
             this.frmLblCodigoFunc.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.frmLblCodigoFunc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.frmLblCodigoFunc.Location = new System.Drawing.Point(27, 90);
+            this.frmLblCodigoFunc.Location = new System.Drawing.Point(22, 46);
             this.frmLblCodigoFunc.Name = "frmLblCodigoFunc";
             this.frmLblCodigoFunc.Size = new System.Drawing.Size(71, 19);
             this.frmLblCodigoFunc.TabIndex = 67;
@@ -271,7 +271,7 @@
             // 
             this.PanelCodigo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PanelCodigo.Controls.Add(this.txtCodigoFuncionario);
-            this.PanelCodigo.Location = new System.Drawing.Point(170, 88);
+            this.PanelCodigo.Location = new System.Drawing.Point(152, 46);
             this.PanelCodigo.Name = "PanelCodigo";
             this.PanelCodigo.Size = new System.Drawing.Size(89, 21);
             this.PanelCodigo.TabIndex = 71;
@@ -296,7 +296,7 @@
             this.frmLblNome.AutoSize = true;
             this.frmLblNome.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.frmLblNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.frmLblNome.Location = new System.Drawing.Point(27, 127);
+            this.frmLblNome.Location = new System.Drawing.Point(22, 85);
             this.frmLblNome.Name = "frmLblNome";
             this.frmLblNome.Size = new System.Drawing.Size(62, 19);
             this.frmLblNome.TabIndex = 68;
@@ -306,7 +306,7 @@
             // 
             this.panelQuantidade.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelQuantidade.Controls.Add(this.txtSalario);
-            this.panelQuantidade.Location = new System.Drawing.Point(169, 244);
+            this.panelQuantidade.Location = new System.Drawing.Point(649, 46);
             this.panelQuantidade.Name = "panelQuantidade";
             this.panelQuantidade.Size = new System.Drawing.Size(145, 21);
             this.panelQuantidade.TabIndex = 74;
@@ -330,7 +330,7 @@
             this.frmLblCargo.AutoSize = true;
             this.frmLblCargo.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.frmLblCargo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.frmLblCargo.Location = new System.Drawing.Point(27, 166);
+            this.frmLblCargo.Location = new System.Drawing.Point(22, 122);
             this.frmLblCargo.Name = "frmLblCargo";
             this.frmLblCargo.Size = new System.Drawing.Size(63, 19);
             this.frmLblCargo.TabIndex = 69;
@@ -353,7 +353,7 @@
             // 
             this.panelProduto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelProduto.Controls.Add(this.cmbCargo);
-            this.panelProduto.Location = new System.Drawing.Point(169, 166);
+            this.panelProduto.Location = new System.Drawing.Point(152, 122);
             this.panelProduto.Name = "panelProduto";
             this.panelProduto.Size = new System.Drawing.Size(294, 21);
             this.panelProduto.TabIndex = 73;
@@ -362,7 +362,7 @@
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.mskCpf);
-            this.panel2.Location = new System.Drawing.Point(169, 205);
+            this.panel2.Location = new System.Drawing.Point(649, 122);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(144, 21);
             this.panel2.TabIndex = 87;
@@ -385,7 +385,7 @@
             this.frmLblCpf.AutoSize = true;
             this.frmLblCpf.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.frmLblCpf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.frmLblCpf.Location = new System.Drawing.Point(27, 205);
+            this.frmLblCpf.Location = new System.Drawing.Point(493, 122);
             this.frmLblCpf.Name = "frmLblCpf";
             this.frmLblCpf.Size = new System.Drawing.Size(46, 19);
             this.frmLblCpf.TabIndex = 86;
@@ -396,7 +396,7 @@
             this.frmLblDataAdmissao.AutoSize = true;
             this.frmLblDataAdmissao.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.frmLblDataAdmissao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.frmLblDataAdmissao.Location = new System.Drawing.Point(27, 284);
+            this.frmLblDataAdmissao.Location = new System.Drawing.Point(493, 85);
             this.frmLblDataAdmissao.Name = "frmLblDataAdmissao";
             this.frmLblDataAdmissao.Size = new System.Drawing.Size(137, 19);
             this.frmLblDataAdmissao.TabIndex = 88;
@@ -406,7 +406,7 @@
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.dtpDataAdmissao);
-            this.panel3.Location = new System.Drawing.Point(170, 283);
+            this.panel3.Location = new System.Drawing.Point(649, 85);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(145, 21);
             this.panel3.TabIndex = 89;
@@ -429,7 +429,7 @@
             this.frmLblDadosFucionario.AutoSize = true;
             this.frmLblDadosFucionario.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.frmLblDadosFucionario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.frmLblDadosFucionario.Location = new System.Drawing.Point(26, 35);
+            this.frmLblDadosFucionario.Location = new System.Drawing.Point(22, 10);
             this.frmLblDadosFucionario.Name = "frmLblDadosFucionario";
             this.frmLblDadosFucionario.Size = new System.Drawing.Size(217, 23);
             this.frmLblDadosFucionario.TabIndex = 90;
@@ -440,7 +440,7 @@
             this.frmLblFuncionario.AutoSize = true;
             this.frmLblFuncionario.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.frmLblFuncionario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
-            this.frmLblFuncionario.Location = new System.Drawing.Point(518, 35);
+            this.frmLblFuncionario.Location = new System.Drawing.Point(22, 167);
             this.frmLblFuncionario.Name = "frmLblFuncionario";
             this.frmLblFuncionario.Size = new System.Drawing.Size(256, 23);
             this.frmLblFuncionario.TabIndex = 91;
