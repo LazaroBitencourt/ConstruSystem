@@ -13,6 +13,7 @@ namespace ContruSystem
 {
     public partial class FormTelaUsuario : Form
     {
+        // 0 = nenhum usuário selecionado (modo cadastro); != 0 = usuário selecionado para edição/exclusão
         private int idUsuarioSelecionado = 0;
         public FormTelaUsuario()
         {
@@ -78,7 +79,8 @@ namespace ContruSystem
                 txtLogin.Focus();
                 return false;
             }
-
+            // senha só é obrigatória no cadastro (idUsuarioSelecionado == 0);
+            // na edição, campo em branco significa "manter a senha atual"
             if (idUsuarioSelecionado == 0 && string.IsNullOrWhiteSpace(txtSenha.Text))
             {
                 MessageBox.Show("Informe a senha do usuário.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -125,6 +127,7 @@ namespace ContruSystem
             }
             catch (MySqlException erro)
             {
+                // erro 1062 = violação de constraint UNIQUE (login já usado por outro usuário)
                 if (erro.Number == 1062) // login duplicado (UNIQUE)
                 {
                     MessageBox.Show("Já existe um usuário com este login.", "Login duplicado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -209,6 +212,7 @@ namespace ContruSystem
                 MessageBox.Show("Erro ao editar usuário.\n\n" + erro.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        // valida nome, login e tipo
         private bool ValidarCamposEdicao()
         {
             if (string.IsNullOrWhiteSpace(txtNome.Text) || string.IsNullOrWhiteSpace(txtLogin.Text) || cmbTipoUsuario.SelectedIndex == -1)

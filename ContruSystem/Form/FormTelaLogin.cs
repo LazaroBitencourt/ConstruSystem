@@ -17,9 +17,9 @@ namespace ContruSystem
         public FormTelaLogin()
         {
             InitializeComponent();
-            this.ActiveControl = txtUsuario;
-            txtSenha.UseSystemPasswordChar = true;
-            this.AcceptButton = btnEntrar;
+            this.ActiveControl = txtUsuario; // define o foco inicial no campo de usuário ao abrir a tela
+            txtSenha.UseSystemPasswordChar = true; // esconde a senha digitada por padrão
+            this.AcceptButton = btnEntrar; // permite logar pressionando Enter
         }
 
         private void btnEntrar_Click(object sender, EventArgs e)
@@ -43,7 +43,7 @@ namespace ContruSystem
                 using (MySqlConnection conexao = ConexaoBanco.CriarConexao())
                 {
                     conexao.Open();
-
+                    // senha comparada em texto puro — não há hash/criptografia armazenada no banco
                     string sql = "SELECT nome, tipo_usuario FROM usuarios WHERE login = @login AND senha = @senha";
 
                     MySqlCommand comando = new MySqlCommand(sql, conexao);
@@ -55,13 +55,15 @@ namespace ContruSystem
                     {
                         if (leitor.Read())
                         {
+                            // tipoUsuario é repassado ao menu principal para liberar/bloquear
+                            // funcionalidades restritas (ex: tela de Usuários) conforme o perfil
                             string nomeUsuario = leitor["nome"].ToString();
                             string tipoUsuario = leitor["tipo_usuario"].ToString();
 
                             MessageBox.Show("Bem-vindo, " + nomeUsuario + "!", "Login realizado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             FormTelaPrincipal menu = new FormTelaPrincipal(nomeUsuario, tipoUsuario);
                             menu.Show();
-                            this.Hide();
+                            this.Hide(); // login some da tela, mas continua na memória até o app fechar
                         }
                         else
                         {
@@ -80,6 +82,7 @@ namespace ContruSystem
 
         private void FormTelaLoginMostrarSenha_CheckedChanged(object sender, EventArgs e)
         {
+            // alterna a visibilidade da senha conforme o checkbox "Mostrar senha"
             txtSenha.UseSystemPasswordChar = !btnMostrarSenha.Checked;
         }
 

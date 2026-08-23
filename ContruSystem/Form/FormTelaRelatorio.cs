@@ -15,6 +15,9 @@ namespace ContruSystem
 {
     public partial class FormTelaRelatorio : Form
     {
+        // PrintDocument e linhaAtualImpressao ficam como campos da classe (não locais)
+        // porque o evento PrintPage é chamado várias vezes seguidas pelo próprio
+        // Windows Forms (uma por página) até HasMorePages = false
         private PrintDocument documentoImpressao = new PrintDocument();
         private int linhaAtualImpressao = 0;
         public FormTelaRelatorio()
@@ -29,6 +32,8 @@ namespace ContruSystem
             dtpDataFinal.Value = DateTime.Now.Date;
             txtTotalGeral.Text = "0,00";
             frmLblDataRelatorio.Text = "Período: " + DateTime.Now.ToShortDateString() + " a " + DateTime.Now.ToShortDateString();
+            // EnableHeadersVisualStyles = false é necessário para que a fonte em negrito
+            // do cabeçalho seja respeitada (senão o tema do Windows sobrescreve o estilo)
             dataGridView.EnableHeadersVisualStyles=false;
             dataGridView.ColumnHeadersDefaultCellStyle.Font = new Font(dataGridView.Font, FontStyle.Bold);
         }
@@ -47,7 +52,8 @@ namespace ContruSystem
                 using (MySqlConnection conexao = ConexaoBanco.CriarConexao())
                 {
                     conexao.Open();
-
+                    // "< dataFinal + 1 dia" em vez de "<= dataFinal" para incluir
+                    // todas as vendas do dia final, mesmo as com hora depois de 00:00
                     string sql = "SELECT v.id_venda AS Codigo, v.data_venda AS DataVenda, f.nome AS Funcionario, v.subtotal AS Subtotal, v.desconto_total AS Desconto, v.total_venda AS Total FROM vendas v INNER JOIN funcionarios f ON v.id_funcionario = f.id_funcionario WHERE v.data_venda >= @dataInicial AND v.data_venda < @dataFinal ORDER BY v.data_venda DESC";
 
                     MySqlCommand comando = new MySqlCommand(sql, conexao);
@@ -76,6 +82,7 @@ namespace ContruSystem
             }
 
         }
+        // Soma o total de todas as linhas já carregadas na grid (não faz nova consulta ao banco)
         private void CalcularTotalGeral()
         {
             decimal totalGeral = 0;
@@ -106,7 +113,7 @@ namespace ContruSystem
         {
             this.Close();
         }
-
+        // Gera um arquivo .xlsx formatado com o conteúdo atual da grid
         private void ExportarParaExcel()
         {
             if (dataGridView.Rows.Count == 0)
@@ -160,7 +167,7 @@ namespace ContruSystem
                     int linha = linhaCabecalho + 1;
                     foreach (DataGridViewRow linhaGrid in dataGridView.Rows)
                     {
-                        if (linhaGrid.Cells["Codigo"].Value == null) continue;
+                        if (linhaGrid.Cells["Codigo"].Value == null) continue; // pula a linha vazia final do grid
 
                         planilha.Cell(linha, 1).Value = Convert.ToInt32(linhaGrid.Cells["Codigo"].Value);
                         planilha.Cell(linha, 2).Value = Convert.ToDateTime(linhaGrid.Cells["DataVenda"].Value);
@@ -191,6 +198,7 @@ namespace ContruSystem
             }
             catch (Exception erro)
             {
+                // catch genérico (não MySqlException) pois os erros aqui vêm do ClosedXML/sistema de arquivos, não do banco
                 MessageBox.Show("Erro ao exportar para Excel.\n\n" + erro.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
@@ -200,6 +208,7 @@ namespace ContruSystem
             ExportarParaExcel();
         }
 
+        // Abre a pré-visualização de impressão do relatório atual
         private void ImprimirRelatorio()
         {
             if (dataGridView.Rows.Count == 0)
@@ -208,7 +217,7 @@ namespace ContruSystem
                 return;
             }
 
-            linhaAtualImpressao = 0;
+            linhaAtualImpressao = 0; // reinicia o contador a cada nova impressão
 
             documentoImpressao.PrintPage += DocumentoImpressao_PrintPage;
 
@@ -218,8 +227,12 @@ namespace ContruSystem
             visualizacao.Height = 700;
             visualizacao.ShowDialog();
 
+            // remove o handler após o uso para não duplicar a inscrição
+            // caso o usuário clique em "Imprimir" novamente depois
             documentoImpressao.PrintPage -= DocumentoImpressao_PrintPage;
         }
+        // Desenha manualmente cada página do relatório, célula por célula
+        // (chamado automaticamente pelo PrintDocument, uma vez por página)
         private void DocumentoImpressao_PrintPage(object sender, PrintPageEventArgs e)
         {
             Graphics g = e.Graphics;
@@ -301,7 +314,7 @@ namespace ContruSystem
             posicaoY += 10;
             g.DrawString("Total Geral: " + txtTotalGeral.Text, fonteCabecalho, Brushes.Black, margemEsquerda, posicaoY);
 
-            e.HasMorePages = false;
+            e.HasMorePages = false; // sinaliza ao PrintDocument que não há mais páginas
         }
 
         private void btnImprimir_Click(object sender, EventArgs e)

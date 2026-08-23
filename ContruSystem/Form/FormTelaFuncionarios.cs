@@ -17,9 +17,10 @@ namespace ContruSystem
         {
             InitializeComponent();
         }
+
         private void FrmFuncionario_Load(object sender, EventArgs e)
         {
-            txtCodigoFuncionario.ReadOnly = true;
+            txtCodigoFuncionario.ReadOnly = true; // código é gerado automaticamente pelo banco
             dtpDataAdmissao.Value = DateTime.Now;
             CarregarFuncionarios();
         }
@@ -49,6 +50,7 @@ namespace ContruSystem
 
             decimal salario;
 
+            // TryParse evita exceção se o usuário digitar texto não numérico no campo
             if (!decimal.TryParse(txtSalario.Text, out salario))
             {
                 MessageBox.Show("Informe um salário válido.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -75,7 +77,7 @@ namespace ContruSystem
                 using (MySqlConnection conexao = ConexaoBanco.CriarConexao())
                 {
                     conexao.Open();
-
+                    // valida duplicidade de CPF antes do INSERT (reforço além da constraint UNIQUE do banco
                     string verificar = "SELECT COUNT(*) FROM funcionarios WHERE cpf = @cpf";
                     MySqlCommand comandoVerificar = new MySqlCommand(verificar, conexao);
                     comandoVerificar.Parameters.AddWithValue("@cpf", mskCpf.Text);
@@ -104,7 +106,8 @@ namespace ContruSystem
                 CarregarFuncionarios();
             }
             catch (MySqlException erro)
-            {
+            {   // captura especificamente MySqlException para mostrar mensagem amigável;
+
                 MessageBox.Show("Erro ao cadastrar funcionário.\n\n" + erro.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
@@ -133,6 +136,7 @@ namespace ContruSystem
 
         private void txtPesquisar_TextChanged(object sender, EventArgs e)
         {
+            // dispara uma consulta ao banco a cada tecla digitada;
             try
             {
                 using (MySqlConnection conexao = ConexaoBanco.CriarConexao())
@@ -158,6 +162,7 @@ namespace ContruSystem
 
         private void dataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            // evita erro ao clicar na linha vazia final do grid (reservada para novo registro)
             if (e.RowIndex >= 0 && !(dataGridView.Rows[e.RowIndex].Cells["Codigo"].Value is DBNull))
             {
                 txtCodigoFuncionario.Text = dataGridView.Rows[e.RowIndex].Cells["Codigo"].Value.ToString();
@@ -225,7 +230,7 @@ namespace ContruSystem
                 using (MySqlConnection conexao = ConexaoBanco.CriarConexao())
                 {
                     conexao.Open();
-
+                    // ignora o próprio registro na checagem de CPF duplicado, senão a edição nunca salvaria
                     string verificar = "SELECT COUNT(*) FROM funcionarios WHERE cpf = @cpf AND id_funcionario <> @codigo";
                     MySqlCommand comandoVerificar = new MySqlCommand(verificar, conexao);
                     comandoVerificar.Parameters.AddWithValue("@cpf", mskCpf.Text);
@@ -278,7 +283,7 @@ namespace ContruSystem
                     using (MySqlConnection conexao = ConexaoBanco.CriarConexao())
                     {
                         conexao.Open();
-
+                        // impede exclusão se houver vendas vinculadas (evita erro de FK e perda de histórico)
                         string verificar = "SELECT COUNT(*) FROM vendas WHERE id_funcionario = @codigo";
                         MySqlCommand comandoVerificar = new MySqlCommand(verificar, conexao);
                         comandoVerificar.Parameters.AddWithValue("@codigo", txtCodigoFuncionario.Text);
@@ -354,6 +359,7 @@ namespace ContruSystem
             }
         }
 
+        // repopula os cargos toda vez que o ComboBox é aberto, para refletir
         private void cmbCargo_DropDown(object sender, EventArgs e)
         {
             CarregarCargos();

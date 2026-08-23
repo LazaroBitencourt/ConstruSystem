@@ -12,13 +12,18 @@ namespace ContruSystem
 {
     public partial class FormTelaVendas : Form
     {
+
+        // disparado após uma venda ser concluída com sucesso; a tela principal
+        // escuta este evento para atualizar o dashboard sem precisar reabrir a tela
         public event EventHandler VendaFinalizada;
 
+        // tabela em memória que representa os itens da venda atual (carrinho),
+        // só é persistida no banco quando a venda é finalizada
         private DataTable tabelaItens = new DataTable();
         private int idProdutoSelecionado = 0;
         private int estoqueSelecionado = 0;
         private decimal precoProdutoSelecionado = 0;
-        private int linhaItemSelecionado = -1;
+        private int linhaItemSelecionado = -1; // -1 = nenhum item selecionado na grid da venda
         private DateTime dataVendaAtual;
 
         public FormTelaVendas()
@@ -41,7 +46,7 @@ namespace ContruSystem
             txtValTotal.Text = "0,00";
         }
 
-
+        // Monta a estrutura (colunas) da tabela de itens da venda em memória
         private void CriarTabelaItens()
         {
             tabelaItens.Columns.Add("Codigo", typeof(int));
@@ -83,6 +88,8 @@ namespace ContruSystem
             PesquisarProdutos();
         }
 
+        // Busca em tempo real: só produtos com estoque > 0 aparecem na pesquisa,
+        // já que produtos zerados não podem ser adicionados à venda
         private void PesquisarProdutos()
         {
             if (txtPesqProduto.Text.Trim() == "")
@@ -127,7 +134,7 @@ namespace ContruSystem
                 UDQuantidade.Focus();
             }
         }
-
+        // Adiciona o produto pesquisado como um novo item na venda atual (carrinho em memória)
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
             if (idProdutoSelecionado == 0)
@@ -161,6 +168,8 @@ namespace ContruSystem
             LimparProduto();
 
         }
+        // Impede adicionar o mesmo produto duas vezes; para alterar quantidade
+        // de um item já incluído, o usuário deve usar Editar (não Adicionar de novo)
         private bool ProdutoJaAdicionado(int codigoProduto)
         {
             foreach (DataRow linha in tabelaItens.Rows)
@@ -181,7 +190,7 @@ namespace ContruSystem
             decimal total = subtotal - valorDesconto;
             return total;
         }
-
+        // Recalcula o total da venda somando todos os itens já adicionados na tabelaItens
         private void AtualizarTotalVenda()
         {
             decimal totalVenda = 0;
@@ -206,6 +215,8 @@ namespace ContruSystem
                 linhaItemSelecionado = e.RowIndex;
                 idProdutoSelecionado = Convert.ToInt32(dataGridView.Rows[e.RowIndex].Cells["Codigo"].Value);
                 precoProdutoSelecionado = Convert.ToDecimal(dataGridView.Rows[e.RowIndex].Cells["Preco"].Value);
+                // busca o estoque atualizado no banco (não usa o valor salvo em memória)
+                // pois outra venda pode ter alterado o estoque desde a última consulta
                 estoqueSelecionado = ConsultarEstoque(idProdutoSelecionado);
                 txtPesqProduto.Text = dataGridView.Rows[e.RowIndex].Cells["Descricao"].Value.ToString();
                 txtPreco.Text = precoProdutoSelecionado.ToString("N2");
@@ -243,7 +254,7 @@ namespace ContruSystem
 
             return estoque;
         }
-
+        // Atualiza quantidade/desconto de um item já existente na venda (não persiste ainda no banco)
         private void btnEditar_Click(object sender, EventArgs e)
         {
             if (linhaItemSelecionado < 0)
@@ -295,7 +306,9 @@ namespace ContruSystem
             }
 
         }
-
+        // Confirma e persiste a venda no banco: registra a venda, dá baixa no
+        // estoque de cada item e grava os itens vendidos — tudo dentro de uma
+        // única transação, para garantir que nada fique "pela metade" em caso de erro
         private void btnFinalizar_Click(object sender, EventArgs e)
         {
             if (cmbFuncionario.SelectedIndex == -1)
@@ -337,7 +350,7 @@ namespace ContruSystem
                     }
 
                     decimal descontoTotal = subtotal - totalVenda;
-
+                    // registra o cabeçalho da venda e recupera o ID gerado
                     string sqlVenda = "INSERT INTO vendas (data_venda, id_funcionario, subtotal, desconto_total, total_venda) VALUES (@data, @funcionario, @subtotal, @desconto, @total)";
                     MySqlCommand comandoVenda = new MySqlCommand(sqlVenda, conexao, transacao);
                     comandoVenda.Parameters.AddWithValue("@data", dataVendaAtual);
@@ -348,12 +361,14 @@ namespace ContruSystem
                     comandoVenda.ExecuteNonQuery();
 
                     int codigoVenda = Convert.ToInt32(comandoVenda.LastInsertedId);
-
+                    // para cada item: dá baixa no estoque e grava o item vinculado à venda
                     foreach (DataRow item in tabelaItens.Rows)
                     {
                         int codigoProduto = Convert.ToInt32(item["Codigo"]);
                         int quantidade = Convert.ToInt32(item["Quantidade"]);
-
+                        // "AND estoque >= @quantidade" garante atomicidade: se outra venda
+                        // consumiu o estoque entre a pesquisa e a finalização, o UPDATE não
+                        // aplica e registrosAlterados vem 0, disparando o erro abaixo
                         string sqlEstoque = "UPDATE produtos SET estoque = estoque - @quantidade WHERE id_produto = @produto AND estoque >= @quantidade";
                         MySqlCommand comandoEstoque = new MySqlCommand(sqlEstoque, conexao, transacao);
                         comandoEstoque.Parameters.AddWithValue("@quantidade", quantidade);
@@ -362,6 +377,8 @@ namespace ContruSystem
 
                         if (registrosAlterados == 0)
                         {
+                            // força o catch abaixo, que faz o Rollback de toda a transação
+                            // (venda e itens já inseridos até aqui também são desfeitos)
                             throw new Exception("Estoque insuficiente para o produto: " + item["Descricao"].ToString());
                         }
 
@@ -380,14 +397,18 @@ namespace ContruSystem
                     txtCodigoVenda.Text = codigoVenda.ToString();
                     MessageBox.Show("Venda nº " + codigoVenda + " finalizada com sucesso.", "Venda finalizada", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+                    // notifica quem estiver escutando (ex: FormTelaPrincipal) que uma venda foi concluída
                     VendaFinalizada?.Invoke(this, EventArgs.Empty);
 
+                    //apenas exibe o próximo código provável (codigoVenda + 1)
                     LimparVenda();
                     txtCodigoVenda.Text = (codigoVenda + 1).ToString();
                     
                 }
                 catch (Exception erro)
                 {
+                    // captura Exception genérica (não só MySqlException) porque o "throw" manual
+                    // de estoque insuficiente também precisa cair aqui e desfazer a transação
                     transacao.Rollback();
                     MessageBox.Show("A venda não foi concluída.\n\n" + erro.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }

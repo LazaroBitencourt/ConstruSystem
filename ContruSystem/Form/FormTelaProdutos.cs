@@ -20,7 +20,7 @@ namespace ContruSystem
 
         private void FrmProduto_Load(object sender, EventArgs e)
         {
-            txtCodigoProduto.ReadOnly = true;
+            txtCodigoProduto.ReadOnly = true;// código é gerado automaticamente pelo banco
             CarregarProdutos();
         }
 
@@ -77,7 +77,7 @@ namespace ContruSystem
                 using (MySqlConnection conexao = ConexaoBanco.CriarConexao())
                 {
                     conexao.Open();
-
+                    // evita produto duplicado: mesma descrição + mesma categoria
                     string verificar = "SELECT COUNT(*) FROM produtos WHERE descricao = @descricao AND categoria = @categoria";
                     MySqlCommand comandoVerificar = new MySqlCommand(verificar, conexao);
                     comandoVerificar.Parameters.AddWithValue("@descricao", txtDescricao.Text.Trim());
@@ -252,6 +252,7 @@ namespace ContruSystem
                     {
                         conexao.Open();
 
+                        // impede exclusão se o produto já foi vendido (evita erro de FK e perda de histórico)
                         string verificar = "SELECT COUNT(*) FROM itens_venda WHERE id_produto = @codigo";
                         MySqlCommand comandoVerificar = new MySqlCommand(verificar, conexao);
                         comandoVerificar.Parameters.AddWithValue("@codigo", txtCodigoProduto.Text);
@@ -325,7 +326,8 @@ namespace ContruSystem
                 MessageBox.Show("Erro ao carregar categorias.\n\n" + erro.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
+        //repopula as categorias toda vez que o ComboBox é aberto,
+        // para refletir categorias novas cadastradas sem precisar reabrir a tela
         private void cmbCategoria_DropDown(object sender, EventArgs e)
         {
             CarregarCategorias();

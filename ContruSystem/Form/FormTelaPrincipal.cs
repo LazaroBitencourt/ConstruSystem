@@ -22,6 +22,8 @@ namespace ContruSystem
     public partial class FormTelaPrincipal : Form
 
     {
+        // frmAtivo guarda o form atualmente exibido dentro do panelFormTelaPrincipal,
+        // permitindo fechá-lo antes de abrir outro (evita telas empilhadas)
         private Form frmAtivo;
         private string nomeUsuarioLogado;
         private string tipoUsuarioLogado;
@@ -38,16 +40,18 @@ namespace ContruSystem
             frmLblDataHoje.Text = DateTime.Now.ToString("dd/MM/yyyy");
             frmLblHoraAtual.Text = DateTime.Now.ToString("HH:mm:ss");
             CarregarDashboard();
-
+            // apenas administradores têm acesso à tela de Usuários
             bool ehAdministrador = tipoUsuarioLogado.Equals("administrador", StringComparison.OrdinalIgnoreCase);
-            btnUsuarios.Enabled = ehAdministrador;
+            btnUsuarios.Enabled = ehAdministrador; // Enabled = false já bloqueia o clique automaticamente
 
             if (!ehAdministrador)
             {
-                btnUsuarios.BackColor = Color.FromArgb(180, 180, 180);
+                btnUsuarios.BackColor = Color.FromArgb(180, 180, 180);// reforça visualmente que o botão está desabilitado
             }
 
         }
+        // Exibe um form dentro do panelFormTelaPrincipal, no lugar de abrir uma nova janela.
+        // TopLevel = false é o que permite o form "filho" ficar embutido dentro do painel.
         private void formShow(Form frm)
         {
             frmAtivoFechar();
@@ -64,7 +68,7 @@ namespace ContruSystem
                 frmAtivo.Close();
             }
         }
-
+        // Destaca visualmente o botão do menu que está ativo no momento
         private void botaoAtivado(Button frmAtivo)
         {
             foreach (Control controle in panelMenuTelaPrincipal.Controls)
@@ -84,7 +88,7 @@ namespace ContruSystem
         private void btnHome_Click(object sender, EventArgs e)
         {
             botaoAtivado(btnHome);
-            frmAtivoFechar();
+            frmAtivoFechar();// Home não tem tela própria, só fecha o form atual e mostra o dashboard
 
         }
 
@@ -92,6 +96,9 @@ namespace ContruSystem
         {
             botaoAtivado(btnVendas);
             FormTelaVendas frmVendas = new FormTelaVendas();
+
+            // ouve o evento disparado quando uma venda é concluída, para atualizar
+            // o dashboard (vendas hoje, qtd vendas, estoque) sem precisar reabrir a tela principal
             frmVendas.VendaFinalizada += FrmVendas_VendaFinalizada;
             formShow(frmVendas);
         }
@@ -128,6 +135,8 @@ namespace ContruSystem
         {
 
         }
+        // Busca em uma única consulta os 3 indicadores do dashboard,
+        // evitando 3 idas separadas ao banco
         private void CarregarDashboard()
         {
             try
@@ -159,7 +168,7 @@ namespace ContruSystem
                 MessageBox.Show("Erro ao carregar o dashboard.\n\n" + erro.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
+        // Handler do evento VendaFinalizada (FormTelaVendas) — mantém o dashboard sincronizado
         private void FrmVendas_VendaFinalizada(object sender, EventArgs e)
         {
             CarregarDashboard();
